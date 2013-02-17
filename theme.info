@@ -1,11 +1,11 @@
 ; Empty strings and strings beginning with ; symbols ignored
   name        = "cerber"
   title       = "Cerber Theme"
-  description = "A crisp and distinctive, tableless, fluid width administration theme"
+  description = "A crisp, distinctive and tableless theme for Gleez CMS"
   version     = 1
   license     = http://gleezcms.org/license
-  themeURL    = https://github.com/gleez/cms/tree/master/themes/cerber
-  depends     =
+  themeURL    = https://github.com/sergeyklay/gleez-cerber
+  depends     = "gleez"
   author      = "Gleez Team"
   authorURL   = http://www.gleeztech.com/
   site        = 1
