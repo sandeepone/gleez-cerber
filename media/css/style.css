@@ -1,0 +1,238 @@
+html { overflow-y: scroll; }
+html, body { min-height: 100%; }
+
+*::selection, *::-moz-selection { background-color: #9B4B4B; color: #FFFFF0; }
+
+body {
+  color: #555;
+  background: #F7F7F7 url("/media/images/bg.png") repeat 0 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.65em;
+  letter-spacing: normal;
+  padding-top: 94px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 110%;
+  margin-bottom: 10px;
+  color: #25252C;
+}
+
+
+h1 { font-size: 30px; }
+h2 { font-size: 20px;	}
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:link, a:active {
+  color: #999;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #9B4B4B;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+div.page-header h1,
+div.page-header h2,
+div.page-header h3,
+div.page-header h4,
+div.page-header h5,
+div.page-header h6 {
+  color: #25252C;
+}
+
+.navbar .brand { margin-top: 22px; }
+.navbar-inner { height: 94px; }
+.navbar-inverse .navbar-inner {
+  border-bottom: 1px solid #9B4B4B;
+  background: #222 url("/media/images/bgheader.png") repeat-x 0 0;
+}
+
+#messages { top: 94px; }
+
+.section { padding-top: 30px; }
+
+.infotextwrap {
+  height: 38px;
+  -moz-box-shadow: 0px 1px 0px #25252C;
+  -webkit-box-shadow: 0px 1px 0px #25252C;
+  box-shadow: 0px 1px 0px #25252C;
+  background: #222  url("/media/images/bgheader.png") repeat;
+  border-bottom: 1px solid #9B4B4B;
+  border-top: 1px solid #9B4B4B;
+}
+
+.infotext {
+  position: relative;
+  text-align: center;
+  margin: -16px auto 10px auto;
+  width: 960px;
+}
+
+.infotext h2 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 6px 0 30px; 
+  word-spacing: 0;
+  letter-spacing: 0;
+}
+
+.infotext span { color: #9B4B4B; }
+
+/* Backend style */
+
+#backend-place {
+  padding: 18px 20px 10px;
+  width: 960px;
+  margin: 24px auto;
+  height: 100%;
+}
+
+#backend-place .sidebar_left,
+#backend-place .sidebar_right {
+  width: 280px;
+  font-size: 12px;
+  background: #FFF;
+  border: 1px solid #DDDCDC;
+  border-bottom: 1px solid #BBB;
+  margin: 0 0 30px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#backend-place .sidebar_right {
+  padding: 23px 10px 0 19px;
+  float: left;
+}
+
+#backend-place .sidebar_right {
+  padding: 23px 19px 0 10px;
+  float: right;
+}
+
+#backend-place .pad {
+  background: none;
+  height: 0;
+  clear: both;
+}
+
+#backend-place .main {
+  width: 600px;
+  padding: 0 0 20px;
+  float: left;
+}
+
+#backend-place #content { padding: 20px 10px; }
+
+#backend-place .postcontent {
+  background: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: auto !important;
+  border: 1px solid #DDDCDC;
+  border-bottom: 1px solid #BBB;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#backend-place .postcontent h1 {
+  line-height: 1.2em;
+  padding: 20px 5px 5px 15px;
+}
+
+#backend-place .postcontent .help {
+ padding: 0 5px 5px 15px; 
+}
+
+
+#backend-place .widget {
+  position: relative;
+  margin: 0 0 1.7em;
+  z-index: 10;
+  border: none;
+  background: #FFF;
+  line-height: 18px;
+}
+
+#backend-place .widget .widget-header {
+  border: none;
+  background: #FFF;
+}
+
+#backend-place .widget .widget-header h3 {
+  font-size: 18px;
+  padding: 0 10px 5px 0;
+  margin: 0;
+}
+
+
+#backend-place .widget .widget-content {
+  border: none;
+  padding-top: 1em;
+}
+
+#backend-place table {
+  font-size: 11px;
+  color: #5D5D5D;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#backend-place .table th,
+#backend-place .table td {
+  border-color: #DDD;
+}
+
+#backend-place table tr { background: #EFEFEF; }
+
+#backend-place table td,
+#backend-place table th {
+  padding: 4px 8px;
+}
+
+#backend-place table th {
+  background: #DEDEDE;
+  border: 1px solid white;
+  padding: 8px;
+  width: 100px;
+  font-weight: 900;
+}
+
+#backend-place .table-bordered {
+  border: 1px solid #DDD;
+}
+
+#backend-place .table-bordered th, #backend-place .table-bordered td { border-left: 1px solid #DDD; }
+
