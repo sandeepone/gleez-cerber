@@ -1,6 +1,6 @@
 # Gleez Cerber
 
-A crisp, distinctive and tableless theme for Gleez CMS
+A crisp, distinctive and tableless theme for [Gleez CMS](http://gleezcms.org/)
 
 ## Overview
 
@@ -16,7 +16,7 @@ A crisp, distinctive and tableless theme for Gleez CMS
   </tr>
   <tr>
     <td>Name</td>
-    <td>`cerber`</td>
+    <td>cerber</td>
   </tr>
   <tr>
     <td>Title</td>
@@ -64,23 +64,23 @@ A crisp, distinctive and tableless theme for Gleez CMS
     <th>Title</th>
   </tr>
   <tr>
-    <td>`top`</td>
+    <td>top</td>
     <td>Top</td>
   </tr>
   <tr>
-    <td>`left`</td>
+    <td>left</td>
     <td>Left</td>
   </tr>
   <tr>
-    <td>`right`</td>
+    <td>right</td>
     <td>Right</td>
   </tr>
   <tr>
-    <td>`dashboard`</td>
+    <td>dashboard</td>
     <td>Dashboard</td>
   </tr>
   <tr>
-    <td>`footer`</td>
+    <td>footer</td>
     <td>Footer</td>
   </tr>
 </table>
@@ -103,14 +103,14 @@ A crisp, distinctive and tableless theme for Gleez CMS
 
 ## Contributors
 
-- [Sergey Yakovlev] (https://github.com/sergeyklay) - Code
+- [Sergey Yakovlev](https://github.com/sergeyklay) - Code
 
 Now that you're here, why not start contributing as well? :)
 
 
 ##  Special thanks to
 
-- [sandeepone] (https://github.com/sandeepone) - Gleez Team
+- [sandeepone](https://github.com/sandeepone) - Gleez Team
 
 
 ## Changelog
