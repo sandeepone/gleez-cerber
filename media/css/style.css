@@ -188,6 +188,12 @@ a {
 .navbar .search-query:-moz-placeholder {color: #666;}
 
 
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active>.dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active>.dropdown-toggle {
+	background-color: transparent;
+}
+
 /*-------------------------------------------------------------------
                            3. Buttons
 -------------------------------------------------------------------*/

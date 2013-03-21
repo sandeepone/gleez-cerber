@@ -14,6 +14,7 @@
 	<!--[if lt IE 8]>
 		<link type="text/css" href="/media/css/font-awesome-ie7.css" rel="stylesheet" media="all" />
 	<![endif]-->
+	<link href="/media/css/bootstrap-responsive.min.css" rel="stylesheet" media="all">
 </head>
 <body id="<?php echo $page_id; ?>" class="<?php echo $page_class; ?>">
 	<!-- ########## Navbar start ########## -->
