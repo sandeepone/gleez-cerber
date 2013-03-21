@@ -1,0 +1,74 @@
+
+/*----------------------------------Table-------------------------------------*/
+
+.table tbody tr td .progress{
+  margin-bottom: 0;
+}
+
+.table td.action,
+table td.action {
+  width: 100px;
+}
+
+.table td.action .btn-min,
+table td.action .btn-min {
+  float: left;
+  margin: 0 1px;
+}
+
+
+/*---------------------------------Sidebar------------------------------------*/
+
+#right .widget-menu  .widget-content {
+	background: #EFEFEF;
+	padding: 0;
+}
+
+#right .widget-menu  .widget-content ul {
+	background: #FAFAFB;
+	list-style: none;
+}
+
+#right .widget-menu  .widget-content ul.level-1 {
+	margin: 0;
+}
+
+#right .widget-menu  .widget-content ul.level-1 li {
+	border-bottom: 1px solid #EEE;
+	border-top: 1px solid white;
+}
+
+#right .widget-menu  .widget-content ul li [class^="icon-"],
+#right .widget-menu  .widget-content ul .nav li [class^="icon-"],
+#right .widget-menu  .widget-content ul li [class*=" icon-"],
+#right .widget-menu  .widget-content ul .nav li [class*=" icon-"] {
+	margin-right: 8px;
+}
+
+
+#right .widget-menu  .widget-content ul.level-1 li:first-child {
+	border-top: none;
+}
+
+#right .widget-menu  .widget-content ul.level-1 li a,
+#right .widget-menu  .widget-content ul.level-1 li a:link {
+	display: block;
+	padding: 8px 10px 8px 8px;
+	text-shadow: 0 1px 0 white;
+	border-left: 2px solid #FAFAFB;
+}
+
+#right .widget-menu  .widget-content ul.level-1 li a:hover,
+#right .widget-menu  .widget-content ul.level-1 li a:active {
+	background: #FDFDFE;
+	text-decoration: none;
+}
+
+#right .widget-menu  .widget-content ul.level-1 li.active a {
+	background: white;
+	border-left: 2px solid #D26911;
+	font-weight: bold;
+	color: #222;
+	cursor: default;
+	box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0.1);
+}

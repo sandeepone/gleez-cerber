@@ -1,0 +1,313 @@
+body {color: #838383;}
+
+.form-password {margin-bottom: 0;}
+.form-password .login-fields {margin-bottom: 0;}
+.form-password .form-actions {margin-bottom: 0;}
+.form-password .btn {min-width: 120px;}
+
+.button {
+	display: inline-block;
+	margin-top: 18px;
+	min-width: 120px;
+}
+
+.account-container {
+	width: 380px;
+	display: block;
+	margin: 60px auto 0 auto;
+	background: #F9F9F9;
+	border: 1px solid #D5D5D5;
+	box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
+	-moz-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
+	-webkit-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.account-container .content {
+	padding: 16px 28px 23px;
+}
+
+.account-container h1 {
+	margin-bottom: .8em;
+	text-transform: none;
+}
+
+.profilecols {
+	margin-top: 20px;
+}
+
+.avatar {
+	position: relative;
+}
+
+.vcard img,
+.empty-photo {
+	padding: 5px;
+	background-color: #FFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
+	-webkit-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
+	width: 210px;
+	height: 210px;
+	border: 1px solid #DDD;
+	margin: 0 auto;
+	display: block;
+}
+
+.empty-photo i {
+	margin: 0 auto;
+	display: block;
+	width: 1em;
+	position: relative;
+	top: 70px;
+}
+
+a#add-pic {
+	color: #838383;
+	display: block;
+}
+
+a#add-pic:hover {
+	color: indianred;
+}
+
+.vcard h1 {
+	font-size: 26px;
+	letter-spacing: -1px;
+	color: #495961;
+	margin-top: 6px;
+	text-align: center;
+}
+
+.vcard h1 span {
+	line-height: 1;
+	display: inline-block;
+	width: 100%;
+	line-height: 26px;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	padding-bottom: 4px;
+	margin-bottom: -12px;
+}
+
+.vcard h1 em {
+	display: inline-block;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px;
+	color: #666;
+	position: relative;
+	top: -2px;
+	margin-bottom: 12px;
+	vertical-align: top;
+	letter-spacing: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+.vcard .details {
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	margin: 0 0 8px 0;
+	padding: 18px 0 15px 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+.vcard dl {
+	margin: 5px 0 0 0;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.vcard dl:first-child {
+	margin-top: 0;
+}
+
+.vcard dl dt {
+	margin: 0;
+	float: left;
+	width: 22px;
+	color: #D0D0D0;
+}
+
+.vcard dl dd {
+	margin: 0 0 0 22px;
+	width: 195px;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+}
+
+.vcard .details .caption-label {
+	color: #A0A0A0;
+	padding-right: 4px;
+}
+
+.login-fields,
+.login-actions {
+	float: left;
+	width: 100%;
+	margin-top: -1em;
+	margin-bottom: 1.25em;
+}
+
+.login-fields .field {
+	margin-bottom: 1.25em;
+}
+
+.login-fields .input-prepend {
+	width: 100%;
+}
+
+.login-fields input,
+.login-fields span.add-on {
+	min-height: 30px !important;
+}
+
+.login-fields span.add-on {
+	min-width: 30px !important;
+	float: left;
+}
+
+.login-fields input[type="password"],
+.login-fields input[type="text"] {
+	width: 260px;
+	height: 38px;
+	float: left;
+	font-size: 16px;
+	color: #8E8D8D;
+	padding: 0 10px;
+	background-color: #FDFDFD;
+	display: block;
+	margin: 0;
+	box-shadow: inset 2px 2px 4px #F1F1F1;
+	-moz-box-shadow: inset 2px 2px 4px #F1F1F1;
+	-webkit-box-shadow: inset 2px 2px 4px #F1F1F1;
+}
+
+.form-password input[type="password"] {
+	font-size: 32px !important;
+	line-height: 42px !important;
+}
+
+.login-fields .icon-large:before {
+	font-size: 1.8em;
+	padding-top: 0.1em;
+}
+
+span.login-checkbox {
+	float: left;
+	margin-top: 30px;
+}
+
+span.login-checkbox > input[type='checkbox'] {
+	opacity: 0;
+	float: left;
+	width: 15px;
+}
+
+span.login-checkbox > input[type='checkbox'] + label {
+	background: url('../images/check.png') no-repeat 0 0;
+	padding: 0 0 0 22px;
+	line-height: 1.2em;
+	font-size: 12px;
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	clear: none;
+	margin: 0;
+
+}
+
+span.login-checkbox > input[type='checkbox']:checked + label {
+	background-position: 0 -15px;
+}
+
+.login-actions ul {
+	list-style-type: none;
+	min-height: 18px;
+	margin-left: 0;
+}
+
+.login-actions ul li {
+	float: left;
+	width: 47%;
+	padding-left: 3%;
+	line-height: 18px;
+}
+
+.login-actions ul li:first-child {
+	border-right: 1px solid #838383;
+	margin-left: -1px;
+	text-align: right;
+	padding-right: 3%;
+	padding-left: 0;
+}
+
+.login-social {
+	padding: 10px 0 15px;
+	float: left;
+}
+
+.login-social div.twitter,
+.login-social div.facebook,
+.login-social div.github,
+.login-social div.google,
+.login-social div.live {
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+	height: 32px;
+	width: 157px;
+}
+
+.login-social div.twitter  {background-image: url('../images/twitter_btn.png');}
+.login-social div.facebook {background-image: url('../images/facebook_btn.png');}
+.login-social div.github   {}
+.login-social div.google   {}
+.login-social div.live     {}
+
+.login-social div.twitter:active,
+.login-social div.facebook:active,
+.login-social div.github:active,
+.login-social div.google:active,
+.login-social div.live:active {
+	top: 1px;
+}
+
+.login-social div.twitter:hover,
+.login-social div.facebook:hover,
+.login-social div.github:hover,
+.login-social div.google:hover,
+.login-social div.live:hover {
+	background-position: 0 -32px;
+}
+
+.login-social a.btn-social {
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+	padding: 5px 0 0 35px;
+	font-weight: bold;
+	font-size: 11px;
+	display: block;
+	height: 32px;
+	color: #FFF;
+}
+
+.login-social a.btn-social:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.button-controls {
+	position: relative;
+}
+
+.button-controls-right {
+	position: relative;
+	display: block;
+	float: right;
+}

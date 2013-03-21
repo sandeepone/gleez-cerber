@@ -1,20 +1,20 @@
-; Empty strings and strings beginning with ; symbols ignored
-  name        = "cerber"
-  title       = "Cerber Theme"
-  description = "A crisp, distinctive and tableless theme for Gleez CMS"
-  version     = 1
-  license     = http://gleezcms.org/license
-  themeURL    = https://github.com/sergeyklay/gleez-cerber
-  depends     = "gleez"
-  author      = "Gleez Team"
-  authorURL   = http://www.gleeztech.com/
-  site        = 1
-  admin       = 1
+; Theme info
+    name        = "cerber"
+    title       = "Gleez Cerber"
+    description = "Gleez Cerber Theme with left sidebar"
+    version     = 1.0
+    license     = http://gleezcms.org/license
+    themeURL    = https://github.com/gleez/cms/tree/master/themes/cerber
+    depends     =
+    author      = "Gleez Team"
+    authorURL   = http://www.gleeztech.com/
+    site        = 1
+    admin       = 0
 
 ; Regions
 [regions]
-  top         = Top
-  left        = Left
-  right       = Right
-  dashboard   = Dashboard
-  footer      = Footer
+    top         = Top Region
+    subnav      = Sub Navigation
+    left        = Right Sidebar
+    footer      = Footer
+    dashboard   = Dashboard
