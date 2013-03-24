@@ -38,6 +38,6 @@ admin          = 1
 ;
 [regions]
 	top            = Top Region
-	left           = Right Sidebar
+	right          = Right Sidebar
 	dashboard      = Dashboard
 	footer         = Footer

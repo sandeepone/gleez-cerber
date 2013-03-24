@@ -16,7 +16,7 @@
 			<?php
 				$main_column = 9;
 
-				if ($is_front)
+				if ($is_front OR ! $sidebar_right)
 				{
 					$main_column = 12;
 				}
@@ -26,7 +26,7 @@
 					<?php echo $content; ?>
 				</div>
 			</div>
-			<?php if ( ! $is_front): ?>
+			<?php if ( ! $is_front AND $sidebar_right): ?>
 				<div class="span3">
 					<!-- ########## Sidebar right start ########## -->
 					<div id="right">
