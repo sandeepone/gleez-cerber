@@ -38,7 +38,6 @@ admin          = 1
 ;
 [regions]
 	top            = Top Region
-	subnav         = Sub Navigation
 	left           = Right Sidebar
-	footer         = Footer
 	dashboard      = Dashboard
+	footer         = Footer

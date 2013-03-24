@@ -5,6 +5,31 @@ body {color: #838383;}
 .form-password .form-actions {margin-bottom: 0;}
 .form-password .btn {min-width: 120px;}
 
+.profile-container {
+	margin-top: 2.5em;
+	position: relative;
+}
+
+ul.tabnav {
+	margin: 0;
+	right: 0;
+	top: 0;
+	right: 0;
+	z-index: 21;
+	float: right;
+	position: relative;
+	padding: 0;
+}
+
+ul.tabnav>li {
+	list-style-type: none;
+	display: inline;
+	font-size: 11px;
+	color: #333;
+	margin: 0 5px 0 0;
+	float: left;
+}
+
 .button {
 	display: inline-block;
 	margin-top: 18px;
@@ -33,11 +58,6 @@ body {color: #838383;}
 	margin-bottom: .8em;
 	text-transform: none;
 }
-
-.profilecols {
-	margin-top: 20px;
-}
-
 .avatar {
 	position: relative;
 }
@@ -300,14 +320,4 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 .login-social a.btn-social:hover {
 	color: #FFF;
 	text-decoration: none;
-}
-
-.button-controls {
-	position: relative;
-}
-
-.button-controls-right {
-	position: relative;
-	display: block;
-	float: right;
 }
