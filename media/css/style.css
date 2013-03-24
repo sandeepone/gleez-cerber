@@ -41,7 +41,7 @@ html, body {
 
 body {
 	position: relative;
-	font: 13px/1.7em "Open Sans", "Helvetica Neue", Helvetica, Arial, Freesans, Clean, sans-serif;
+	font: 13px/1.7em 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Freesans, Clean, sans-serif;
 	background-color: #E9E9E9;
 	background-repeat: repeat;
 	text-rendering: optimizeLegibility;
