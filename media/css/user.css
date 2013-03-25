@@ -38,6 +38,7 @@ ul.tabnav>li {
 
 .account-container {
 	width: 380px;
+	position: relative;
 	display: block;
 	margin: 60px auto 0 auto;
 	background: #F9F9F9;
