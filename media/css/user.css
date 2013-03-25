@@ -1,4 +1,11 @@
-body {color: #838383;}
+body {color: #404040;}
+body.user-register {
+	background: #FAFAFA url("../images/bg/bg3.png") repeat 0 0!important;
+}
+
+.user-register #content {
+	padding-bottom: 80px;
+}
 
 .form-password {margin-bottom: 0;}
 .form-password .login-fields {margin-bottom: 0;}
@@ -321,4 +328,115 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 .login-social a.btn-social:hover {
 	color: #FFF;
 	text-decoration: none;
+}
+
+
+/* Sign Up form */
+#signup {
+	width: 48%;
+	float: left;
+}
+
+#signin {
+	width: 48%;
+	float: right;
+}
+
+#signup .title,
+#signin .title {
+	padding: 15px 30px;
+	margin: 0;
+	letter-spacing: -1px;
+	font-size: 22px;
+	color: #444;
+	width: auto;
+	border: 1px solid #DDD;
+	background: #F7F7F7 url("../images/bg/bg4.png");
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+}
+
+#signup fieldset,
+#signin .signin-wrapper {
+	width: auto;
+	margin: 0;
+	padding: 2.7em 0 0 0;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	border-top: none;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+}
+
+#signin .signin-wrapper {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#signup .actions,
+#signin .actions {
+	background: whiteSmoke;
+	margin: 2em 0 0 0;
+	padding: 1em 0 2em 2em;
+	border-top: 1px solid #DDD;
+	border-radius: 0 0 3px 3px;
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+}
+
+#signup label.control-label,
+#signin label.control-label {
+	font-weight: 700;
+	font-size: .9em;
+	color: #555;
+}
+
+#signin #providers {
+	margin: 2em;
+}
+
+#providers li {
+	height: 3em;
+}
+
+.user-register .provider {
+	margin: .5em .5em .5em 1em;
+	list-style: none;
+}
+
+.user-register li.base     {background: url('../images/gleez-24.png')    0 10px no-repeat;}
+.user-register li.facebook {background: url('../images/facebook-24.png') 0 10px no-repeat;}
+.user-register li.twitter  {background: url('../images/twitter-24.png')  0 10px no-repeat;}
+
+.user-register .provider a {
+	margin-left: 3em;
+	vertical-align: middle;
+	background: none;
+	height: 3em;
+	line-height: 3em;
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.help-signin {
+	color: #333;
+	background: #FDFDFD;
+	margin: 1em 0.2em;
+	font-family: Cambria, Georgia,serif;
+	font-size: 100%;
+	line-height: 120%;
+	padding: .8em .9em;
+	border: 1px dashed #E4E4E4;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
 }
