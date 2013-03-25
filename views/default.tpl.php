@@ -5,34 +5,42 @@
 		$main_column = 12;
 	}
 ?>
-
-<div class="row-fluid">
-	<div class="span12">
-		<div class="row">
-			<div class="span8 offset2">
-				<!-- ########## Messages start ########## -->
-				<div id="messages" class="messages span12">
-					<?php echo $messages ?>
-				</div>
-				<!-- ########## Messages end ########## -->
+<?php if ($messages): ?>
+	<!-- ########## Messages start ########## -->
+	<div id="messages" class="messages container">
+		<?php echo $messages ?>
+	</div>
+	<!-- ########## Messages end ########## -->
+<?php endif; ?>
+<?php if ($title): ?>
+	<div class="subnavbar">
+		<header class="container">
+			<div class="page-header-top">
+				<h1><?php echo $title;?></h1>
 			</div>
-		</div>
+		</header>
+	</div>
+<?php endif; ?>
 
-		<div class="row-fluid">
-			<div class="span<?php echo $main_column?>">
-				<div id="content">
-					<?php echo $content; ?>
-				</div>
-			</div>
-			<?php if ( ! $is_front AND $sidebar_right): ?>
-				<div class="span3">
-					<!-- ########## Sidebar right start ########## -->
-					<div id="right">
-						<?php echo $sidebar_right; ?>
+<div class="container main">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="row-fluid">
+				<div class="span<?php echo $main_column?>">
+					<div id="content">
+						<?php echo $content; ?>
 					</div>
-					<!-- ########## Sidebar right end ########## -->
 				</div>
-			<?php endif; ?>
+				<?php if ( ! $is_front AND $sidebar_right): ?>
+					<div class="span3">
+						<!-- ########## Sidebar right start ########## -->
+						<div id="right">
+							<?php echo $sidebar_right; ?>
+						</div>
+						<!-- ########## Sidebar right end ########## -->
+					</div>
+				<?php endif; ?>
+			</div>
 		</div>
 	</div>
 </div>

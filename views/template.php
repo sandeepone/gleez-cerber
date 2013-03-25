@@ -64,12 +64,10 @@
 	<!-- ########## Navbar end ########## -->
 
 	<!-- ########## Container start ########## -->
-	<div class="container main">
-		<?php
-			$tpl = $is_admin ? 'admin' : 'default';
-			include Kohana::find_file('views', $tpl.'.tpl');
-		?>
-	</div>
+	<?php
+		$tpl = $is_admin ? 'admin' : 'default';
+		include Kohana::find_file('views', $tpl.'.tpl');
+	?>
 	<!-- ########## Container end ########## -->
 
 	<!-- ########## Footer start ########## -->
