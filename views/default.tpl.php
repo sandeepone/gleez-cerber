@@ -1,11 +1,17 @@
-<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+<?php defined('SYSPATH') OR die('No direct script access.');
+	$main_column = 9;
+	if ($is_front OR ! $sidebar_right)
+	{
+		$main_column = 12;
+	}
+?>
 
 <div class="row-fluid">
 	<div class="span12">
 		<div class="row">
 			<div class="span8 offset2">
 				<!-- ########## Messages start ########## -->
-				<div id="messages" class="messages span8">
+				<div id="messages" class="messages span12">
 					<?php echo $messages ?>
 				</div>
 				<!-- ########## Messages end ########## -->
@@ -13,14 +19,6 @@
 		</div>
 
 		<div class="row-fluid">
-			<?php
-				$main_column = 9;
-
-				if ($is_front OR ! $sidebar_right)
-				{
-					$main_column = 12;
-				}
-			?>
 			<div class="span<?php echo $main_column?>">
 				<div id="content">
 					<?php echo $content; ?>
