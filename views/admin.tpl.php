@@ -1,32 +1,31 @@
 <?php defined('SYSPATH') OR die('No direct script access.'); ?>
+<?php if ($messages): ?>
+	<!-- ########## Messages start ########## -->
+	<div id="messages" class="messages container">
+		<?php echo $messages ?>
+	</div>
+	<!-- ########## Messages end ########## -->
+<?php endif; ?>
+<?php if ($title): ?>
+	<div class="subnavbar">
+		<header class="container">
+			<div class="page-header-top">
+				<h1 class="default-title"><?php echo $title;?></h1>
+			</div>
+		</header>
+	</div>
+<?php endif; ?>
 
 <div class="container">
 	<div class="row">
-		<div class="span12">
-			<div class="row">
-				<div class="span8 offset2">
-					<!-- ########## Messages start ########## -->
-					<div id="messages" class="messages span8">
-						<?php echo $messages ?>
-					</div>
-					<!-- ########## Messages end ########## -->
-				</div>
-			</div>
-		</div>
-
 		<div class="span12 dashboard-wrapper">
 			<div class="row">
 				<div class="span9">
-					<!-- ########## Header and tabs start ########## -->
+					<?php if ($tabs): ?>
 					<div class="page-header<?php echo ($tabs ? ' with-tabs' : ''); ?>">
-						<?php if ($title): ?>
-							<h1 class="default-title"><?php echo $title;?></h1>
-						<?php endif; ?>
-						<?php if ($tabs): ?>
-							<?php echo $tabs; ?>
-						<?php endif; ?>
+						<?php echo $tabs; ?>
 					</div>
-					<!-- ########## Header and tabs end ########## -->
+					<?php endif; ?>
 					<div id="content"><?php echo $content; ?></div>
 				</div>
 				<div class="span3">
