@@ -1,3 +1,6 @@
+body a [class^="icon-"], a [class*=" icon-"] {
+	text-decoration: none;
+}
 
 /*----------------------------------Table-------------------------------------*/
 
@@ -71,4 +74,176 @@ table td.action .btn-min {
 	color: #222;
 	cursor: default;
 	box-shadow: inset 0 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------Dashboard Widgets Wrap----------------------------*/
+
+body.widget{
+	overflow: visible;
+	margin: 0;
+	z-index: 0;
+	clear: none;
+	position: relative;
+}
+
+#dashboard-widgets-wrap {
+	width: 100%;
+	*zoom: 1;
+}
+
+#dashboard-widgets-wrap:before,
+#dashboard-widgets-wrap:after {
+	display: table;
+	content: "";
+}
+
+#dashboard-widgets-wrap:after {
+	clear: both;
+}
+
+#dashboard-widgets-wrap [class*="blockme"] {
+	display: block;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	min-height: 28px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+#dashboard-widgets-wrap [class*="blockme"]:first-child {
+	margin-left: 0;
+}
+
+#dashboard-widgets-wrap .blockme {
+	width: 48.93617020799999%;
+	*width: 48.88297871863829%;
+}
+
+#dashboard-widgets-wrap .widget-even{
+	margin-left: 2.127659574%;
+	*margin-left: 2.0744680846382977%;
+}
+
+div.widget.widget-admin-shortcut .widget-content{
+	padding: 1.2em 0;
+}
+/*-------------------------------Shortcuts---------------------------------*/
+
+.shortcuts {
+	text-align: center;
+}
+
+.shortcuts .shortcut {
+	width: 24.5%;
+	display: inline-block;
+	padding: 0.9em 0;
+	margin: 0 0 1em;
+	vertical-align: top;
+	text-decoration: none;
+	background: #F3F3F3;
+	border-radius: 3px;
+}
+
+.shortcuts .shortcut .shortcut-icon {
+	margin-top: .25em;
+	margin-bottom: .25em;
+	font-size: 32px;
+	color: #888;
+}
+
+.shortcuts .shortcut:hover {
+	background: #E8E8E8;
+}
+
+.shortcuts .shortcut:hover .shortcut-icon {
+	color: #666;
+}
+
+.shortcuts .shortcut-label {
+	display: block;
+	font-weight: 400;
+	color: #666;
+	font-size: .85em;
+}
+
+
+@media (max-width: 767px) {
+	#dashboard-widgets-wrap {
+		width: 100%;
+	}
+	#dashboard-widgets-wrap [class*="blockme"] {
+		float: none;
+		display: block;
+		width: auto;
+		margin-left: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	#dashboard-widgets-wrap {
+		width: 100%;
+		*zoom: 1;
+	}
+	#dashboard-widgets-wrap:before,
+	#dashboard-widgets-wrap:after {
+		display: table;
+		content: "";
+	}
+	#dashboard-widgets-wrap:after {
+		clear: both;
+	}
+	#dashboard-widgets-wrap [class*="blockme"] {
+		display: block;
+		width: 100%;
+		min-height: 28px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		float: left;
+		margin-left: 0;
+	}
+	#dashboard-widgets-wrap .widget-even{
+		margin-left: 2.762430939%;
+		*margin-left: 2.709239449638298%;
+	}
+	#dashboard-widgets-wrap .blockme {
+		width: 48.618784527%;
+		*width: 48.5655930376383%;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	#dashboard-widgets-wrap {
+		width: 100%;
+		*zoom: 1;
+	}
+	#dashboard-widgets-wrap:before,
+	#dashboard-widgets-wrap:after {
+		display: table;
+		content: "";
+	}
+	#dashboard-widgets-wrap:after {
+		clear: both;
+	}
+	#dashboard-widgets-wrap [class*="blockme"] {
+		display: block;
+		width: 100%;
+		min-height: 28px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		float: left;
+		margin-left: 0;
+	}
+	#dashboard-widgets-wrap .blockme {
+		width: 47.717948718%;
+		margin: 1%;
+		*width: 47.6647572286383%;
+	}
+
 }
