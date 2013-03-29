@@ -1,10 +1,8 @@
 <?php defined('SYSPATH') OR die('No direct script access.'); ?>
 
-<?php include Kohana::find_file('views', 'errors/partial'); ?>
-
 <div class="span12">
-
 	<div class="widget">
+		<?php include Kohana::find_file('views', 'errors/partial'); ?>
 		<!-- ########## Widget Header start ########## -->
 		<div class="widget-header">
 			<span class="icon-user"></span>
@@ -26,14 +24,13 @@
 				<?php echo Form::open($action, array('class' => 'form-horizontal')); ?>
 				<div class="tab-content" id="profile-tabs-content">
 					<div class="tab-pane fade in active" id="profile">
-						<div class="control-group <?php echo isset($errors['name']) ? 'error': ''; ?>">
-							<?php echo Form::label('name', __('Username'), array('class' => 'control-label')) ?>
+						<div class="control-group <?php echo isset($errors['homepage']) ? 'error': ''; ?>">
+							<?php echo Form::label('homepage', __('Home Page'), array('class' => 'control-label')) ?>
 							<div class="controls">
 								<div class="input-prepend">
-									<span class="add-on"><i class="icon-lock"></i></span>
-									<?php echo Form::input('name', $user->name, array('class' => 'input-xlarge disabled', 'disabled')); ?>
+									<span class="add-on"><i class="icon-globe"></i></span>
+									<?php echo Form::input('homepage', $user->homepage, array('class' => 'input-xlarge')); ?>
 								</div>
-								<span class="help-block"><?php echo __('Username for logging in can\'t be changed.') ?></span>
 							</div>
 						</div>
 						<div class="control-group <?php echo isset($errors['nick']) ? 'error': ''; ?>">
@@ -56,17 +53,30 @@
 						<div class="control-group <?php echo isset($errors['dob']) ? 'error': ''; ?>">
 							<?php echo Form::label('dob', __('Birthday'), array('class' => 'control-label')) ?>
 							<div class="controls">
-								<?php echo Form::select('month', Date::months(Date::MONTHS_SHORT), date('n', $user->dob), array('class' => 'span2')); ?>
-								<?php echo Form::select('days',  Date::days(Date::DAY), date('j', $user->dob), array('class' => 'span2')); ?>
-								<?php echo Form::select('years', Date::years(date('Y') - 95,date('Y') - 5), date('Y', $user->dob), array('class' => 'span2')); ?>
+								<?php echo Form::select('month', Date::months(Date::MONTHS_SHORT), date('n', $user->dob), array('class' => 'input-small')); ?>
+								<?php echo Form::select('days',  Date::days(Date::DAY), date('j', $user->dob), array('class' => 'input-small')); ?>
+								<?php echo Form::select('years', Date::years(date('Y') - 95,date('Y') - 5), date('Y', $user->dob), array('class' => 'input-small')); ?>
 							</div>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="settings">
+						<div class="control-group <?php echo isset($errors['name']) ? 'error': ''; ?>">
+							<?php echo Form::label('name', __('Username'), array('class' => 'control-label')) ?>
+							<div class="controls">
+								<div class="input-prepend">
+									<span class="add-on"><i class="icon-lock"></i></span>
+									<?php echo Form::input('name', $user->name, array('class' => 'input-large disabled', 'disabled')); ?>
+								</div>
+								<span class="help-block"><?php echo __('Username for logging in can\'t be changed.') ?></span>
+							</div>
+						</div>
 						<div class="control-group <?php echo isset($errors['mail']) ? 'error': ''; ?>">
 							<?php echo Form::label('mail', __('Mail'), array('class' => 'control-label')) ?>
 							<div class="controls">
-								<?php echo Form::input('mail', $user->mail, array('class' => 'input-large')); ?>
+								<div class="input-prepend">
+									<span class="add-on"><i class="icon-envelope"></i></span>
+									<?php echo Form::input('mail', $user->mail, array('class' => 'input-large')); ?>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -32,6 +32,12 @@
 					<dd><a class="email" data-email="<?php echo $user->mail ?>" href="mailto:<?php echo $user->mail ?>"><?php echo $user->mail ?></a></dd>
 				</dl>
 			<?php endif; ?>
+			<?php if ($user->homepage): ?>
+				<dl title="<?php echo __('Home Page') ?>">
+					<dt><i class="icon-globe"></i></dt>
+					<dd><?php echo HTML::anchor($user->homepage, $user->homepage, array('itemprop' => 'url')); ?></dd>
+				</dl>
+			<?php endif; ?>
 			<dl title="<?php echo __('Birthday') ?>">
 				<dt><i class="icon-heart"></i></dt>
 				<dd itemprop="birthDate"><?php echo date('M d, Y', $user->dob) ?></dd>
