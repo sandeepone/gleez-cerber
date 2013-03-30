@@ -24,15 +24,6 @@
 				<?php echo Form::open($action, array('class' => 'form-horizontal')); ?>
 				<div class="tab-content" id="profile-tabs-content">
 					<div class="tab-pane fade in active" id="profile">
-						<div class="control-group <?php echo isset($errors['homepage']) ? 'error': ''; ?>">
-							<?php echo Form::label('homepage', __('Home Page'), array('class' => 'control-label')) ?>
-							<div class="controls">
-								<div class="input-prepend">
-									<span class="add-on"><i class="icon-globe"></i></span>
-									<?php echo Form::input('homepage', $user->homepage, array('class' => 'input-xlarge')); ?>
-								</div>
-							</div>
-						</div>
 						<div class="control-group <?php echo isset($errors['nick']) ? 'error': ''; ?>">
 							<?php echo Form::label('nick', __('Display Name'), array('class' => 'control-label')) ?>
 							<div class="controls">
@@ -56,6 +47,19 @@
 								<?php echo Form::select('month', Date::months(Date::MONTHS_SHORT), date('n', $user->dob), array('class' => 'input-small')); ?>
 								<?php echo Form::select('days',  Date::days(Date::DAY), date('j', $user->dob), array('class' => 'input-small')); ?>
 								<?php echo Form::select('years', Date::years(date('Y') - 95,date('Y') - 5), date('Y', $user->dob), array('class' => 'input-small')); ?>
+							</div>
+						</div>
+
+						<div class="control-group <?php echo isset($errors['homepage']) ? 'error': ''; ?>">
+							<?php echo Form::label('homepage', __('Home Page'), array('class' => 'control-label')) ?>
+							<div class="controls">
+								<div class="input-prepend">
+									<span class="add-on"><i class="icon-globe"></i></span>
+									<?php echo Form::input('homepage', $user->homepage, array('class' => 'input-xlarge')); ?>
+								</div>
+								<?php if ($user->homepage): ?>
+									<span class="help-inline"><?php echo HTML::anchor($user->homepage, __('Go to'), array('target' => 'blank')) ?></span>
+								<?php endif; ?>
 							</div>
 						</div>
 					</div>
