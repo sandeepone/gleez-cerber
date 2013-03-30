@@ -7,6 +7,10 @@ body.user-register {
 	padding-bottom: 80px;
 }
 
+.user-register .form-horizontal {
+	margin-top: 0;
+}
+
 .form-password {margin-bottom: 0;}
 .form-password .login-fields {margin-bottom: 0;}
 .form-password .form-actions {margin-bottom: 0;}

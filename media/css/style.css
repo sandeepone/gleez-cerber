@@ -108,7 +108,7 @@ a {
 
 .alert {
 	padding: 12px 7% 12px 3%;
-	position: absolute;
+	position: relative;
 	z-index: 999;
 	width: 90%;
 }
@@ -231,7 +231,7 @@ a {
 
 .btn-inverse {
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	color: white;
+	color: white!important;
 }
 
 .btn-large {
@@ -242,6 +242,15 @@ a {
 .btn-icon-only {
 	padding-right: 3px;
 	padding-left: 3px;
+}
+
+.btn-block {
+	margin: 1em 0!important;
+}
+
+.textarea.input-xxlarge {
+	width: 98%;
+	padding: 4px 0.5%;
 }
 
 /*-------------------------------------------------------------------
