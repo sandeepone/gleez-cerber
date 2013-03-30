@@ -1,14 +1,10 @@
 <?php defined('SYSPATH') OR die('No direct script access.'); ?>
 
 <div class="account-container">
-	<?php
-		$destin = isset($_GET['destination']) ? $_GET['destination'] : Request::initial()->uri();
-		$params = array('action' => 'login');
-		include Kohana::find_file('views', 'errors/partial');
-	?>
+	<?php include Kohana::find_file('views', 'errors/partial'); ?>
 
 	<div class="content clearfix">
-		<?php echo Form::open(Route::get('user')->uri($params).URL::query(array('destination' => $destin)), array('class' => 'row-fluid')); ?>
+		<?php echo Form::open($action, array('class' => 'row-fluid')); ?>
 			<h1><?php echo $site_name ?></h1>
 
 			<div class="login-fields">
@@ -46,7 +42,9 @@
 				<div class="clearfix"></div><br>
 				<ul>
 					<li><?php echo HTML::anchor('user/reset/password', __('Forgot Password?')); ?></li>
-					<li><?php echo HTML::anchor('user/register', __("Don't have an account?")); ?></li>
+					<?php if ($register): ?>
+						<li><?php echo HTML::anchor('user/register', __("Don't have an account?")); ?></li>
+					<?php endif; ?>
 				</ul>
 			</div>
 
