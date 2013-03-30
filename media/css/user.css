@@ -7,7 +7,8 @@ body.user-register {
 	padding-bottom: 80px;
 }
 
-.user-register .form-horizontal {
+.user-register .form-horizontal,
+.user-edit  .form-horizontal {
 	margin-top: 0;
 }
 
@@ -268,16 +269,17 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 .login-actions ul li {
 	float: left;
 	width: 47%;
-	padding-left: 3%;
+	padding-right: 3%;
 	line-height: 18px;
+	text-align: right;
 }
 
-.login-actions ul li:first-child {
-	border-right: 1px solid #838383;
+.login-actions ul li:nth-child(2n) {
+	border-left: 1px solid #838383;
 	margin-left: -1px;
-	text-align: right;
-	padding-right: 3%;
-	padding-left: 0;
+	text-align: left;
+	padding-left: 3%;
+	padding-right: 0;
 }
 
 .login-social {
