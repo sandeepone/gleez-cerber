@@ -24,7 +24,7 @@
 			</dl>
 			<dl title="<?php echo __('Last Active') ?>">
 				<dt><i class="icon-fire"></i></dt>
-				<dd><?php echo date('M d, Y', $user->login); ?> @ <?php echo date('h:i a', $user->login) ?></dd>
+				<dd><?php echo date('M d, Y', $user->login) . __(' @ ') .  date('h:i a', $user->login) ?></dd>
 			</dl>
 			<?php if ($is_owner OR User::is_admin()): ?>
 				<dl title="<?php echo __('Email') ?>">
@@ -34,12 +34,12 @@
 			<?php endif; ?>
 			<?php if ($user->homepage): ?>
 				<dl title="<?php echo __('Home Page') ?>">
-					<dt><i class="icon-globe"></i></dt>
+					<dt><i class="icon-link"></i></dt>
 					<dd><?php echo HTML::anchor($user->homepage, $user->homepage, array('itemprop' => 'url')); ?></dd>
 				</dl>
 			<?php endif; ?>
 			<dl title="<?php echo __('Birthday') ?>">
-				<dt><i class="icon-heart"></i></dt>
+				<dt><i class="icon-calendar"></i></dt>
 				<dd itemprop="birthDate"><?php echo date('M d, Y', $user->dob) ?></dd>
 			</dl>
 			<?php if (User::is_admin()): ?>

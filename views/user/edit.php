@@ -54,7 +54,7 @@
 							<?php echo Form::label('homepage', __('Home Page'), array('class' => 'control-label')) ?>
 							<div class="controls">
 								<div class="input-prepend">
-									<span class="add-on"><i class="icon-globe"></i></span>
+									<span class="add-on"><i class="icon-link"></i></span>
 									<?php echo Form::input('homepage', $user->homepage, array('class' => 'input-xlarge')); ?>
 								</div>
 								<?php if ($user->homepage): ?>
