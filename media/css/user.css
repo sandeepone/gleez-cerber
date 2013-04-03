@@ -22,26 +22,6 @@ body.user-register {
 	position: relative;
 }
 
-ul.tabnav {
-	margin: 0;
-	right: 0;
-	top: 0;
-	right: 0;
-	z-index: 21;
-	float: right;
-	position: relative;
-	padding: 0;
-}
-
-ul.tabnav>li {
-	list-style-type: none;
-	display: inline;
-	font-size: 11px;
-	color: #333;
-	margin: 0 5px 0 0;
-	float: left;
-}
-
 .button {
 	display: inline-block;
 	margin-top: 18px;
