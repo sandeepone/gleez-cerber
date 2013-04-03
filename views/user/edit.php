@@ -55,11 +55,19 @@
 							<div class="controls">
 								<div class="input-prepend">
 									<span class="add-on"><i class="icon-link"></i></span>
-									<?php echo Form::input('homepage', $user->homepage, array('class' => 'input-xlarge')); ?>
+									<?php echo Form::input('homepage', $user->homepage, array('class' => 'input-xlarge', 'rel' => 'tooltip', 'data-placement' => 'right', 'title' => __('Will be public'))); ?>
 								</div>
 								<?php if ($user->homepage): ?>
 									<span class="help-inline"><?php echo HTML::anchor($user->homepage, __('Go to'), array('target' => 'blank')) ?></span>
 								<?php endif; ?>
+							</div>
+						</div>
+
+						<div class="control-group <?php echo isset($errors['bio']) ? 'error': ''; ?>">
+							<?php echo Form::label('bio', __('Bio'), array('class' => 'control-label')) ?>
+							<div class="controls">
+								<?php echo Form::textarea('bio', $user->bio, array('class' => 'input-xlarge', 'rows' => 5, 'rel' => 'tooltip', 'data-placement' => 'right', 'title' => __('Will be private'))); ?>
+								<span class="help-block"><?php echo __('No more than 800 characters') ?></span>
 							</div>
 						</div>
 					</div>
@@ -79,7 +87,7 @@
 							<div class="controls">
 								<div class="input-prepend">
 									<span class="add-on"><i class="icon-envelope"></i></span>
-									<?php echo Form::input('mail', $user->mail, array('class' => 'input-large')); ?>
+									<?php echo Form::input('mail', $user->mail, array('class' => 'input-large',   'rel' => 'tooltip', 'data-placement' => 'right', 'title' => __('Will be private'))); ?>
 								</div>
 							</div>
 						</div>

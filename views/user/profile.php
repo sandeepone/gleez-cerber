@@ -38,6 +38,7 @@
 					<dd><?php echo HTML::anchor($user->homepage, $user->homepage, array('itemprop' => 'url')); ?></dd>
 				</dl>
 			<?php endif; ?>
+
 			<dl title="<?php echo __('Birthday') ?>">
 				<dt><i class="icon-calendar"></i></dt>
 				<dd itemprop="birthDate"><?php echo date('M d, Y', $user->dob) ?></dd>
@@ -56,7 +57,7 @@
 	</div>
 </div>
 <div class="span8">
-	<ul class="tabnav">
+	<ul class="tabnav span12">
 		<li>
 			<?php echo HTML::anchor('user/edit', '<i class="icon-pencil"></i> '.__('Edit Account'), array('class' => 'btn')); ?>
 		</li>
@@ -64,7 +65,18 @@
 			<?php echo HTML::anchor('user/password', '<i class="icon-cog"></i> '.__('Change Password'), array('class' => 'btn')); ?>
 		</li>
 	</ul>
+	<div class="span12">
+		<div class="widget">
+			<div class="widget-header">
+				<h3><?php echo __('Bio') ?></h3>
+			</div>
+			<div class="widget-content">
+				<?php echo Text::plain($user->bio); ?>
+			</div>
+		</div>
+	</div>
 </div>
+
 <div class="modal hide fade in" id="upload-photo" role="dialog" tabindex="-1" aria-hidden="true">
 	<div class="modal-header">
 		<?php echo Form::button('close_window', '&times;', array('class' => 'close', 'data-dismiss' => 'modal', 'aria-hidden' => 'true')); ?>
