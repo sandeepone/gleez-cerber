@@ -31,7 +31,9 @@
 
 					<ul class="nav pull-right">
 						<?php if (User::is_guest()): ?>
-							<li><a href="<?php echo URL::site('/user/register'); ?>"><?php echo __('Sign Up')?></a></a></li>
+							<?php if (Kohana::$config->load('auth')->get('register')): ?>
+								<li><a href="<?php echo URL::site('/user/register'); ?>"><?php echo __('Sign Up')?></a></a></li>
+							<?php endif; ?>
 							<li><a href="<?php echo URL::site('/user/login'); ?>"><i class="icon-white icon-chevron-left"></i><?php echo __('Sign In') ?></a></li>
 						<?php else:  ?>
 						<li class="dropdown">
