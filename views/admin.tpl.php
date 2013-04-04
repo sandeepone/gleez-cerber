@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') OR die('No direct script access.'); ?>
 <?php if ($messages): ?>
 	<!-- ########## Messages start ########## -->
-	<div id="messages" class="messages container">
+	<div id="messages" class="messages span9 offset1">
 		<?php echo $messages ?>
 	</div>
 	<!-- ########## Messages end ########## -->

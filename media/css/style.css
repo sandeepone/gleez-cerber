@@ -375,7 +375,6 @@ a {
 .widget-box {}
 
 .widget-box .widget-content {
-	background: #E3E3E3;
 	background: #FFF;
 }
 
@@ -391,7 +390,7 @@ a {
 #messages {
 	display: block;
 	position: absolute;
-	text-align: center !important;
+	text-align: center;
 	top: 55px;
 	z-index: 200;
 }
@@ -436,6 +435,15 @@ ul.tabnav>li {
 	color: #333;
 	margin: 0 5px 0 0;
 	float: right;
+}
+
+.page-header {
+	border-bottom: none;
+}
+
+ul.page-stats,
+ul.page-stats ul {
+	list-style: none;
 }
 
 
