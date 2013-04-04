@@ -66,14 +66,16 @@
 		</li>
 	</ul>
 	<div class="span12">
-		<div class="widget">
-			<div class="widget-header">
-				<h3><?php echo __('Bio') ?></h3>
+		<?php if ($user->bio): ?>
+			<div class="widget">
+				<div class="widget-header">
+					<h3><?php echo __('Bio') ?></h3>
+				</div>
+				<div class="widget-content">
+					<?php echo Text::plain($user->bio); ?>
+				</div>
 			</div>
-			<div class="widget-content">
-				<?php echo Text::plain($user->bio); ?>
-			</div>
-		</div>
+		<?php endif ?>
 	</div>
 </div>
 
