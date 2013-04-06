@@ -45,7 +45,7 @@ table td.action .btn-min {
 #right .widget-menu  .widget-content ul .nav li [class^="icon-"],
 #right .widget-menu  .widget-content ul li [class*=" icon-"],
 #right .widget-menu  .widget-content ul .nav li [class*=" icon-"] {
-	margin-right: 8px;
+	margin-right: 1em;
 }
 
 
@@ -137,7 +137,7 @@ div.widget.widget-admin-shortcut .widget-content{
 }
 
 .shortcuts .shortcut {
-	width: 24.5%;
+	width: 23.5%;
 	display: inline-block;
 	padding: 0.9em 0;
 	margin: 0 0 1em;
