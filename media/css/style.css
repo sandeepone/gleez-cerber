@@ -378,6 +378,14 @@ a {
 	background: #FFF;
 }
 
+#admin-info th {
+	text-align: left;
+}
+
+#admin-info td {
+	padding-left: 1em;
+}
+
 /*-------------------------------------------------------------------
                            7. Footer
 -------------------------------------------------------------------*/
@@ -446,6 +454,36 @@ ul.page-stats ul {
 	list-style: none;
 }
 
+select[name="operation"] {
+	margin-bottom: 0;
+}
+
+div.help {
+	position: relative;
+	margin: 1em 0;
+	padding: 2.7em 1.2em 0.7em;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+div.help:after {
+	content: "info";
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #F5F5F5;
+	border: 1px solid #DDD;
+	color: #9DA0A4;
+	-webkit-border-radius: 4px 0 4px 0;
+	-moz-border-radius: 4px 0 4px 0;
+	border-radius: 4px 0 4px 0;
+}
 
 /*-------------------------------------------------------------------
                            10. Responsive
