@@ -52,6 +52,16 @@ a {
 	text-decoration: none;
 }
 
+code {
+	padding: 2px 4px;
+	color: #d14;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	white-space: nowrap;
+	display: block;
+	overflow-x: scroll;
+}
+
 *::selection, *::-moz-selection {
 	background: #999;
 	color: #FFF;
