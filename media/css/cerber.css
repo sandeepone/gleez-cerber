@@ -105,18 +105,15 @@ a {
 	padding: 1em 0;
 }
 
-#messages {position: relative;}
-
-.alert {
-	padding: 12px 7% 12px 3%;
-	position: relative;
-	z-index: 999;
-	width: 90%;
+.pad {
+	background: none;
+	height: 0;
+	clear: both;
 }
 
-.alert .close {top: 2;}
-
-.pad { background: none; height: 0; clear: both; }
+.text-centered {
+	text-align:center;
+}
 
 /*-------------------------------------------------------------------
                            2. Navbar
@@ -381,7 +378,7 @@ a {
 
 #admin-info th {
 	text-align: left;
-	width: 40%;
+	width: 50%;
 }
 
 #admin-info td {
@@ -392,6 +389,11 @@ a {
                            7. Footer
 -------------------------------------------------------------------*/
 
+.footer {
+	background: #1b1b1b;
+	color: #666;
+	padding: 30px 0;
+}
 
 /*-------------------------------------------------------------------
                            8. Messages
@@ -404,6 +406,15 @@ a {
 	top: 55px;
 	z-index: 200;
 }
+
+.alert {
+	padding: 12px 7% 12px 3%;
+	position: relative;
+	z-index: 999;
+	width: 90%;
+}
+
+.alert .close {top: 2;}
 
 
 /*-------------------------------------------------------------------
