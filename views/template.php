@@ -76,6 +76,9 @@
 			<div class="row" id="footer-region">
 				<?php echo Widgets::instance()->render('footer', 'footer'); ?>
 			</div>
+			<div class="row text-centered">
+				<small><?php echo __('Rendered in {execution_time}, using {memory_usage} of memory.')?></small>
+			</div>
 		</div>
 	</footer>
 	<!-- ########## Footer end ########## -->
