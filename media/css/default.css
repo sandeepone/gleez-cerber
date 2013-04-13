@@ -140,14 +140,24 @@ div.widget.widget-admin-shortcut .widget-content{
 	width: 23.5%;
 	display: inline-block;
 	padding: 0.9em 0;
-	margin: 0 0 1em;
+	margin: 0 0.25em 0.75em;
 	vertical-align: top;
 	text-decoration: none;
-	background: #F3F3F3;
-	border-radius: 3px;
+	background: #f8f8f8;
+	background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eeeeee));
+	background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+	background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
+	background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	border-radius: 4px;
 }
 
 .shortcuts .shortcut .shortcut-icon {
+	width: 100%;
 	margin-top: .25em;
 	margin-bottom: .25em;
 	font-size: 32px;
@@ -156,6 +166,14 @@ div.widget.widget-admin-shortcut .widget-content{
 
 .shortcuts .shortcut:hover {
 	background: #E8E8E8;
+	background-color: #f0f0f0;
+	background-image: -moz-linear-gradient(top, #fafafa, #e1e1e1);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#e1e1e1));
+	background-image: -webkit-linear-gradient(top, #fafafa, #e1e1e1);
+	background-image: -o-linear-gradient(top, #fafafa, #e1e1e1);
+	background-image: linear-gradient(to bottom, #fafafa, #e1e1e1);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffafafa', endColorstr='#ffe1e1e1', GradientType=0);
 }
 
 .shortcuts .shortcut:hover .shortcut-icon {
@@ -166,9 +184,10 @@ div.widget.widget-admin-shortcut .widget-content{
 	display: block;
 	font-weight: 400;
 	color: #666;
-	font-size: .85em;
+	font-size: .9em;
 }
 
+/*-------------------------------Responsive--------------------------------*/
 
 @media (max-width: 767px) {
 	#dashboard-widgets-wrap {
