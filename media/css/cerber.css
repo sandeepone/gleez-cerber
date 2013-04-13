@@ -400,10 +400,26 @@ code {
 -------------------------------------------------------------------*/
 
 .footer {
+	border-top: 1px solid #000;
 	background: #1b1b1b;
 	color: #666;
 	padding: 30px 0;
+	font-size: 12px;
 }
+
+.footer a {
+	color: #666;
+}
+
+#credits {
+	color: #999;
+}
+
+#footer-system-info {
+	color: #555;
+	width: 100%;
+}
+
 
 /*-------------------------------------------------------------------
                            8. Messages
@@ -577,5 +593,15 @@ div.help:after {
 	}
 	.alert .close {
 		right: -5px;
+	}
+	/* Downsize footer padding and maximize width */
+	.footer {
+		padding: 5px 5px;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	/* Downsize widget margin */
+	.widget {
+		margin-bottom: 1em;
 	}
 }
