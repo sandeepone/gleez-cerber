@@ -400,6 +400,7 @@ code {
 -------------------------------------------------------------------*/
 
 .footer {
+	margin-top: 30px;
 	border-top: 1px solid #000;
 	background: #1b1b1b;
 	color: #666;
