@@ -7,3 +7,7 @@
 .btn-inverse {
 	color: #FFFFDD;
 }
+
+.redactor_textarea {
+	border: 1px solid #ddd;
+}
