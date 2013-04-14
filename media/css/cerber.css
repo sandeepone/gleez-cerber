@@ -52,6 +52,10 @@ a {
 	text-decoration: none;
 }
 
+a:link {
+	-webkit-tap-highlight-color: #666;
+}
+
 code {
 	padding: 2px 4px;
 	color: #d14;
@@ -92,7 +96,7 @@ code {
 	background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
-	font-size: 0.9em;
+	font-size: .9em;
 	color: #444;
 	text-transform: uppercase;
 }
@@ -105,9 +109,21 @@ code {
 	color: #555;
 	border: 1px solid #DDDCDC;
 	border-bottom: 1px solid #BBB;
-	padding: 5px 10px 5px 10px;
-	margin-bottom: 4px;
+	padding: .25em .75em;
+	margin-bottom: .3em;
 	display: inline-block;
+}
+
+.tagcloud .nav {
+	padding-left: 1em;
+}
+
+.tagcloud li a {
+	background-color: whiteSmoke;
+	padding: .25em .75em .35em;
+	margin-bottom: .3em;
+	border: 1px solid #DDDCDC;
+	font-size: 0.9em !important;
 }
 
 .modal-body-text {
@@ -190,9 +206,9 @@ code {
 	padding: 20px 20px 10px;
 	margin: 0 0 30px 0;
 	border-bottom: 1px solid #DDD;
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
 .page-header-top h1 {
@@ -218,7 +234,7 @@ code {
 	font-size: 13px;
 	font-weight: bold;
 	color: #333;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
 	position: relative;
 	margin: 0 1em;
 	vertical-align: middle;
@@ -232,7 +248,7 @@ code {
 }
 
 .btn-inverse {
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
 	color: white!important;
 }
 
@@ -252,7 +268,7 @@ code {
 
 .textarea.input-xxlarge {
 	width: 98%;
-	padding: 4px 0.5%;
+	padding: 4px .5%;
 }
 
 /*-------------------------------------------------------------------
@@ -261,6 +277,105 @@ code {
 
 .main {padding-bottom: 2.5em;}
 
+#page .main #tabs ul.nav-tabs {
+	margin-bottom: 0;
+}
+
+#page .main #content {
+	background: #FFF;
+	padding: 1em 2em;
+	margin-bottom: 3em;
+	border: 1px solid #DDDCDC;
+	border-top: 0;
+	border-bottom-color: #BBB;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+}
+
+#page.page-list .main #content {
+	background: transparent;
+	border: 0;
+}
+
+.post-list {
+	background: #FFF;
+	margin-bottom: 3em;
+	padding: 1em 2em;
+	overflow: hidden;
+	height: auto;
+	border: 1px solid #DDDCDC;
+	border-bottom-color: #BBB;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.post-list:nth-child(2n) {
+	background-color: #FCFCFC;
+}
+
+.post-list h2 {
+	line-height: 110%;
+	margin: 0 3em 4px 0;
+	color: #25252C;
+	font-size: 24px;
+}
+
+.post-list h2 a {
+	color: #25252C;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.teaser .post-content p {
+	text-align: justify;
+}
+
+.meta {
+	margin: 0 8% 0 2%;
+	width: 90%;
+	float: left;
+	font-weight: 600;
+}
+
+.meta a, .meta a:link, .meta a:visited {
+	color: #aaa;
+}
+
+.meta a:hover, .meta a:active, .meta a:focus {
+	color: #005580;
+	text-decoration: none;
+}
+
+.meta .author,
+.meta .written {
+	float: left;
+	padding: .3em .8em .7em 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: .85em;
+	cursor: pointer;
+	height: 32px;
+	line-height: 32px;
+	color: #aaa;
+}
+
+.meta .author a + a {
+	padding-left: .3em;
+}
 
 /*-------------------------------------------------------------------
                            6. Widgets
@@ -419,9 +534,9 @@ code {
 	font-size: 11px;
 	color: #BBB;
 	background: #1A1A1A;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3);
 }
 
 .extra h4 {
@@ -529,7 +644,7 @@ select[name="operation"] {
 div.help {
 	position: relative;
 	margin: 1em 0;
-	padding: 2.7em 1.2em 0.7em;
+	padding: 2.7em 1.2em .7em;
 	background-color: #FFF;
 	border: 1px solid #DDD;
 	-webkit-border-radius: 4px;
