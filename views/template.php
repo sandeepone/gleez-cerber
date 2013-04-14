@@ -72,9 +72,15 @@
 
 	<!-- ########## Footer start ########## -->
 	<footer class="footer">
+		<div class="extra">
+			<div class="container">
+				<div class="row">
+					<?php echo Widgets::instance()->render('footer', 'footer'); ?>
+				</div>
+			</div>
+		</div>
 		<div class="container">
 			<div class="row-fluid" id="footer-region">
-				<?php echo Widgets::instance()->render('footer', 'footer'); ?>
 				<div class="row">
 					<div class="span12" id="credits">
 						<div class="span6">
@@ -83,11 +89,9 @@
 						<div class="span6">
 							<p class="pull-right"><?php echo __(':powerdby v{gleez_version}', array(':powerdby' => HTML::anchor('http://gleezcms.org/', 'Gleez CMS')))?></p>
 						</div>
-						<?php if (Kohana::$environment === Kohana::DEVELOPMENT): ?>
-							<div class="span12 text-centered" id="footer-system-info">
-								<small><?php echo __('Rendered in {execution_time}, using {memory_usage} of memory.')?></small>
-							</div>
-						<?php endif; ?>
+						<div class="span12 text-centered" id="footer-system-info">
+							<small><?php echo __('Rendered in {execution_time}, using {memory_usage} of memory.')?></small>
+						</div>
 					</div>
 				</div>
 			</div>
