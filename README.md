@@ -1,4 +1,4 @@
-Gleez Cerber
+Cerber Theme
 ============
 
-Gleez Cerber is a new responsive cool theme for Gleez CMS with right sidebar
+Cerber Theme is a new responsive cool theme for Gleez CMS with right sidebar
