@@ -79,19 +79,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row-fluid" id="footer-region">
+		<div class="footer-terms">
+			<div class="container">
 				<div class="row">
-					<div class="span12" id="credits">
-						<div class="span6">
-							<p class="pull-left"><?php echo __('&copy; :year :site', array(':year' => date('Y'), ':site' => HTML::anchor(URL::site(false, true), $site_name)));?></p>
-						</div>
-						<div class="span6">
-							<p class="pull-right"><?php echo __(':powerdby v{gleez_version}', array(':powerdby' => HTML::anchor('http://gleezcms.org/', 'Gleez CMS')))?></p>
-						</div>
-						<div class="span12 text-centered" id="footer-system-info">
-							<small><?php echo __('Rendered in {execution_time}, using {memory_usage} of memory.')?></small>
-						</div>
+					<div class="span6">
+						<p class="pull-left"><?php echo __('&copy; :year :site', array(':year' => date('Y'), ':site' => HTML::anchor(URL::site(false, true), $site_name)));?></p>
+					</div>
+					<div class="span6">
+						<p class="pull-right"><?php echo __(':powerdby v{gleez_version}', array(':powerdby' => HTML::anchor('http://gleezcms.org/', 'Gleez CMS')))?></p>
+					</div>
+					<div class="span12 text-centered" id="footer-system-info">
+						<small><?php echo __('Rendered in {execution_time}, using {memory_usage} of memory.')?></small>
 					</div>
 				</div>
 			</div>
