@@ -27,6 +27,13 @@
 		<div class="span12">
 			<div class="row-fluid">
 				<div class="span<?php echo $main_column?>">
+					<?php if ($tabs): ?>
+						<div id="tabs-actions">
+							<?php if($tabs):?>
+								<div id="tabs"><?php echo $tabs; ?></div>
+							<?php endif; ?>
+						</div>
+					<?php endif;?>
 					<div id="content">
 						<?php echo $content; ?>
 					</div>
