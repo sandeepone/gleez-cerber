@@ -400,11 +400,9 @@ code {
 -------------------------------------------------------------------*/
 
 .footer {
-	margin-top: 30px;
-	border-top: 1px solid #000;
+	margin-top: 2em;
 	background: #1b1b1b;
 	color: #666;
-	padding: 30px 0;
 	font-size: 12px;
 }
 
@@ -421,6 +419,32 @@ code {
 	width: 100%;
 }
 
+.extra {
+	border-top: 1px solid #000;
+	padding: 20px 0;
+	font-size: 11px;
+	color: #BBB;
+	background: #1A1A1A;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.extra h4 {
+	margin-bottom: 1em;
+	margin-top: 0;
+	font-weight: 400;
+}
+
+.extra ul {
+	padding: 0;
+	margin: 0;
+}
+
+.extra ul li {
+	margin-bottom: .6em;
+	list-style: none;
+}
 
 /*-------------------------------------------------------------------
                            8. Messages
