@@ -555,7 +555,7 @@ code {
 	list-style: none;
 }
 
-.extra + .footer-terms {
+.footer-terms {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background: #111;

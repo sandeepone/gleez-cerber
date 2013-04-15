@@ -72,13 +72,16 @@
 
 	<!-- ########## Footer start ########## -->
 	<footer class="footer">
-		<div class="extra">
-			<div class="container">
-				<div class="row">
-					<?php echo Widgets::instance()->render('footer', 'footer'); ?>
+		<?php $footer = Widgets::instance()->render('footer', 'footer'); ?>
+		<?php if ($footer): ?>
+			<div class="extra">
+				<div class="container">
+					<div class="row">
+						<?php echo $footer; ?>
+					</div>
 				</div>
 			</div>
-		</div>
+		<?php endif; ?>
 		<div class="footer-terms">
 			<div class="container">
 				<div class="row">
