@@ -565,6 +565,10 @@ code {
 	box-shadow: inset 0 1px 0 #292929;
 }
 
+.footer-block {
+	overflow: hidden;
+}
+
 /*-------------------------------------------------------------------
                            8. Messages
 -------------------------------------------------------------------*/
@@ -715,6 +719,36 @@ div.help:after {
 	#messages {
 		width: 90%;
 	}
+	/* Downsize footer padding and maximize width */
+	.footer {
+		padding: 5px 5px;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.extra {
+		/* Disable box-shadow */
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		/* Downsize padding */
+		padding: 5px 0;
+	}
+	.extra h4 {
+		margin-bottom: .5em;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	footer.footer .footer-block {
+		width: 160px;
+		float: left;
+	}
+	.extra .footer-block-content {
+		padding-left: 1em;
+	}
+	.footer .footer-terms {
+		margin: 0 -5px;
+		padding: 0 5px;
+	}
 }
 
 /* Landscape phones */
@@ -743,6 +777,26 @@ div.help:after {
 		padding: 5px 5px;
 		margin-left: -20px;
 		margin-right: -20px;
+	}
+	.extra {
+		/* Disable box-shadow */
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		/* Downsize padding */
+		padding: 5px 0;
+	}
+	.extra h4 {
+		margin-bottom: .5em;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.extra .footer-block-content {
+		padding-left: 1em;
+	}
+	.footer .footer-terms {
+		margin: 0 -5px;
+		padding: 0 5px;
 	}
 	/* Downsize widget margin */
 	.widget {
