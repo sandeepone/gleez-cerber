@@ -48,7 +48,7 @@
 					<dt><i class="icon-group"></i></dt>
 					<dd class="tagcloud">
 						<?php foreach ($user->roles() as $role): ?>
-							<span><?php echo Text::plain(ucfirst($role->name)); ?></span>
+							<span><?php echo Text::plain(ucfirst($role)); ?></span>
 						<?php endforeach; ?>
 					</dd>
 				</dl>
