@@ -135,9 +135,6 @@ body a [class^="icon-"], a [class*=" icon-"] {
 	box-shadow: inset 0 1px 0 #888;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-.table-highlight.table-bordered {
-	border-top: 1px solid #1C2B37;
-}
 
 .table tbody tr td .progress{
   margin-bottom: 0;
