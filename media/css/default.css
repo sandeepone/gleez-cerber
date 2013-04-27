@@ -4,6 +4,141 @@ body a [class^="icon-"], a [class*=" icon-"] {
 
 /*----------------------------------Table-------------------------------------*/
 
+.table td {
+	vertical-align: middle;
+}
+
+.table th, .table td {
+	line-height: 18px;
+}
+
+.table tbody+tbody{
+	border-top: 2px solid #DDD;
+}
+
+.table.table-bordered tbody tr td {
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.table-bordered thead tr {
+	background-color: #e6e6e6;
+	background-image: -moz-linear-gradient(top, #EEE, #dadada);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EEE), to(#dadada));
+	background-image: -webkit-linear-gradient(top, #EEE, #dadada);
+	background-image: -o-linear-gradient(top, #EEE, #dadada);
+	background-image: linear-gradient(to bottom, #EEE, #dadada);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffdadada', GradientType=0);
+}
+
+.table-bordered thead tr th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #444;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #CCC;
+	-webkit-box-shadow: inset 0 1px 0 #FFF;
+	-moz-box-shadow: inset 0 1px 0 #FFF;
+	box-shadow: inset 0 1px 0 #FFF;
+}
+
+.table-bordered thead tr th:first-child {
+	border-left-color: #CCC;
+}
+
+.table-bordered thead tr th:last-child {
+	border-right: none;
+}
+
+.table-bordered tbody tr:first-child td {
+	border-top-color: #CCC;
+}
+
+.table-bordered tbody tr td {
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #DDD;
+}
+
+.table-bordered tbody tr td:first-child {
+	border-left-color: #DDD;
+}
+
+.table-bordered tbody tr td:last-child {
+	border-right: none;
+}
+
+.table-bordered thead tr {
+	background: #EEE;
+	background: -moz-linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #dadada));
+	background: -webkit-linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	background: -o-linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	background: -ms-linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	background: linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#DADADA')";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#DADADA');
+}
+
+.table-bordered thead th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #444;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #CCC;
+	-moz-box-shadow: inset 0 1px 0 #FFF;
+	-webkit-box-shadow: inset 0 1px 0 #FFF;
+	box-shadow: inset 0 1px 0 #FFF;
+}
+
+.table-bordered thead th:first-child {
+	border-left-color: #CCC;
+}
+
+.table-bordered thead th:last-child {
+	border-right: none;
+}
+
+.table-bordered tbody td {
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #DDD;
+}
+
+.table-bordered tbody tr td:first-child {
+	border-left-color: #DDD;
+}
+
+.table-bordered tbody tr td:last-child {
+	border-right: none;
+}
+
+.table-highlight.table-bordered thead tr {
+	background-color: #4b4b4b;
+	background-image: -moz-linear-gradient(top, #555, #3b3b3b);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555), to(#3b3b3b));
+	background-image: -webkit-linear-gradient(top, #555, #3b3b3b);
+	background-image: -o-linear-gradient(top, #555, #3b3b3b);
+	background-image: linear-gradient(to bottom, #555, #3b3b3b);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff555555', endColorstr='#ff3b3b3b', GradientType=0);
+}
+.table-highlight.table-bordered thead th {
+	color: #FFF;
+	border-right: 1px solid #2f2f2f;
+	border-left: 1px solid #6f6f6f;
+	-webkit-box-shadow: inset 0 1px 0 #888;
+	-moz-box-shadow: inset 0 1px 0 #888;
+	box-shadow: inset 0 1px 0 #888;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.table-highlight.table-bordered {
+	border-top: 1px solid #1C2B37;
+}
+
 .table tbody tr td .progress{
   margin-bottom: 0;
 }
@@ -46,6 +181,34 @@ table td.action .btn-min {
 	background: transparent;
 }
 
+#admin-modules .check-column {
+	padding: 7px 0;
+	vertical-align: top;
+	text-align: center;
+	width: 2.2em;
+}
+
+#admin-modules .module-title-column {
+	padding-right: 1em;
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+#admin-modules .module-title-column strong {
+	display: block;
+	margin-bottom: .2em;
+}
+
+#admin-modules .module-description-column {
+	line-height: 1.5em;
+	padding-top: 5px;
+}
+
+#admin-modules .module-version {
+	padding: 5px 0 5px;
+	font-size: 0.9em;
+	color: #555;
+}
 
 /*---------------------------------Sidebar------------------------------------*/
 

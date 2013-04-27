@@ -32,12 +32,13 @@
 -------------------------------------------------------------------*/
 
 body {
+	font: 13px/1.7em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #333;
 	background: #E9E9E9 url('../images/bg/bg1.png') repeat 0 0;
 	text-rendering: optimizeLegibility;
 	font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
-	font-size: 13px;
 }
 
 body.backend  {background-image: url('../images/bg/bg3.png');}
@@ -77,29 +78,6 @@ code {
 }
 
 .dashboard-wrapper {padding-top: 2em;}
-
-.table td {vertical-align: middle;}
-
-.table th, .table td {
-	line-height: 18px;
-}
-
-.table-bordered th {
-	background: #E9E9E9;
-	background:-moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9));
-	background:-webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
-	background:-o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
-	background:-ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
-	background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
-	font-size: .9em;
-	color: #444;
-	text-transform: uppercase;
-}
-
-.table tbody+tbody{border-top:2px solid #DDD;}
 
 .tagcloud span {
 	font-size: 12px;
