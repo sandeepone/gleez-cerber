@@ -277,8 +277,8 @@ code {
 	border: 0;
 }
 
-.post-list,
-.blog-list{
+div.post-list,
+div.blog-list{
 	background: #FFF;
 	margin-bottom: 3em;
 	padding: 1em 2em;
@@ -297,21 +297,21 @@ code {
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.post-list:nth-child(2n),
-.blog-list:nth-child(2n) {
+div.post-list:nth-child(2n),
+div.blog-list:nth-child(2n) {
 	background-color: #FCFCFC;
 }
 
-.post-list h2,
-.blog-list h2 {
+div.post-list h2,
+div.blog-list h2 {
 	line-height: 110%;
 	margin: 0 3em 4px 0;
 	color: #25252C;
 	font-size: 24px;
 }
 
-.post-list h2 a,
-.blog-list h2 a {
+div.post-list h2 a,
+div.blog-list h2 a {
 	color: #25252C;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
