@@ -10,8 +10,8 @@
 					<?php
 						$nick = $post->user->nick;
 						$url  = $post->user->url;
-						$pic  = ( strlen($post->user->picture) > 4 ) ? $post->user->picture : 'media/images/commentor.jpg';
-						$img = HTML::resize($pic, array('title' => $nick, 'width' => 32, 'height' => 32, 'type' => 'resize') );
+						$pic  = (strlen($post->user->picture) > 4) ? $post->user->picture : 'media/images/commentor.jpg';
+						$img = HTML::resize($pic, array('title' => $nick, 'width' => 32, 'height' => 32, 'type' => 'resize'));
 
 						echo HTML::anchor($url, $img);
 						echo HTML::anchor($url, $nick, array('title' => $nick));
