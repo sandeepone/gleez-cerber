@@ -253,11 +253,13 @@ code {
 
 .main {padding-bottom: 2.5em;}
 
-#page .main #tabs ul.nav-tabs {
+#page .main #tabs ul.nav-tabs,
+#blog .main #tabs ul.nav-tabs {
 	margin-bottom: 0;
 }
 
-#page .main #content {
+#page .main #content,
+#blog .main #content {
 	background: #FFF;
 	padding: 1em 2em;
 	margin-bottom: 3em;
@@ -272,7 +274,8 @@ code {
 	-moz-border-radius-bottomleft: 3px;
 }
 
-#page.page-list .main #content {
+#page.page-list .main #content,
+#blog.page-list .main #content {
 	background: transparent;
 	border: 0;
 }
