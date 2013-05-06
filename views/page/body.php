@@ -15,8 +15,8 @@
 						<?php
 							$nick = $post->user->nick;
 							$url  = $post->user->url;
-							$pic  = ( strlen($post->user->picture) > 4 ) ? $post->user->picture : 'media/images/commentor.jpg';
-							$img = HTML::resize($pic, array('title' => $nick, 'width' => 32, 'height' => 32, 'type' => 'resize') );
+							$pic  = (strlen($post->user->picture) > 4) ? $post->user->picture : 'media/images/commentor.jpg';
+							$img = HTML::resize($pic, array('title' => $nick, 'width' => 32, 'height' => 32, 'type' => 'resize'));
 
 							echo HTML::anchor($url, $img);
 							echo HTML::anchor($url, $nick, array('title' => $nick));
@@ -37,14 +37,20 @@
 		</div>
 	<?php endif;?>
 
-	<div class="content"> <?php echo $post->body; ?> </div>
+	<div class="content">
+		<?php echo $post->body; ?>
+	</div>
 
 	<?php if ($post->tagcloud): ?>
-		<div class="tagcloud"><?php echo __('Tagged with :tag', array(':tag' => $post->tagcloud) ); ?></div>
+		<div class="tagcloud">
+			<?php echo __('Tagged with :tag', array(':tag' => $post->tagcloud) ); ?>
+		</div>
 	<?php endif;?>
 
 	<?php if($widget_p_bot): ?>
-		<div id="post-bottom" class="clear-block"> <?php echo $widget_p_bot; ?> </div>
+		<div id="post-bottom" class="clear-block">
+			<?php echo $widget_p_bot; ?>
+		</div>
 		<?php unset($widget_p_bot); ?>
 	<?php endif; ?>
 </div>
