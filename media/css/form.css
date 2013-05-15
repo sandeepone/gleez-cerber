@@ -11,3 +11,7 @@
 .redactor_textarea {
 	border: 1px solid #ddd;
 }
+
+.textarea.full {
+	width: 100%;
+}
