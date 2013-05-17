@@ -303,12 +303,15 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 
 .login-social a.btn-social {
 	text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
-	padding: 5px 0 0 35px;
+	padding: 0 0 0 36px;
 	font-weight: bold;
 	font-size: 11px;
-	display: block;
-	height: 32px;
 	color: #FFF;
+/***********************************************/
+	height: 32px;
+	display: inline-block;
+	line-height: 32px;
+	margin-bottom: 10px;
 }
 
 .login-social a.btn-social:hover {
