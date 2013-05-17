@@ -5,7 +5,7 @@
 [Layout Stylesheet]
 
     Project:      Cerber Theme
-    Version:      0.2.4
+    Version:      0.2.5
     Author:       Sergey Yakovlev - Gleez
     Copyright:    (c) 2011-2013 Gleez Technologies
     License:      http://gleezcms.org/license Gleez CMS License
@@ -21,8 +21,9 @@
     6.  Widgets
     7.  Footer
     8.  Messages
-    9.  Miscellaneous
-    10. Responsive
+    9.  Blogs
+    10. Miscellaneous
+    11. Responsive
 
 -------------------------------------------------------------------*/
 
@@ -576,7 +577,24 @@ div.blog-list h2 a {
 
 
 /*-------------------------------------------------------------------
-                           9. Miscellaneous
+                           9. Blogs
+-------------------------------------------------------------------*/
+
+.blogs-announce p {
+	margin-bottom: 2px;
+	display: inline-block;
+}
+
+.blogs-announce em {
+	width: 80%;
+	float: right;
+	font-size: .85em;
+	color: #777;
+}
+
+
+/*-------------------------------------------------------------------
+                           10. Miscellaneous
 -------------------------------------------------------------------*/
 
 .nav-tabs > li > a,
@@ -657,7 +675,7 @@ div.help:after {
 }
 
 /*-------------------------------------------------------------------
-                           10. Responsive
+                           11. Responsive
 -------------------------------------------------------------------*/
 
 /* Desktop large */

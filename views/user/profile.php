@@ -67,13 +67,11 @@
 	</ul>
 	<div class="span12">
 		<?php if ($user->bio): ?>
-			<div class="widget">
-				<div class="widget-header">
-					<h3><?php echo __('Bio') ?></h3>
-				</div>
-				<div class="widget-content">
+			<div id="user-bio">
+				<h4><?php echo __('Bio') ?></h4>
+				<p>
 					<?php echo Text::plain($user->bio); ?>
-				</div>
+				</p>
 			</div>
 		<?php endif ?>
 	</div>
