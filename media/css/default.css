@@ -228,14 +228,6 @@ table td.action .btn-min {
 	border-top: 1px solid white;
 }
 
-#right .widget-menu  .widget-content ul li [class^="icon-"],
-#right .widget-menu  .widget-content ul .nav li [class^="icon-"],
-#right .widget-menu  .widget-content ul li [class*=" icon-"],
-#right .widget-menu  .widget-content ul .nav li [class*=" icon-"] {
-	margin-right: 1em;
-}
-
-
 #right .widget-menu  .widget-content ul.level-1 li:first-child {
 	border-top: none;
 }
