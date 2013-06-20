@@ -43,7 +43,7 @@
 
 	<?php if ($post->tagcloud): ?>
 		<div class="tagcloud">
-			<?php echo __('Tagged with :tag', array(':tag' => $post->tagcloud) ); ?>
+			<?php echo __('Tagged with :tag', array(':tag' => $post->tagcloud)); ?>
 		</div>
 	<?php endif;?>
 
