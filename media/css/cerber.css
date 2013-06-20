@@ -80,6 +80,16 @@ code {
 
 .dashboard-wrapper {padding-top: 2em;}
 
+.list .tagcloud,
+.view .tagcloud {
+	font-weight: 700;
+}
+
+.list .tagcloud li,
+.view .tagcloud li {
+	font-weight: 500;
+}
+
 .tagcloud span {
 	font-size: 12px;
 	background-color: whiteSmoke;
@@ -194,7 +204,6 @@ code {
 	letter-spacing: -1px;
 	text-transform: none;
 }
-
 
 /*-------------------------------------------------------------------
                            4. Buttons
@@ -687,6 +696,24 @@ div.blog-list h2 a {
                            10. Miscellaneous
 -------------------------------------------------------------------*/
 
+.row-desktop {
+	margin: 80px 0;
+}
+
+.row-desktop h1 {
+	margin: 40px 0;
+}
+
+.row-desktop h3 {
+	margin: 20px 0;
+}
+
+.row-desktop p {
+	text-align: justify;
+}
+
+.view .author img,
+.teaser .author img,
 .commentor_avatar {
 	vertical-align: middle;
 	margin: -4px 4px 4px;
@@ -720,7 +747,8 @@ font-awesome fix
  *	@todo mb should use (ie6 don't support this)
  *	a[class*="action-"]:hover
  ***********************************/
-td.action a:hover {
+td.action a:hover,
+.form-actions a.bulk-add:hover {
 	text-decoration: none;
 }
 
