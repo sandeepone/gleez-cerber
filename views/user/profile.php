@@ -57,14 +57,16 @@
 	</div>
 </div>
 <div class="span8">
-	<ul class="tabnav span12">
-		<li>
-			<?php echo HTML::anchor('user/edit', '<i class="icon-pencil"></i> '.__('Edit Account'), array('class' => 'btn')); ?>
-		</li>
-		<li>
-			<?php echo HTML::anchor('user/password', '<i class="icon-cog"></i> '.__('Change Password'), array('class' => 'btn')); ?>
-		</li>
-	</ul>
+	<?php if ($is_owner OR ACL::check('administer users')): ?>
+		<ul class="tabnav span12">
+			<li>
+				<?php echo HTML::anchor('user/edit', '<i class="icon-pencil"></i> '.__('Edit Account'), array('class' => 'btn')); ?>
+			</li>
+			<li>
+				<?php echo HTML::anchor('user/password', '<i class="icon-cog"></i> '.__('Change Password'), array('class' => 'btn')); ?>
+			</li>
+		</ul>
+	<?php endif; ?>
 	<div class="span12">
 		<?php if ($user->bio): ?>
 			<div id="user-bio">
