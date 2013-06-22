@@ -3,13 +3,12 @@
 <div class="span12">
 	<div class="widget">
 		<?php include Kohana::find_file('views', 'errors/partial'); ?>
-		<!-- ########## Widget Header start ########## -->
+
 		<div class="widget-header">
 			<span class="icon-user"></span>
 			<h3><?php echo __('User Account')?></h3>
 		</div>
-		<!-- ########## Widget Header end ########## -->
-		<!-- ########## Widget Content start ########## -->
+
 		<div class="widget-content">
 			<div class="tabbable">
 				<ul class="nav nav-tabs" id="profile-tabs">
@@ -66,8 +65,8 @@
 						<div class="control-group <?php echo isset($errors['bio']) ? 'error': ''; ?>">
 							<?php echo Form::label('bio', __('Bio'), array('class' => 'control-label')) ?>
 							<div class="controls">
-								<?php echo Form::textarea('bio', $user->bio, array('class' => 'input-xlarge', 'rows' => 5, 'rel' => 'tooltip', 'data-placement' => 'right', 'title' => __('Will be private'))); ?>
-								<span class="help-block"><?php echo __('No more than 800 characters') ?></span>
+								<?php echo Form::textarea('bio', $user->bio, array('class' => 'input-xlarge', 'rows' => 5)); ?>
+								<span class="help-block"><?php echo __('Public field. No more than 800 characters') ?></span>
 							</div>
 						</div>
 					</div>
@@ -98,6 +97,5 @@
 				<?php echo Form::close() ?>
 			</div>
 		</div>
-		<!-- ########## Widget Content End ########## -->
 	</div>
 </div>
