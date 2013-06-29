@@ -298,6 +298,7 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	font-size: 11px;
 	color: #FFF;
 	height: 32px;
+	width: 108px;
 	display: inline-block;
 	line-height: 32px;
 	margin-bottom: 10px;
@@ -407,6 +408,7 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	padding: 0 0 0 48px;
 	vertical-align: middle;
 	height: 32px;
+	width: 108px;
 	line-height: 32px;
 	display: inline-block;
 	color: #fff;
