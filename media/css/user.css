@@ -272,42 +272,31 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 .login-social div.github,
 .login-social div.google,
 .login-social div.live {
-	background-repeat: no-repeat;
 	display: inline-block;
 	position: relative;
 	height: 32px;
-	width: 157px;
+	width: 156px;
+	border-radius: 3px;
+	margin-bottom: 0.4em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
 }
 
-.login-social div.twitter  {background-image: url('../images/twitter_btn.png');}
-.login-social div.facebook {background-image: url('../images/facebook_btn.png');}
-.login-social div.github   {}
-.login-social div.google   {}
-.login-social div.live     {}
-
-.login-social div.twitter:active,
-.login-social div.facebook:active,
-.login-social div.github:active,
-.login-social div.google:active,
-.login-social div.live:active {
-	top: 1px;
-}
-
-.login-social div.twitter:hover,
-.login-social div.facebook:hover,
-.login-social div.github:hover,
-.login-social div.google:hover,
-.login-social div.live:hover {
-	background-position: 0 -32px;
-}
+.login-social div.twitter  {background: #00b0ef url('../images/social/twitter-32.png') no-repeat 0 0;}
+.login-social div.facebook {background: #265999 url('../images/social/facebook-32.png') no-repeat 0 0;}
+.login-social div.github   {background: #222222 url('../images/social/github-32.png') no-repeat 0 0;}
+.login-social div.google   {background: #005cc3 url('../images/social/googleplus-32.png') no-repeat 0 0;}
+.login-social div.live     {background: #ff4f00 url('../images/social/windows-32.png') no-repeat 0 0;}
 
 .login-social a.btn-social {
 	text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
-	padding: 0 0 0 36px;
+	padding: 0 0 0 48px;
 	font-weight: bold;
 	font-size: 11px;
 	color: #FFF;
-/***********************************************/
 	height: 32px;
 	display: inline-block;
 	line-height: 32px;
@@ -315,10 +304,9 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 }
 
 .login-social a.btn-social:hover {
-	color: #FFF;
+	color: #f8f8f8;
 	text-decoration: none;
 }
-
 
 /* Sign Up form */
 #signup {
@@ -392,28 +380,38 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	margin: 2em;
 }
 
-#providers li {
-	height: 3em;
-}
-
 .user-register .provider {
-	margin: .5em .5em .5em 1em;
 	list-style: none;
+	width: 156px;
+	height: 32px;
+	border-radius: 3px;
+	margin-bottom: 0.4em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
 }
 
-.user-register li.base     {background: url('../images/gleez-24.png')    0 10px no-repeat;}
-.user-register li.facebook {background: url('../images/facebook-24.png') 0 10px no-repeat;}
-.user-register li.twitter  {background: url('../images/twitter-24.png')  0 10px no-repeat;}
+.user-register li.base     {background: #7a0c7b url('../images/social/gleez-24.png')      5px 5px no-repeat;}
+.user-register li.twitter  {background: #00b0ef url('../images/social/twitter-24.png')    5px 5px no-repeat;}
+.user-register li.facebook {background: #265999 url('../images/social/facebook-24.png')   5px 5px no-repeat;}
+.user-register li.github   {background: #222222 url('../images/social/github-24.png')     5px 5px no-repeat;}
+.user-register li.google   {background: #005cc3 url('../images/social/googleplus-24.png') 5px 5px no-repeat;}
+.user-register li.live     {background: #ff4f00 url('../images/social/windows-24.png')    5px 5px no-repeat;}
+
 
 .user-register .provider a {
-	margin-left: 3em;
-	vertical-align: middle;
-	background: none;
-	height: 3em;
-	line-height: 3em;
-	display: inline-block;
 	text-decoration: none;
-	color: inherit;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+	padding: 0 0 0 48px;
+	vertical-align: middle;
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+	color: #fff;
+	font-weight: bold;
+	font-size: 11px;
 }
 
 .help-signin {

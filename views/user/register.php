@@ -98,14 +98,14 @@
 			<li class="provider base">
 				<?php
 				$url = Route::get('user')->uri(array('action' => 'login'));
-				echo HTML::anchor($url, __(':site Account', array(':site' => ucfirst($site_name) )), array('class' => 'picon-base', 'title' =>__('Login with :provider', array(':provider' => $site_name)), 'rel' => 'tooltip', 'data-placement' => 'right'));
+				echo HTML::anchor($url, ucfirst($site_name), array('class' => 'picon-base', 'title' =>__('Login with :provider', array(':provider' => ucfirst($site_name))), 'rel' => 'tooltip', 'data-placement' => 'right'));
 				?>
 			</li>
 			<?php foreach($providers as $provider => $key): ?>
 				<li class="provider <?php echo $provider; ?>">
 					<?php
 					$url = Route::get('user/oauth')->uri(array('controller' => $provider, 'action' => 'login'));
-					echo HTML::anchor($url, __(':prov account', array(':prov' => ucfirst($provider))), array('class' => 'picon-'.$provider, 'title' =>__('Login with :provider', array(':provider' => $provider)), 'rel' => 'tooltip', 'data-placement' => 'right'));
+					echo HTML::anchor($url, ucfirst($provider), array('class' => 'picon-'.$provider, 'title' =>__('Login with :provider', array(':provider' => ucfirst($provider))), 'rel' => 'tooltip', 'data-placement' => 'right'));
 					?>
 				</li>
 			<?php endforeach ?>
