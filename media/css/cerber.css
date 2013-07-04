@@ -5,7 +5,7 @@
 [Layout Stylesheet]
 
     Project:      Cerber Theme
-    Version:      0.2.5
+    Version:      0.2.9
     Author:       Sergey Yakovlev - Gleez
     Copyright:    (c) 2011-2013 Gleez Technologies
     License:      http://gleezcms.org/license Gleez CMS License
@@ -257,6 +257,9 @@ code {
 	padding: 4px .5%;
 }
 
+.label, .badge {
+	font-weight: normal;
+}
 /*-------------------------------------------------------------------
                            5. Main
 -------------------------------------------------------------------*/
