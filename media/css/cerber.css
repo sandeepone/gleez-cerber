@@ -284,8 +284,12 @@ code {
 	-moz-border-radius-bottomleft: 3px;
 }
 
+#page.page-term .main #content,
+#page.page-tag .main #content,
 #page.page-list .main #content,
-#blog.page-list .main #content {
+#blog.blog-term .main #content,
+#blog.blog-tag .main #content,
+#blog.blog-list .main #content {
 	background: transparent;
 	border: 0;
 }
