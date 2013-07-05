@@ -15,7 +15,7 @@
 name           = "cerber"
 title          = "Cerber Theme"
 description    = "Gleez Cerber is a new responsive cool theme for Gleez CMS with right sidebar"
-version        = 0.2.9
+version        = 0.2.10
 license        = http://gleezcms.org/license
 themeURL       = https://github.com/sergeyklay/gleez-cerber
 depends        = gleez
