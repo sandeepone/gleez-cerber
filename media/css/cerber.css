@@ -131,7 +131,6 @@ code {
 }
 
 .navbar-inner {
-	padding: 1em 0;
 	border: 0;
 }
 
@@ -157,7 +156,13 @@ code {
 }
 
 .navbar-fixed-top .nav {
-	margin: 4px 10px 0 40px;
+	margin-top: 18px;
+	margin-bottom: 14px;
+}
+
+.navbar-fixed-top .nav.level-1 {
+	margin-right: 30px;
+
 }
 
 .navbar-inverse .navbar-inner {
@@ -169,7 +174,7 @@ code {
 	font-weight: 500;
 	font-size: 26px;
 	position: relative;
-	top: 2px;
+	top: 12px;
 }
 
 .navbar-inverse .brand,
@@ -222,7 +227,7 @@ code {
 
 .navbar-static-top .dropdown-menu,
 .navbar-fixed-top .dropdown-menu {
-	margin-top: 19px;
+	margin-top: 13px;
 }
 
 .navbar-static-top .nav > li > .dropdown-menu:after,

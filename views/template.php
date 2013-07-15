@@ -26,7 +26,7 @@
 					<span class="icon-bar"></span>
 				</a>
 
-				<?php echo HTML::anchor($site_url, HTML::image($site_logo, array('alt' => $site_slogan)), array('class' => 'brand', 'title' => $site_name)) ?>
+				<?php echo HTML::anchor('/', HTML::image($site_logo, array('alt' => $site_slogan)), array('class' => 'brand', 'title' => $site_name)) ?>
 
 				<div class="nav-collapse collapse">
 					<?php echo $primary_menu; ?>
