@@ -13,6 +13,7 @@
 	<!--[if lt IE 8]>
 		<link type="text/css" href="/media/css/font-awesome-ie7.css" rel="stylesheet" media="all" />
 	<![endif]-->
+	<link rel="stylesheet" id="cerber-fonts-css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" type="text/css" media="all">
 </head>
 <body id="<?php echo $page_id; ?>" class="<?php echo $page_class; ?>">
 	<!-- ########## Navbar start ########## -->
@@ -24,7 +25,8 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="<?php echo $site_url ?>" title="<?php echo $site_slogan ?>"><?php echo $site_name ?></a>
+
+				<?php echo HTML::anchor($site_url, HTML::image($site_logo, array('alt' => $site_slogan)), array('class' => 'brand', 'title' => $site_name)) ?>
 
 				<div class="nav-collapse collapse">
 					<?php echo $primary_menu; ?>
