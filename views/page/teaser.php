@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') OR die('No direct script access.') ?>
 
-<div id="post-<?php echo $post->id; ?>" class="<?php echo $post->type . ' post teaser post-' . $post->status; ?>">
+<div class="<?php echo $post->type ?> post teaser">
 
 	<?php if($post->taxonomy OR $config->use_submitted): ?>
 		<div class="row-fluid meta">
