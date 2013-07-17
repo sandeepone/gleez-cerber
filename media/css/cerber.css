@@ -161,6 +161,7 @@ code {
 	font-size: 24px;
 	position: relative;
 	top: 2px;
+	max-height: 25px;
 }
 
 .navbar .search-query {
@@ -364,11 +365,15 @@ div.blog-list h2 a {
 
 .meta, .title-holder {
 	margin: 1em 0 1em 2em;
-	width: 75%;
 }
 .meta {
 	margin-left: 0;
 	font-weight: 600;
+	width: 100%;
+}
+
+.title-holder {
+	width: 75%;
 }
 
 .meta a, .meta a:link, .meta a:visited {
@@ -845,7 +850,7 @@ div.help:after {
 }
 
 /********************************
- bookmark for sticky posts
+ bookmark for promote posts
 ********************************/
 .post-bookmark {
 	background: transparent url("../images/bookmark.png") no-repeat 0 0;
