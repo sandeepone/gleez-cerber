@@ -89,5 +89,5 @@
 
 <?php
 	Assets::js('user', 'media/js/user.js', array('jquery'), FALSE, array('weight' => 15));
-	Assets::js('user/form', 'media/js/jquery.form-3.27.js', array('jquery'), FALSE, array('weight' => 10));
+	Assets::js('user/form', 'media/js/jquery.form.min.js', array('jquery'), FALSE, array('weight' => 10));
 ?>
