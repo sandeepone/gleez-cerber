@@ -1,5 +1,4 @@
 <?php defined('SYSPATH') OR die('No direct script access.');
-	$main_column = 9;
 	if ($is_front OR ! $sidebar_right)
 	{
 		$main_column = 12;
@@ -29,9 +28,7 @@
 				<div class="span<?php echo $main_column?>">
 					<?php if ($tabs): ?>
 						<div id="tabs-actions">
-							<?php if($tabs):?>
-								<div id="tabs"><?php echo $tabs; ?></div>
-							<?php endif; ?>
+							<div id="tabs"><?php echo $tabs; ?></div>
 						</div>
 					<?php endif;?>
 					<div id="content">
