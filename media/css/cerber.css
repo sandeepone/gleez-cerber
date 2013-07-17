@@ -288,6 +288,7 @@ code {
 	margin-bottom: 0;
 }
 
+#comment .main #content,
 #page .main #content,
 #blog .main #content {
 	background: #FFF;
@@ -363,28 +364,33 @@ div.blog-list h2 a {
 	text-align: justify;
 }
 
-.meta, .title-holder {
-	margin: 1em 0 1em 2em;
-}
-.meta {
-	margin-left: 0;
+.meta,
+.Meta {
+	margin: 1em 0;
 	font-weight: 600;
 	width: 100%;
+	min-height: 30px;
 }
 
 .title-holder {
+	margin: 1em 0 1em 2em;
 	width: 75%;
 }
 
+.Meta a, .Meta a:link, .Meta a:visited,
 .meta a, .meta a:link, .meta a:visited {
 	color: #aaa;
 }
 
+.Meta a:hover, .Meta a:active, .Meta a:focus,
 .meta a:hover, .meta a:active, .meta a:focus {
 	color: #005580;
 	text-decoration: none;
 }
-
+.Meta .edit,
+.Meta .delete,
+.Meta .Author,
+.Meta .DateCreated,
 .meta .author,
 .meta .written {
 	float: left;
@@ -398,6 +404,7 @@ div.blog-list h2 a {
 	color: #aaa;
 }
 
+.Meta .Author  a + a,
 .meta .author a + a {
 	padding-left: .3em;
 }
@@ -746,13 +753,13 @@ div.blog-list h2 a {
 .teaser .author img,
 .commentor_avatar {
 	vertical-align: middle;
-	margin: -4px 4px 4px;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
-	-webkit-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
+	margin: 2px 4px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.251);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.251);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.251);
 }
 
 /************************************
@@ -863,13 +870,63 @@ div.help:after {
 	top: 0;
 }
 
-.post {
+.post,
+.post-comments {
 	margin: 0 2em;
+}
+
+.post-comment-form {
+	margin: 0 2em 0 3.8em;
 }
 
 .bulk-delete li {
 	font-weight: 800;
 	letter-spacing: 2px;
+}
+
+
+.form-horizontal {
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+.btn-inverse {
+	color: #FFFFDD;
+}
+
+.redactor_textarea {
+	border: 1px solid #ddd;
+}
+
+/*.textarea.full {
+	width: 100%;
+}*/
+
+.form-actions select,
+.form-actions input[type="file"] {
+	padding: 2px 3px;
+	font-size: 10.5px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.form-actions.rounded {
+	border: 1px solid #e5e5e5;
+	border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-o-border-radius: 3px 3px 3px 3px;
+	-khtml-border-radius: 3px 3px 3px 3px;
+}
+
+#postdiv, #submitdiv {
+	background: #F5F5F5;
+}
+
+#postdiv h3, #submitdiv h3,
+.postbox h3 {
+	font-family: inherit;
+	font-weight: 700;
 }
 
 /*-------------------------------------------------------------------
