@@ -6,15 +6,20 @@
 	</div>
 </div>
 <?php foreach($posts as $i => $post): ?>
-	<div id="blog-<?php echo $post->id; ?>" class="blog-list <?php echo ($post->sticky ? ' sticky' : '') . ($post->promote ? ' promote' : '') . ' blog-'.$post->status; ?>">
-		<h2 class="blog-title">
-			<?php echo HTML::anchor($post->url, $post->title); ?>
-		</h2>
+	<div id="blog-<?php echo $post->id; ?>" class="blog-list <?php echo ($post->promote ? ' promote' : '') . ' blog-'.$post->status; ?>">
+		<div class="title-holder">
+			<h2 class="blog-title">
+				<?php echo HTML::anchor($post->url, $post->title); ?>
+			</h2>
+		</div>
+		<?php if ($post->sticky): ?>
+			<i class="post-bookmark clearfix"></i>
+		<?php endif; ?>
 		<?php
-		echo View::factory($post->type.'/teaser')
-			->set('post',       $post)
-			->set('config',     $config)
-			->set('page_title', TRUE);
+			echo View::factory($post->type.'/teaser')
+				->set('post',       $post)
+				->set('config',     $config)
+				->set('page_title', TRUE);
 		?>
 	</div>
 <?php endforeach; ?>
