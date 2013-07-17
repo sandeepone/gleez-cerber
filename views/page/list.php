@@ -6,13 +6,13 @@
 	</div>
 </div>
 <?php foreach($posts as $i => $post): ?>
-	<div id="post-<?php echo $post->id; ?>" class="post-list <?php echo ($post->promote ? ' promote' : '') . ' post-'.$post->status; ?>">
+	<div id="post-<?php echo $post->id; ?>" class="post-list post-<?php echo $post->status; ?>">
 		<div class="title-holder">
 			<h2 class="post-title">
 				<?php echo HTML::anchor($post->url, $post->title); ?>
 			</h2>
 		</div>
-		<?php if ($post->sticky): ?>
+		<?php if ($post->promote): ?>
 			<i class="post-bookmark clearfix"></i>
 		<?php endif; ?>
 		<?php
