@@ -43,14 +43,37 @@ body.user-register {
 	-moz-border-radius: 5px;
 }
 
+.widget .account-container {
+	margin: 0;
+	width: auto;
+	background: transparent;
+	border: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
 .account-container .content {
 	padding: 16px 28px 23px;
+}
+
+.widget .account-container .content {
+	padding: 0;
 }
 
 .account-container h1 {
 	margin-bottom: .8em;
 	text-transform: none;
 }
+
+.widget .account-container h1 {
+	font-size: 1.6em;
+	margin-top: 0;
+	margin-bottom: 12px;
+	text-align: center;
+	border-bottom: 1px solid #a0a3a8;
+}
+
 .avatar {
 	position: relative;
 }
@@ -168,6 +191,17 @@ a#add-pic:hover {
 	margin-bottom: 1.25em;
 }
 
+.widget .account-container .login-fields,
+.widget .account-container .login-actions {
+	margin-bottom: 0;
+}
+
+.widget .account-container .login-fields > p {
+	color: #9F9F9F;
+	font-size: 0.85em;
+	padding-top: 0.5em;
+}
+
 .login-fields .field {
 	margin-bottom: 1.25em;
 }
@@ -200,6 +234,11 @@ a#add-pic:hover {
 	box-shadow: inset 2px 2px 4px #F1F1F1;
 	-moz-box-shadow: inset 2px 2px 4px #F1F1F1;
 	-webkit-box-shadow: inset 2px 2px 4px #F1F1F1;
+}
+
+.login-fields input[type="password"],
+.login-fields input[type="text"] {
+	width: 174px;
 }
 
 .form-password input[type="password"] {
