@@ -5,10 +5,12 @@
 [Layout Stylesheet]
 
     Project:      Cerber Theme
-    Version:      0.2.13
+    Description:  New responsive cool theme for Gleez CMS with right sidebar
+    Version:      0.2.14
     Author:       Sergey Yakovlev - Gleez
     Copyright:    (c) 2011-2013 Gleez Technologies
     License:      http://gleezcms.org/license Gleez CMS License
+    URL:          https://github.com/sergeyklay/gleez-cerber
 
 
 [Table of contents]
@@ -23,7 +25,9 @@
     8.  Messages
     9.  Blogs
     10. Miscellaneous
-    11. Responsive
+    11. Tables
+    12. Sidebar
+    13. Responsive
 
 -------------------------------------------------------------------*/
 
@@ -51,7 +55,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-	color: #4183C4;
 	text-decoration: none;
 }
 
@@ -177,7 +180,7 @@ code {
 	font-size: 24px;
 	position: relative;
 	max-height: 25px;
-	top: -1px;
+	top: 2px;
 }
 
 .navbar .search-query {
@@ -211,10 +214,14 @@ code {
 	background-color: transparent;
 }
 
-.navbar .nav>.active>a,
-.navbar .nav>.active>a:hover,
-.navbar .nav>.active>a:focus {
-	background-color: transparent;
+.navbar .nav a {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+	background: transparent;
 }
 
 /*-------------------------------------------------------------------
@@ -323,6 +330,10 @@ code {
 	-webkit-border-bottom-left-radius: 3px;
 	-moz-border-radius-bottomright: 3px;
 	-moz-border-radius-bottomleft: 3px;
+}
+
+.backend #content {
+	border: 0!important;
 }
 
 .list #content {
@@ -449,10 +460,6 @@ div.blog-list h2 a {
 -------------------------------------------------------------------*/
 
 .widget {
-	position: relative;
-	/*clear: both;*/
-	width: auto;
-	margin-bottom: 2em;
 	overflow: hidden;
 }
 
@@ -485,7 +492,7 @@ div.blog-list h2 a {
 	left: 10px;
 	display: inline-block;
 	margin-right: 1em;
-	font-size: 1.2em;
+	font-weight: 900;
 	color: #555;
 	line-height: 18px;
 	text-shadow: 1px 1px 2px rgba(255,255,255,.5);
@@ -502,24 +509,7 @@ div.blog-list h2 a {
 }
 
 .widget-content {
-	padding: 20px 15px 15px;
-	background: #FFF;
 	border: 1px solid #D5D5D5;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-o-border-radius: 5px;
-	-khtml-border-radius: 5px;
-}
-
-.widget-header+.widget-content {
-	border-top: none;
-	-webkit-border-top-left-radius: 0;
-	-webkit-border-top-right-radius: 0;
-	-moz-border-radius-topleft: 0;
-	-moz-border-radius-topright: 0;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
 }
 
 .widget-nopad .widget-content {padding: 0;}
@@ -531,8 +521,6 @@ div.blog-list h2 a {
 }
 
 .widget-content:after {clear:both;}
-
-.widget-content {zoom:1;}
 
 .widget-table .widget-content {padding: 0;}
 
@@ -579,6 +567,19 @@ div.blog-list h2 a {
 .widget-blog-announce .widget-content {
 	border: none;
 	background: transparent;
+}
+
+.widget-content ul.menus {
+	margin: 0;
+}
+
+.widget-content ul.menus li:first-child {
+	border-top: none;
+}
+
+.widget-content ul.menus a {
+	padding: 4px 10px;
+	font-weight: 500;
 }
 
 .recent-announce-blogs {
@@ -819,10 +820,7 @@ font-awesome fix
 .nav-pills > li > a {
 	font-size: 14px;
 	color: #666;
-}
-
-.nav-tabs >li > a {
-	color: #666;
+	font-weight: 500;
 }
 
 /***********************************
@@ -995,8 +993,270 @@ div.help:after {
 	background: #efefef;
 }
 
+.shortcuts .shortcut {
+	width: 22.5%;
+	display: inline-block;
+	padding: 0.9em 0;
+	margin: 0 0.25em 0.75em;
+	vertical-align: top;
+	text-decoration: none;
+	background: #f8f8f8;
+	background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eeeeee));
+	background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+	background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
+	background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.shortcuts .shortcut .shortcut-icon {
+	width: 100%;
+	margin-top: .25em;
+	margin-bottom: .25em;
+	font-size: 32px;
+	color: #888;
+}
+
+.shortcuts .shortcut:hover {
+	background: #E8E8E8;
+	background-color: #f0f0f0;
+	background-image: -moz-linear-gradient(top, #fafafa, #e1e1e1);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#e1e1e1));
+	background-image: -webkit-linear-gradient(top, #fafafa, #e1e1e1);
+	background-image: -o-linear-gradient(top, #fafafa, #e1e1e1);
+	background-image: linear-gradient(to bottom, #fafafa, #e1e1e1);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffafafa', endColorstr='#ffe1e1e1', GradientType=0);
+}
+
+.shortcuts .shortcut:hover .shortcut-icon {color: #666;}
+
+.shortcuts .shortcut-label {
+	display: block;
+	font-weight: 400;
+	color: #666;
+	font-size: .9em;
+}
+
 /*-------------------------------------------------------------------
-                           11. Responsive
+                           11. Tables
+-------------------------------------------------------------------*/
+
+.table td {vertical-align: middle;}
+.table th, .table td {border-color: #dddddd;}
+.table tbody+tbody{border-top: 2px solid #DDD;}
+
+.table.table-bordered tbody tr td {
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.table-bordered thead tr {
+	background-color: #e6e6e6;
+	background-image: -moz-linear-gradient(top, #EEE, #dadada);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EEE), to(#dadada));
+	background-image: -webkit-linear-gradient(top, #EEE, #dadada);
+	background-image: -o-linear-gradient(top, #EEE, #dadada);
+	background-image: linear-gradient(to bottom, #EEE, #dadada);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffdadada', GradientType=0);
+}
+
+.table-bordered thead tr th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 600;
+	color: #444;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #CCC;
+	-webkit-box-shadow: inset 0 1px 0 #FFF;
+	-moz-box-shadow: inset 0 1px 0 #FFF;
+	box-shadow: inset 0 1px 0 #FFF;
+}
+
+.table-bordered thead tr th:first-child {border-left-color: #CCC;}
+.table-bordered thead tr th:last-child  {border-right: none;}
+.table-bordered tbody tr:first-child td {border-top-color: #CCC;}
+.table-bordered tbody tr td:first-child {border-left-color: #DDD;}
+.table-bordered tbody tr td:last-child  {border-right: none;}
+
+.table-bordered thead tr {
+	background: #EEE;
+	background: -moz-linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #dadada));
+	background: -webkit-linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	background: -o-linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	background: -ms-linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	background: linear-gradient(top, #eeeeee 0%, #dadada 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#DADADA')";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#DADADA');
+}
+
+.table-bordered thead th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #444;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #CCC;
+	-moz-box-shadow: inset 0 1px 0 #FFF;
+	-webkit-box-shadow: inset 0 1px 0 #FFF;
+	box-shadow: inset 0 1px 0 #FFF;
+}
+
+.table-bordered thead th:first-child {border-left-color: #CCC;}
+.table-bordered thead th:last-child  {border-right: none;}
+
+.table-bordered tbody td {
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #DDD;
+}
+
+.table-highlight.table-bordered thead tr {
+	background-color: #4b4b4b;
+	background-image: -moz-linear-gradient(top, #555, #3b3b3b);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555), to(#3b3b3b));
+	background-image: -webkit-linear-gradient(top, #555, #3b3b3b);
+	background-image: -o-linear-gradient(top, #555, #3b3b3b);
+	background-image: linear-gradient(to bottom, #555, #3b3b3b);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff555555', endColorstr='#ff3b3b3b', GradientType=0);
+}
+.table-highlight.table-bordered thead th {
+	color: #FFF;
+	border-right: 1px solid #2f2f2f;
+	border-left: 1px solid #6f6f6f;
+	-webkit-box-shadow: inset 0 1px 0 #888;
+	-moz-box-shadow: inset 0 1px 0 #888;
+	box-shadow: inset 0 1px 0 #888;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.table tbody tr td .progress{
+	margin-bottom: 0;
+}
+
+.table td.action,
+table td.action {
+	width: 100px;
+}
+
+.table td.action .btn-min,
+table td.action .btn-min {
+	float: left;
+	margin: 0 1px;
+}
+
+.table.table-bordered tr.permission-group {
+	background: #EEE; /* for old browsers */
+	background-repeat: repeat-x;
+	background: -moz-linear-gradient(top, #EEE 0%, #DADADA 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEE), color-stop(100%, #DADADA));
+	background: -webkit-linear-gradient(top, #EEE 0%, #DADADA 100%);
+	background: -o-linear-gradient(top, #EEE 0%, #DADADA 100%);
+	background: -ms-linear-gradient(top, #EEE 0%, #DADADA 100%);
+	background: linear-gradient(top, #EEE 0%, #DADADA 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#DADADA')";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#DADADA');
+}
+
+.table.table-bordered td.permission-key {
+	font-size: .9em;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	font-weight: 700;
+	color: #444;
+	line-height: 20px;
+	text-align: left;
+	box-shadow: inset 0 1px 0 #FFF;
+	-webkit-box-shadow: inset 0 1px 0 #FFF;
+	-moz-box-shadow: inset 0 1px 0 #FFF;
+	background: transparent;
+}
+
+#admin-modules .check-column {
+	padding: 7px 0;
+	vertical-align: top;
+	text-align: center;
+	width: 2.2em;
+}
+
+#admin-modules .module-title-column {
+	padding-right: 1em;
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+#admin-modules .module-title-column strong {
+	display: block;
+	margin-bottom: .2em;
+}
+
+#admin-modules .module-description-column {
+	line-height: 1.5em;
+	padding-top: 5px;
+}
+
+#admin-modules .module-version {
+	padding: 5px 0 5px;
+	font-size: 0.9em;
+	color: #555;
+}
+
+#widgets tr.region-title td {
+	background-color: #EBEBEB;
+}
+
+
+/*-------------------------------------------------------------------
+                           12. Sidebar
+-------------------------------------------------------------------*/
+
+
+#right .widget-menu  .widget-content {
+	background: #EFEFEF;
+	padding: 0;
+}
+
+#right .widget-menu  .widget-content ul.level-1 li a:hover,
+#right .widget-menu  .widget-content ul.level-1 li a:active {
+	background: #FDFDFE;
+	text-decoration: none;
+}
+
+#right .widget-menu  .widget-content ul.level-1 li.active a {
+	background: white;
+	border-left: 3px solid #D26911;
+	font-weight: bold;
+	color: #222;
+	cursor: default;
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Admin Dashboard menu */
+#right li.active#menu-administer a { border-left-color: #D26911; }
+#right li.active#menu-modules a { border-left-color: #75d211; }
+#right li.active#menu-menus a { border-left-color: #11bfd2; }
+#right li.active#menu-admin-pages a { border-left-color: #1168d2; }
+#right li.active#menu-blogs a { border-left-color: #8e11d2; }
+#right li.active#menu-admin-comment a {	border-left-color: #d2118e; }
+#right li.active#menu-taxonomy a { border-left-color: #334263; }
+#right li.active#menu-tags a { border-left-color: #949711; }
+#right li.active#menu-input-formats a { border-left-color: #116797; }
+#right li.active#menu-path-alias a { border-left-color: #c86797; }
+#right li.active#menu-users a { border-left-color: #67bfc8; }
+#right li.active#menu-roles a { border-left-color: #D26911; }
+#right li.active#menu-widgets a { border-left-color: #6787c8; }
+#right li.active#menu-settings a { border-left-color: #d21111; }
+
+
+/*-------------------------------------------------------------------
+                           13. Responsive
 -------------------------------------------------------------------*/
 
 /* Desktop large */
