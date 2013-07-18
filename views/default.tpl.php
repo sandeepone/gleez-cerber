@@ -31,7 +31,7 @@
 							<div id="tabs"><?php echo $tabs; ?></div>
 						</div>
 					<?php endif;?>
-					<div id="content">
+					<div id="content" class="<?php echo $tabs ? 'with-tabs' : 'without-tabs'?>">
 						<?php echo $content; ?>
 					</div>
 				</div>
