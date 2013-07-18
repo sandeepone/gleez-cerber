@@ -148,7 +148,15 @@ code {
 }
 
 .navbar-inverse .navbar-inner {
-	background: url('../images/header-bg.png') repeat-x 0 0;
+	border-top: 4px solid #3fa757;
+	background-color: #222222;
+	background-image: -moz-linear-gradient(top, #333333, #222222);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+	background-image: -webkit-linear-gradient(top, #333333, #222222);
+	background-image: -o-linear-gradient(top, #333333, #222222);
+	background-image: linear-gradient(to bottom, #333333, #222222);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#ff222222', GradientType=0);
 }
 
 .navbar-inverse .brand,
@@ -157,6 +165,7 @@ code {
 	font-size: 24px;
 	position: relative;
 	max-height: 25px;
+	top: -1px;
 }
 
 .navbar .search-query {
@@ -637,6 +646,10 @@ div.blog-list h2 a {
 	padding-left: 1em;
 }
 
+.widget-content ul.blogs-list {
+	margin-left: 0;
+}
+
 /*-------------------------------------------------------------------
                            7. Footer
 -------------------------------------------------------------------*/
@@ -962,10 +975,36 @@ div.help:after {
 	.page-header-top h1 {
 		margin: 0 0 8px 0;
 	}
+	.widget-header {
+		height: 28px;
+		line-height: 18px;
+	}
+	.widget-header h3 {
+		left: 6px;
+		margin: 4px 10px 4px 0;
+		font-size: 1em;
+		font-weight: 900;
+	}
+
+	.widget-header [class^="icon-"],
+	.widget-header [class*=" icon-"] {
+		font-size: 13px;
+		margin-right: -5px;
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 979px) {
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
 }
 
 /* Tablet to desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+	body {
+		padding-top: 0;
+	}
 	/* Downsize the h1 */
 	.page-header-top h1 {
 		font-size: 28px;
@@ -979,6 +1018,9 @@ div.help:after {
 
 /* Tablet */
 @media (max-width: 767px) {
+	body {
+		padding-top: 0;
+	}
 	/* Downsize the h1 */
 	.page-header-top h1 {
 		font-size: 24px;
