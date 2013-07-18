@@ -62,6 +62,10 @@ code {
 	padding: 0 5px;
 	border: 1px solid #e1e1e8;
 	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-khtml-border-radius: 3px;
 	background: #f7f7f9;
 	color: #d14;
 	white-space: nowrap;
@@ -74,9 +78,11 @@ code {
 }
 
 .dropdown .dropdown-menu {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
 	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	-khtml-border-radius: 4px;
 }
 
 .dashboard-wrapper {padding-top: 2em;}
@@ -145,6 +151,12 @@ code {
 
 .navbar-fixed-top .nav.level-1 {
 	margin-right: 30px;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 10px rgba(0,0,0,.4);
+	box-shadow: 0 1px 10px rgba(0,0,0,.4);
 }
 
 .navbar-inverse .navbar-inner {
@@ -249,9 +261,11 @@ code {
 }
 
 .button {
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
 	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-khtml-border-radius: 3px;
 }
 
 .btn-inverse {
@@ -491,9 +505,11 @@ div.blog-list h2 a {
 	padding: 20px 15px 15px;
 	background: #FFF;
 	border: 1px solid #D5D5D5;
+	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	-o-border-radius: 5px;
+	-khtml-border-radius: 5px;
 }
 
 .widget-header+.widget-content {
@@ -582,8 +598,10 @@ div.blog-list h2 a {
 	-moz-box-shadow: 0px 1px 1px #BBB;
 	-webkit-box-shadow: 0px 1px 1px #BBB;
 	border-radius: 3px;
-	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-khtml-border-radius: 3px;
 	transition-duration: 0.8s;
 	-webkit-transition-duration: 0.8s;
 	-moz-transition-duration: 0.8s;
@@ -734,7 +752,7 @@ div.blog-list h2 a {
 	width: 90%;
 }
 
-.alert .close {top: 2;}
+.alert .close {top: 2px;}
 
 
 /*-------------------------------------------------------------------
@@ -780,8 +798,10 @@ div.blog-list h2 a {
 	vertical-align: middle;
 	margin: 2px 4px;
 	border-radius: 2px;
-	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-khtml-border-radius: 2px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.251);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.251);
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.251);
@@ -860,9 +880,11 @@ div.help {
 	padding: 2.7em 1.2em .7em;
 	background-color: #FFF;
 	border: 1px solid #DDD;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
 	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	-khtml-border-radius: 4px;
 }
 
 div.help:after {
@@ -876,9 +898,11 @@ div.help:after {
 	background-color: #F5F5F5;
 	border: 1px solid #DDD;
 	color: #9DA0A4;
-	-webkit-border-radius: 4px 0 4px 0;
-	-moz-border-radius: 4px 0 4px 0;
 	border-radius: 4px 0 4px 0;
+	-moz-border-radius: 4px 0 4px 0;
+	-webkit-border-radius: 4px 0 4px 0;
+	-o-border-radius: 4px 0 4px 0;
+	-khtml-border-radius: 4px 0 4px 0;
 }
 
 /********************************
@@ -900,7 +924,9 @@ div.help:after {
 	margin: 0 2em;
 }
 
-.post-comment-form {
+.post-comment-form,
+#post-auth-request,
+#post-provider-buttons {
 	margin: 0 2em 0 3.8em;
 }
 
@@ -937,11 +963,11 @@ div.help:after {
 
 .form-actions.rounded {
 	border: 1px solid #e5e5e5;
-	border-radius: 3px 3px 3px 3px;
-	-webkit-border-radius: 3px 3px 3px 3px;
-	-moz-border-radius: 3px 3px 3px 3px;
-	-o-border-radius: 3px 3px 3px 3px;
-	-khtml-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-khtml-border-radius: 3px;
 }
 
 #postdiv, #submitdiv {
@@ -952,6 +978,21 @@ div.help:after {
 .postbox h3 {
 	font-family: inherit;
 	font-weight: 700;
+	margin-bottom: 0;
+}
+
+#postdiv .inside textarea {
+	max-width: inherit;
+}
+
+.page-view #comment-form .postarea {
+	width: 99.5%;
+}
+
+.list-comments,
+.post-comment-form-wrapper {
+	padding: 1em 0;
+	background: #efefef;
 }
 
 /*-------------------------------------------------------------------
