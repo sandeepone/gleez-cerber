@@ -13,7 +13,6 @@
 	<!--[if lt IE 8]>
 		<link type="text/css" href="/media/css/font-awesome-ie7.css" rel="stylesheet" media="all" />
 	<![endif]-->
-	<link rel="stylesheet" id="cerber-fonts-css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" type="text/css" media="all">
 </head>
 <body id="<?php echo $page_id; ?>" class="<?php echo $page_class; ?>">
 	<!-- ########## Navbar start ########## -->
