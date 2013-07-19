@@ -236,8 +236,8 @@ a#add-pic:hover {
 	-webkit-box-shadow: inset 2px 2px 4px #F1F1F1;
 }
 
-.login-fields input[type="password"],
-.login-fields input[type="text"] {
+.widget .login-fields input[type="password"],
+.widget .login-fields input[type="text"] {
 	width: 174px;
 }
 
@@ -272,7 +272,6 @@ span.login-checkbox > input[type='checkbox'] + label {
 	height: 15px;
 	clear: none;
 	margin: 0;
-
 }
 
 span.login-checkbox > input[type='checkbox']:checked + label {
