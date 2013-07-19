@@ -36,6 +36,7 @@
                            1. General
 -------------------------------------------------------------------*/
 
+
 body {
 	font: 13px/1.7em "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #333;
@@ -138,9 +139,11 @@ code {
 	text-align:center;
 }
 
+
 /*-------------------------------------------------------------------
                            2. Navbar
 -------------------------------------------------------------------*/
+
 
 .navbar .container {
 	position: relative;
@@ -224,9 +227,11 @@ code {
 	background: transparent;
 }
 
+
 /*-------------------------------------------------------------------
                            3. Subnavbar
 -------------------------------------------------------------------*/
+
 
 .subnavbar {
 	background: #F5F5F5 url('../images/bg/bg2.png') repeat 0 0;
@@ -245,9 +250,11 @@ code {
 	text-transform: none;
 }
 
+
 /*-------------------------------------------------------------------
                            4. Buttons
 -------------------------------------------------------------------*/
+
 
 .button-controls {
 	padding: 10px 0;
@@ -302,9 +309,12 @@ code {
 .label, .badge {
 	font-weight: normal;
 }
+
+
 /*-------------------------------------------------------------------
                            5. Main
 -------------------------------------------------------------------*/
+
 
 .main {padding: 2.5em 0;}
 .subnavbar + .main {
@@ -455,9 +465,11 @@ div.blog-list h2 a {
 	padding-left: .3em;
 }
 
+
 /*-------------------------------------------------------------------
                            6. Widgets
 -------------------------------------------------------------------*/
+
 
 .widget {
 	overflow: hidden;
@@ -669,9 +681,11 @@ div.blog-list h2 a {
 	margin-left: 0;
 }
 
+
 /*-------------------------------------------------------------------
                            7. Footer
 -------------------------------------------------------------------*/
+
 
 .footer {
 	margin-top: 2em;
@@ -734,9 +748,11 @@ div.blog-list h2 a {
 	overflow: hidden;
 }
 
+
 /*-------------------------------------------------------------------
                            8. Messages
 -------------------------------------------------------------------*/
+
 
 #messages {
 	display: block;
@@ -760,6 +776,7 @@ div.blog-list h2 a {
                            9. Blogs
 -------------------------------------------------------------------*/
 
+
 .blogs-announce p {
 	margin-bottom: 2px;
 	display: inline-block;
@@ -776,6 +793,7 @@ div.blog-list h2 a {
 /*-------------------------------------------------------------------
                            10. Miscellaneous
 -------------------------------------------------------------------*/
+
 
 .row-desktop {
 	margin: 80px 0;
@@ -1047,9 +1065,11 @@ div.help:after {
 	color: #C06053;
 }
 
+
 /*-------------------------------------------------------------------
                            11. Tables
 -------------------------------------------------------------------*/
+
 
 .table td {vertical-align: middle;}
 .table th, .table td {border-color: #dddddd;}
@@ -1223,46 +1243,34 @@ table td.action .btn-min {
 -------------------------------------------------------------------*/
 
 
-#right .widget-menu  .widget-content {
+.widget-content {
 	background: #EFEFEF;
+}
+
+.widget-menu  .widget-content {
 	padding: 0;
 }
 
-#right .widget-menu  .widget-content ul.level-1 li a:hover,
-#right .widget-menu  .widget-content ul.level-1 li a:active {
+.widget-menu  .widget-content ul.menus li a:hover,
+.widget-menu  .widget-content ul.menus li a:active {
 	background: #FDFDFE;
 	text-decoration: none;
 }
 
-#right .widget-menu  .widget-content ul.level-1 li.active a {
+.widget-menu .widget-content ul.menus li.active a {
 	background: white;
-	border-left: 3px solid #D26911;
+	border-left: 2px solid #D26911;
 	font-weight: bold;
 	color: #222;
 	cursor: default;
 	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
-/* Admin Dashboard menu */
-#right li.active#menu-administer a { border-left-color: #D26911; }
-#right li.active#menu-modules a { border-left-color: #75d211; }
-#right li.active#menu-menus a { border-left-color: #11bfd2; }
-#right li.active#menu-admin-pages a { border-left-color: #1168d2; }
-#right li.active#menu-blogs a { border-left-color: #8e11d2; }
-#right li.active#menu-admin-comment a {	border-left-color: #d2118e; }
-#right li.active#menu-taxonomy a { border-left-color: #334263; }
-#right li.active#menu-tags a { border-left-color: #949711; }
-#right li.active#menu-input-formats a { border-left-color: #116797; }
-#right li.active#menu-path-alias a { border-left-color: #c86797; }
-#right li.active#menu-users a { border-left-color: #67bfc8; }
-#right li.active#menu-roles a { border-left-color: #D26911; }
-#right li.active#menu-widgets a { border-left-color: #6787c8; }
-#right li.active#menu-settings a { border-left-color: #d21111; }
-
 
 /*-------------------------------------------------------------------
                            13. Responsive
 -------------------------------------------------------------------*/
+
 
 /* Desktop large */
 @media (min-width: 1200px) {}
