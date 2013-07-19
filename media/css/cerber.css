@@ -495,7 +495,7 @@ div.blog-list h2 a {
 	font-weight: 900;
 	color: #555;
 	line-height: 18px;
-	text-shadow: 1px 1px 2px rgba(255,255,255,.5);
+	text-shadow: 0 1px 0 #FFF;
 	text-transform: none;
 }
 
@@ -947,10 +947,6 @@ div.help:after {
 	border: 1px solid #ddd;
 }
 
-/*.textarea.full {
-	width: 100%;
-}*/
-
 .form-actions select,
 .form-actions input[type="file"] {
 	padding: 2px 3px;
@@ -1040,6 +1036,15 @@ div.help:after {
 	font-weight: 400;
 	color: #666;
 	font-size: .9em;
+}
+
+#permissions td.permission-key {
+	background-color: #EFEFEF;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+#permissions .text-warning {
+	color: #C06053;
 }
 
 /*-------------------------------------------------------------------
