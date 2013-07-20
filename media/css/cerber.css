@@ -1011,7 +1011,7 @@ div.help:after {
 .form-actions select,
 .form-actions input[type="file"] {
 	padding: 2px 3px;
-	font-size: 10.5px;
+	font-size: 0.9em;
 	height: 22px;
 	line-height: 22px;
 }
