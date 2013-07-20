@@ -1242,13 +1242,17 @@ table td.action .btn-min {
                            12. Sidebar
 -------------------------------------------------------------------*/
 
-
+/**************************
+ Experimental
+**************************/
 .widget-content {
 	background: #EFEFEF;
+	text-shadow: 0 1px 0 #FFF;
 }
 
 .widget-menu  .widget-content {
 	padding: 0;
+	background: #EFEFEF;
 }
 
 .widget-menu  .widget-content ul.menus li a:hover,
