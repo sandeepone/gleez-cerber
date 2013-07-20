@@ -3,7 +3,7 @@
 <div class="span4 vcard" itemscope itemtype="http://schema.org/Person">
 	<div class="avatar">
 		<?php if ($is_owner): ?>
-			<a href="/user/photo" id="add-pic" rel="tooltip" data-placement="bottom" title="<?php echo __('Change your avatar') ?>">
+			<a href="/user/photo" id="add-pic" rel="tooltip" data-placement="bottom" data-toggle="popup" title="<?php echo __('Change your avatar') ?>">
 				<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="icon-camera-retro icon-4x"></i></div>'; ?>
 			</a>
 		<?php else: ?>
@@ -78,16 +78,3 @@
 		<?php endif ?>
 	</div>
 </div>
-
-<div class="modal hide fade in" id="upload-photo" role="dialog" tabindex="-1" aria-hidden="true">
-	<div class="modal-header">
-		<?php echo Form::button('close_window', '&times;', array('class' => 'close', 'data-dismiss' => 'modal', 'aria-hidden' => 'true')); ?>
-		<h3><?php echo __('Uploading Photos'); ?></h3>
-	</div>
-	<div class="modal-data"></div>
-</div>
-
-<?php
-	Assets::js('user', 'media/js/user.js', array('jquery'), FALSE, array('weight' => 15));
-	Assets::js('form', 'media/js/jquery.form.min.js', array('jquery'), FALSE, array('weight' => 10));
-?>
