@@ -14,7 +14,7 @@
 			</div>
 
 			<hr>
-			<?php echo Form::button('reset_pass', __('Reset'), array('class' => 'button btn btn-inverse pull-right', 'type' => 'submit')); ?>
+			<?php echo Form::button('reset_pass', __('Reset'), array('class' => 'btn btn-danger pull-right', 'type' => 'submit')); ?>
 			<div class="clearfix"></div>
 
 		<?php echo Form::close(); ?>

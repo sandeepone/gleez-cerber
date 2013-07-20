@@ -22,12 +22,6 @@ body.user-register {
 	position: relative;
 }
 
-.button {
-	display: inline-block;
-	margin-top: 18px;
-	min-width: 120px;
-}
-
 .account-container {
 	width: 380px;
 	position: relative;
@@ -64,6 +58,12 @@ body.user-register {
 .account-container h1 {
 	margin-bottom: .8em;
 	text-transform: none;
+}
+
+.login .account-container .btn {
+	display: inline-block;
+	margin-top: 18px;
+	min-width: 120px;
 }
 
 .widget .account-container h1 {
@@ -443,7 +443,7 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 .user-register .provider a {
 	text-decoration: none;
 	text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
-	padding: 0 0 0 48px;
+	/*padding: 0 0 0 48px;*/
 	vertical-align: middle;
 	height: 32px;
 	width: 108px;

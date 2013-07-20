@@ -92,7 +92,7 @@
 						</div>
 					</div>
 				</div>
-				<?php echo Form::button('user_edit', '<i class="icon-ok-circle"></i> '.__('Save'), array('class' => 'btn pull-right', 'type' => 'submit'))?>
+				<?php echo Form::button('user_edit', __('Save'), array('class' => 'btn btn-success pull-right', 'type' => 'submit'))?>
 				<div class="clearfix"></div><br>
 				<?php echo Form::close() ?>
 			</div>

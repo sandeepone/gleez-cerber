@@ -38,7 +38,7 @@
 					<input id="remember" name="remember" type="checkbox" class="field login-checkbox" value="TRUE" tabindex="4">
 					<label class="choice" for="remember"><?php echo __('Stay Signed in'); ?></label>
 				</span>
-				<?php echo Form::button('login', __('Login'), array('class' => 'button btn btn-inverse pull-right', 'type' => 'submit')); ?>
+				<?php echo Form::button('login', __('Login'), array('class' => 'btn pull-right', 'type' => 'submit')); ?>
 				<div class="clearfix"></div><br>
 				<ul>
 					<li><?php echo HTML::anchor('user/reset/password', __('Forgot Password?')); ?></li>
