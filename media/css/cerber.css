@@ -605,6 +605,19 @@ div.blog-list h2 a {
 	font-weight: 500;
 }
 
+.widget-content ul.menus li [class^="icon-"] {
+	color: #999;
+	transition: color 0.25s ease-in;
+	-webkit-transition: color 0.25s ease-in 0;
+	-moz-transition: color 0.25s ease-in 0;
+	-o-transition: color 0.25s ease-in 0;
+	-ms-transition: color 0.25s ease-in 0;
+}
+
+.widget-content ul.menus li a:hover [class^="icon-"] {
+	color: #333;
+}
+
 .widget-content ul.menus li a:hover,
 .widget-content ul.menus li a:active {
 	background: #FDFDFE;
@@ -614,9 +627,13 @@ div.blog-list h2 a {
 .widget-content ul.menus li.active a {
 	background: white;
 	font-weight: bold;
-	color: #222;
 	cursor: default;
 	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.widget-content ul.menus li.active a,
+.widget-content ul.menus li.active a [class^="icon-"] {
+	color: #222;
 }
 
 .widget-content ul.menus li.active a:after {
