@@ -2,18 +2,18 @@
 
 <div class="span4 vcard" itemscope itemtype="http://schema.org/Person">
 	<div class="avatar">
-		<?php if ($is_owner): ?>
-			<a href="/user/photo" id="add-pic" rel="tooltip" data-placement="bottom" data-toggle="popup" title="<?php echo __('Change your avatar') ?>">
-				<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="icon-camera-retro icon-4x"></i></div>'; ?>
-			</a>
-		<?php else: ?>
-			<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="icon-camera-retro icon-4x"></i></div>'; ?>
-		<?php endif; ?>
+		<?php echo $avatar; ?>
 		<h1>
 			<span itemprop="name"><?php echo $user->nick; ?></span>
 			<em itemprop="additionalName"><?php echo $user->name; ?></em>
 		</h1>
 		<div class="details">
+			<?php if ($is_owner AND (FALSE === Config::get('site.use_gravatars', FALSE))): ?>
+				<dl>
+					<dt><i class="icon-upload"></i></dt>
+					<dd><?php echo HTML::anchor('user/photo', __('Change Avatar'), array('id' => 'add-pic', 'title' => __('Change your avatar'), 'data-toggle' => 'popup')) ?></dd>
+				</dl>
+			<?php endif; ?>
 			<dl>
 				<dt><i class="icon-signin"></i></dt>
 				<dd><span class="caption-label"><?php echo __('Joined on') ?></span><?php echo date('M d, Y', $user->created) ?></dd>
