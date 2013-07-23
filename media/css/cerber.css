@@ -1311,6 +1311,11 @@ table td.action .btn-min {
 	background-color: #EBEBEB;
 }
 
+#widgets tr.region-title--1 td {
+	color: #ba5d0f;
+	border-left: 3px solid #ba5d0f;
+}
+
 
 /*-------------------------------------------------------------------
                            12. Responsive
