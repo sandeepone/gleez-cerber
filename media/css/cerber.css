@@ -841,6 +841,12 @@ div.blog-list h2 a {
 
 .alert .close {top: 2px;}
 
+.alert-block > ul {list-style: none;}
+
+.alert .placeholder {
+	color: #333;
+	text-shadow: 0 1px 0 #FFF;
+}
 
 /*-------------------------------------------------------------------
                            9. Blogs
