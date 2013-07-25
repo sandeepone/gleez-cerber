@@ -272,7 +272,6 @@ code {
 
 .button-controls button,
 .button-controls .btn {
-	font-size: 13px;
 	font-weight: bold;
 	color: #333;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
@@ -282,12 +281,32 @@ code {
 	display: block;
 }
 
-.button {
+/* reset all border radius */
+button, select, textarea, input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"], input[type="week"],
+input[type="number"], input[type="email"], input[type="url"],
+input[type="search"], input[type="tel"], input[type="color"],
+input[type="button"], input[type="reset"], input[type="submit"],
+.btn, .uneditable-input {
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-o-border-radius: 3px;
 	-khtml-border-radius: 3px;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+.btn {
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 5px 10px;
+	line-height: 18px;
+	cursor: pointer;
 }
 
 .btn-inverse {
@@ -1016,7 +1035,8 @@ div.help:after {
 	margin: 0 2em;
 }
 
-#form-title {
+#page-form #form-title,
+#blog-form #form-title {
 	font-size: 1.7em;
 	line-height: 1.2em;
 }
