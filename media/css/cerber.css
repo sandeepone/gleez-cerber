@@ -49,9 +49,7 @@ body {
 
 body.backend  {background-image: url('../images/bg/bg3.png');}
 
-blockquote {
-	color: #777;
-}
+blockquote {color: #777;}
 
 blockquote p {
 	font-size: 1.2em;
@@ -63,9 +61,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
-a {
-	text-decoration: none;
-}
+hr {border-top: 1px solid #eaeaea;}
+
+a {text-decoration: none;}
 
 code {
 	font-family: Consolas, "Liberation Mono", Courier, monospace;
@@ -272,9 +270,6 @@ code {
 
 .button-controls button,
 .button-controls .btn {
-	font-weight: bold;
-	color: #333;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
 	position: relative;
 	margin: 0 1em;
 	vertical-align: middle;
@@ -1388,6 +1383,17 @@ table td.action .btn-min {
 	.navbar-fixed-top {
 		margin-bottom: 0;
 	}
+	.subnavbar {
+		margin: 0;
+	}
+	.nav-tabs > li > a,
+	.nav-pills > li > a {
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 18px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 }
 
 /* Tablet to desktop */
@@ -1410,6 +1416,10 @@ table td.action .btn-min {
 @media (max-width: 767px) {
 	body {
 		padding-top: 0;
+	}
+	.subnavbar {
+		margin-left: -20px;
+		margin-right: -20px;
 	}
 	/* Downsize the h1 */
 	.page-header-top h1 {
