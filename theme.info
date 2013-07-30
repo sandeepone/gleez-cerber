@@ -14,8 +14,8 @@
 ;
 name           = "cerber"
 title          = "Cerber Theme"
-description    = "New responsive cool theme for Gleez CMS with right sidebar"
-version        = 0.3.1
+description    = "New responsive cool theme for Gleez CMS with left & right sidebar"
+version        = 1.0.0
 license        = http://gleezcms.org/license
 themeURL       = https://github.com/sergeyklay/gleez-cerber
 depends        = gleez
@@ -37,7 +37,11 @@ admin          = 1
 ; language using __() method
 ;
 [regions]
+	content_top    = The top of the main content
+	content_bottom = The bottom of the main content
 	top            = Top Region
+	bottom         = Bottom Region
+	left           = Left Sidebar
 	right          = Right Sidebar
 	dashboard      = Dashboard
 	footer         = Footer
