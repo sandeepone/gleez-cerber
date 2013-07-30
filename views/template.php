@@ -62,20 +62,21 @@
 	</div>
 	<!-- ########## Navbar end ########## -->
 
-	<!-- ########## Container start ########## -->
-	<?php
-		$tpl = $is_admin ? 'admin' : 'default';
-		include Kohana::find_file('views', $tpl.'.tpl');
-	?>
-	<!-- ########## Container end ########## -->
-
+	<!-- ########## template / container-fluid start ########## -->
+	<div class="container-fluid" itemscope itemtype="http://schema.org/WebPage">
+		<?php
+			$tpl = $is_admin ? 'admin' : 'default';
+			include Kohana::find_file('views', $tpl.'.tpl');
+		?>
+	</div>
+	<!-- ########## template / container-fluid end ########## -->
 	<!-- ########## Footer start ########## -->
 	<footer class="footer">
 		<?php $footer = Widgets::instance()->render('footer', 'footer'); ?>
 		<?php if ($footer): ?>
 			<div class="extra">
 				<div class="container">
-					<div class="row">
+					<div class="row-fluid">
 						<?php echo $footer; ?>
 					</div>
 				</div>
@@ -83,7 +84,7 @@
 		<?php endif; ?>
 		<div class="footer-terms">
 			<div class="container">
-				<div class="row">
+				<div class="row-fluid">
 					<div class="span6">
 						<p class="pull-left"><?php echo __('&copy; :year :site', array(':year' => date('Y'), ':site' => HTML::anchor(URL::site(false, true), $site_name)));?></p>
 					</div>

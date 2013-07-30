@@ -1,14 +1,16 @@
 <?php defined('SYSPATH') OR die('No direct script access.'); ?>
-<?php $use_gravatar = Config::get('site.use_gravatars', FALSE); ?>
+
 <div class="span4 vcard" itemscope itemtype="http://schema.org/Person">
 	<div class="avatar">
-		<?php echo $avatar; ?>
+		<div class="Photo">
+			<?php echo User::getAvatar($user, array('size' => 220)); ?>
+		</div>
 		<h1>
 			<span itemprop="name"><?php echo $user->nick; ?></span>
 			<em itemprop="additionalName"><?php echo $user->name; ?></em>
 		</h1>
 		<div class="details">
-			<?php if ($is_owner AND ! $use_gravatar): ?>
+			<?php if ($is_owner AND ( ! Config::get('site.use_gravatars', FALSE))): ?>
 				<dl>
 					<dt><i class="icon-upload"></i></dt>
 					<dd><?php echo HTML::anchor('user/photo', __('Change Avatar'), array('id' => 'add-pic', 'title' => __('Change your avatar'), 'data-toggle' => 'popup')) ?></dd>
