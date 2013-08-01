@@ -22,8 +22,8 @@
 	<ul class="gleez-masthead-links">
 		<li><?php echo HTML::anchor('http://demo.gleezcms.org', 'Demo Site'); ?></li>
 		<li><?php echo HTML::anchor('https://github.com/gleez/cms/wiki', 'Gleez Wiki'); ?></li>
-		<li><?php echo HTML::anchor('https://www.facebook.com/gleezcms', 'Facebook Page'); ?></li>
-		<li><?php echo HTML::anchor('https://plus.google.com/communities/111605254519349265711', 'Google Plus Community'); ?></li>
+		<li><?php echo HTML::anchor('https://www.facebook.com/gleezcms', 'Facebook'); ?></li>
+		<li><?php echo HTML::anchor('https://plus.google.com/communities/111605254519349265711', 'Google Plus'); ?></li>
 	</ul>
 </div>
 
