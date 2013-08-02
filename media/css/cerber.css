@@ -225,6 +225,11 @@ code {
 	font-weight: 500;
 }
 
+.navbar .nav a [class^="icon-"],
+.navbar .nav a [class*=" icon-"] {
+	padding: 4px;
+}
+
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus {
 	background: transparent;
