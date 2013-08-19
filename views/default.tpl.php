@@ -1,4 +1,3 @@
-<?php defined('SYSPATH') OR die('No direct script access.');?>
 <?php
 	$top            = Widgets::instance()->render('top');
 	$bottom         = Widgets::instance()->render('bottom');

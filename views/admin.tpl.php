@@ -1,4 +1,3 @@
-<?php defined('SYSPATH') OR die('No direct script access.'); ?>
 <?php if ($messages): ?>
 	<!-- ########## Messages start ########## -->
 	<div id="messages" class="messages span8 offset2">

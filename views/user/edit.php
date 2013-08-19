@@ -1,5 +1,3 @@
-<?php defined('SYSPATH') OR die('No direct script access.'); ?>
-
 <div class="span12">
 	<div class="widget">
 		<?php include Kohana::find_file('views', 'errors/partial'); ?>

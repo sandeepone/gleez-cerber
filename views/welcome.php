@@ -1,5 +1,3 @@
-<?php defined('SYSPATH') OR die('No direct script access.'); ?>
-
 <div class="gleez-masthead">
 	<div class="container-fluid">
 		<h1><?php _e('Gleez CMS'); ?></h1>

@@ -1,5 +1,3 @@
-<?php defined('SYSPATH') OR die('No direct script access.'); ?>
-
 <div class="span3 footer-block">
     <?php if ($widget->show_title): ?>
         <h4><?php echo Text::plain($title); ?></h4>
