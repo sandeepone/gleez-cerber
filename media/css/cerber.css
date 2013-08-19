@@ -740,8 +740,13 @@ div.blog-list h2 a {
 }
 
 .widget-content {
+
 	background: #fcfcfc;
 	text-shadow: 0 1px 0 #FFF;
+}
+
+.widget-menu-management .widget-content {
+	padding: 0;
 }
 
 .widget-menu  .widget-content {
