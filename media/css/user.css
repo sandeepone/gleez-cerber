@@ -23,7 +23,8 @@ body.user-register {
 }
 
 .account-container {
-	width: 380px;
+	padding: 0;
+	float: none;
 	position: relative;
 	display: block;
 	margin: 60px auto 0 auto;
@@ -48,7 +49,7 @@ body.user-register {
 }
 
 .account-container .content {
-	padding: 16px 28px 23px;
+	padding: 10px 60px;
 }
 
 .widget .account-container .content {
@@ -218,23 +219,9 @@ a#add-pic:hover {
 	margin-bottom: 1.25em;
 }
 
-.login-fields .input-prepend {
-	width: 100%;
-}
-
-.login-fields input,
-.login-fields span.add-on {
-	min-height: 30px !important;
-}
-
-.login-fields span.add-on {
-	min-width: 30px !important;
-	float: left;
-}
 
 .login-fields input[type="password"],
 .login-fields input[type="text"] {
-	width: 260px;
 	height: 38px;
 	font-size: 16px;
 	color: #8E8D8D;
@@ -262,6 +249,7 @@ a#add-pic:hover {
 
 span.login-checkbox {
 	float: left;
+	margin-top: 5px;
 }
 
 span.login-checkbox > input[type='checkbox'] {
