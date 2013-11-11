@@ -1,8 +1,11 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+<?php Assets::css('user', 'media/css/user.css', array('weight' => 2)); ?>
+
 <div class="account-container">
 	<?php include Kohana::find_file('views', 'errors/partial'); ?>
 
 	<div class="content clearfix">
-		<?php echo Form::open($action, array('class' => 'row-fluid')); ?>
+		<?php echo Form::open($action, array('class' => 'row')); ?>
 			<h1><?php echo $site_name ?></h1>
 
 			<div class="login-fields">
@@ -36,11 +39,11 @@
 					<input id="remember" name="remember" type="checkbox" class="field login-checkbox" value="TRUE" tabindex="4">
 					<label class="choice" for="remember"><?php echo __('Stay Signed in'); ?></label>
 				</span>
-				<?php echo Form::button('login', __('Login'), array('class' => 'btn pull-right', 'type' => 'submit')); ?>
+				<?php echo Form::button('login', __('Login'), array('class' => 'btn btn-primary pull-right', 'type' => 'submit')); ?>
 				<div class="clearfix"></div><br>
 				<ul>
 					<li><?php echo HTML::anchor('user/reset/password', __('Forgot Password?')); ?></li>
-					<?php if ($register): ?>
+			 		<?php if ($register): ?>
 						<li><?php echo HTML::anchor('user/register', __("Don't have an account?")); ?></li>
 					<?php endif; ?>
 				</ul>

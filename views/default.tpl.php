@@ -6,7 +6,7 @@
 ?>
 <?php if ($messages): ?>
 	<!-- ########## Messages start ########## -->
-	<div id="messages" class="messages span8 offset2">
+	<div id="messages" class="messages col-md-8 offset2">
 		<?php echo $messages ?>
 	</div>
 	<!-- ########## Messages end ########## -->
@@ -14,17 +14,17 @@
 
 <?php if ($top AND ! empty($top)): ?>
 	<!-- ########## Top start ########## -->
-	<div class="row-fluid">
-		<div class="span12">
+	<div class="row">
+		<div class="col-md-12">
 			<?php echo $top; ?>
 		</div>
 	</div>
 	<!-- ########## Top end ########## -->
 <?php endif;?>
-<div class="row-fluid">
+<div class="row">
 	<?php if ($sidebar_left): ?>
 		<!-- ########## Sidebar left start ########## -->
-		<div class="span3">
+		<div class="col-md-3">
 			<div id="left">
 				<?php echo $sidebar_left; ?>
 			</div>
@@ -32,7 +32,7 @@
 		<!-- ########## Sidebar left end ########## -->
 	<?php endif; ?>
 	<!-- ########## Content start ############# -->
-	<div class="span<?php echo $main_column?>">
+	<div class="col-md-<?php echo $main_column?>">
 		<?php if ($content_top AND ! empty($content_top)): ?>
 			<?php echo $content_top; ?>
 		<?php endif; ?>
@@ -56,7 +56,7 @@
 	<!-- ########## Content end ############### -->
 	<?php if ($sidebar_right): ?>
 		<!-- ########## Sidebar right start ########## -->
-		<div class="span3">
+		<div class="col-md-3">
 			<div id="right">
 				<?php echo $sidebar_right; ?>
 			</div>
@@ -66,8 +66,8 @@
 </div>
 <?php if ($bottom AND ! empty($bottom)): ?>
 	<!-- ########## Bottom start ########## -->
-	<div class="row-fluid">
-		<div class="span12">
+	<div class="row">
+		<div class="col-md-12">
 			<?php echo $bottom; ?>
 		</div>
 	</div>

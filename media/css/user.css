@@ -62,7 +62,7 @@ body.user-register {
 
 .login .account-container .btn {
 	display: inline-block;
-	margin-top: 18px;
+	/*margin-top: 18px;*/
 	min-width: 120px;
 }
 
@@ -73,7 +73,19 @@ body.user-register {
 	text-align: center;
 	border-bottom: 1px solid #a0a3a8;
 }
-
+.login-fields, .login-actions {
+    float: left;
+    margin-bottom: 1.25em;
+    margin-top: -1em;
+    width: 100%;
+}
+.input-append, .input-prepend {
+    display: inline-block;
+    font-size: 0;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
 .avatar {
 	position: relative;
 }
@@ -224,14 +236,11 @@ a#add-pic:hover {
 .login-fields input[type="text"] {
 	width: 260px;
 	height: 38px;
-	float: left;
 	font-size: 16px;
 	color: #8E8D8D;
 	padding: 0 10px;
-	background-color: #FDFDFD;
 	display: block;
 	margin: 0;
-	box-shadow: inset 2px 2px 4px #F1F1F1;
 	-moz-box-shadow: inset 2px 2px 4px #F1F1F1;
 	-webkit-box-shadow: inset 2px 2px 4px #F1F1F1;
 }
@@ -253,7 +262,6 @@ a#add-pic:hover {
 
 span.login-checkbox {
 	float: left;
-	margin-top: 30px;
 }
 
 span.login-checkbox > input[type='checkbox'] {

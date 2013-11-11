@@ -1,19 +1,19 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+<div class="row-fluid">
 <div class="span4 vcard" itemscope itemtype="http://schema.org/Person">
 	<div class="avatar">
-		<div class="Photo">
-			<?php echo User::getAvatar($user, array('size' => 220)); ?>
-		</div>
+		<?php if ($is_owner): ?>
+			<a href="/user/photo" id="add-pic" rel="tooltip" data-placement="bottom" title="<?php echo __('Change your avatar') ?>">
+				<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="icon-camera-retro icon-4x"></i></div>'; ?>
+			</a>
+		<?php else: ?>
+			<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="icon-camera-retro icon-4x"></i></div>'; ?>
+		<?php endif; ?>
 		<h1>
 			<span itemprop="name"><?php echo $user->nick; ?></span>
 			<em itemprop="additionalName"><?php echo $user->name; ?></em>
 		</h1>
 		<div class="details">
-			<?php if ($is_owner AND ( ! Config::get('site.use_gravatars', FALSE))): ?>
-				<dl>
-					<dt><i class="icon-upload"></i></dt>
-					<dd><?php echo HTML::anchor('user/photo', __('Change Avatar'), array('id' => 'add-pic', 'title' => __('Change your avatar'), 'data-toggle' => 'popup')) ?></dd>
-				</dl>
-			<?php endif; ?>
 			<dl>
 				<dt><i class="icon-signin"></i></dt>
 				<dd><span class="caption-label"><?php echo __('Joined on') ?></span><?php echo date('M d, Y', $user->created) ?></dd>
@@ -57,24 +57,37 @@
 	</div>
 </div>
 <div class="span8">
-	<?php if ($is_owner OR ACL::check('administer users')): ?>
-		<ul class="tabnav span12">
-			<li>
-				<?php echo HTML::anchor('user/edit', '<i class="icon-pencil"></i> '.__('Edit Account'), array('class' => 'btn')); ?>
-			</li>
-			<li>
-				<?php echo HTML::anchor('user/password', '<i class="icon-cog"></i> '.__('Change Password'), array('class' => 'btn')); ?>
-			</li>
-		</ul>
-	<?php endif; ?>
+	<ul class="tabnav span12">
+		<li>
+			<?php echo HTML::anchor('user/edit', '<i class="icon-pencil"></i> '.__('Edit Account'), array('class' => 'btn')); ?>
+		</li>
+		<li>
+			<?php echo HTML::anchor('user/password', '<i class="icon-cog"></i> '.__('Change Password'), array('class' => 'btn')); ?>
+		</li>
+	</ul>
 	<div class="span12">
 		<?php if ($user->bio): ?>
-			<div id="user-bio">
-				<h4><?php echo __('Bio') ?></h4>
-				<p>
+			<div class="widget">
+				<div class="widget-header">
+					<h3><?php echo __('Bio') ?></h3>
+				</div>
+				<div class="widget-content">
 					<?php echo Text::plain($user->bio); ?>
-				</p>
+				</div>
 			</div>
 		<?php endif ?>
 	</div>
 </div>
+</div>
+<div class="modal hide fade in" id="upload-photo" role="dialog" tabindex="-1" aria-hidden="true">
+	<div class="modal-header">
+		<?php echo Form::button('close_window', '&times;', array('class' => 'close', 'data-dismiss' => 'modal', 'aria-hidden' => 'true')); ?>
+		<h3><?php echo __('Uploading Photos'); ?></h3>
+	</div>
+	<div class="modal-data"></div>
+</div>
+
+<?php
+	Assets::js('user', 'media/js/user.js', array('jquery'), FALSE, array('weight' => 15));
+	Assets::js('user/form', 'media/js/jquery.form-3.27.js', array('jquery'), FALSE, array('weight' => 10));
+?>

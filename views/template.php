@@ -14,25 +14,26 @@
 	<![endif]-->
 </head>
 <body id="<?php echo $page_id; ?>" class="<?php echo $page_class; ?>">
+
 	<!-- ########## Navbar start ########## -->
-	<div class="navbar navbar-fixed-top navbar-inverse">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
-
-				<?php echo HTML::anchor('/', HTML::image($site_logo, array('alt' => $site_slogan, 'class' => 'logo')), array('class' => 'brand', 'title' => $site_name)) ?>
-
-				<div class="nav-collapse collapse">
-					<?php echo $primary_menu; ?>
-
-					<ul class="nav pull-right">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      	<div class="container">
+	        <div class="navbar-header">
+	          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+	          	</button>
+	          	<?php echo HTML::anchor('/', HTML::image($site_logo, array('alt' => $site_slogan, 'class' => 'logo')), array('class' => 'navbar-brand', 'title' => $site_name)) ?>
+	        </div>
+        	<div class="navbar-collapse collapse">
+				<?php echo $primary_menu; ?>
+          			
+          		<ul class="nav navbar-nav navbar-right">
 						<?php if (User::is_guest()): ?>
 							<?php if (Kohana::$config->load('auth')->get('register')): ?>
-								<li><a href="<?php echo URL::site('/user/register'); ?>"><?php echo __('Sign Up')?></a></a></li>
+								<li><a href="<?php echo URL::site('/user/register'); ?>"><?php echo __('Sign Up')?></a></li>
 							<?php endif; ?>
 							<li><a href="<?php echo URL::site('/user/login'); ?>"><i class="icon-white icon-chevron-left"></i><?php echo __('Sign In') ?></a></li>
 						<?php else:  ?>
@@ -53,16 +54,14 @@
 							</ul>
 						</li>
 						<?php endif; ?>
-					</ul>
-				</div>
-
-			</div>
-		</div>
-	</div>
+          		</ul>
+        	</div><!--/.nav-collapse -->
+      	</div>
+    </div>
 	<!-- ########## Navbar end ########## -->
 
 	<!-- ########## template / container-fluid start ########## -->
-	<div class="container-fluid" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container" itemscope itemtype="http://schema.org/WebPage">
 		<?php
 			$tpl = $is_admin ? 'admin' : 'default';
 			include Kohana::find_file('views', $tpl.'.tpl');
@@ -75,22 +74,24 @@
 		<?php if ($footer): ?>
 			<div class="extra">
 				<div class="container">
-					<div class="row-fluid">
+					<div class="row">
 						<?php echo $footer; ?>
 					</div>
 				</div>
 			</div>
 		<?php endif; ?>
 		<div class="footer-terms">
-			<div class="container">
-				<div class="row-fluid">
-					<div class="span6">
+			<div class="container text-muted">
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 col-md-6">
 						<p class="pull-left"><?php echo __('&copy; :year :site', array(':year' => date('Y'), ':site' => HTML::anchor(URL::site(false, true), $site_name)));?></p>
 					</div>
-					<div class="span6">
+					<div class="col-xs-6 col-sm-3 col-md-6">
 						<p class="pull-right"><?php echo __(':powerdby v{gleez_version}', array(':powerdby' => HTML::anchor('http://gleezcms.org/', 'Gleez CMS')))?></p>
 					</div>
-					<div class="span12 text-centered" id="footer-system-info">
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center" id="footer-system-info">
 						<small><?php echo __('Rendered in {execution_time}, using {memory_usage} of memory.')?></small>
 					</div>
 				</div>

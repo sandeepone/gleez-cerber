@@ -1,3 +1,5 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+
 <div class="account-container">
 	<?php include Kohana::find_file('views', 'errors/partial'); ?>
 
