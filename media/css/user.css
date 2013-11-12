@@ -463,3 +463,29 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 }
+
+
+#signup .form-horizontal .form-group, .form-group {
+    margin-left: 15px;
+    }
+    
+.form-control {
+width:90%
+}
+
+form .captcha {
+display: block;
+}
+
+ul{
+list-style:none;
+}
+
+ul.tabnav > li {
+    color: #333333;
+    display: inline;
+    float: right;
+    font-size: 11px;
+    list-style-type: none;
+    margin: 0 5px 0 0;
+}

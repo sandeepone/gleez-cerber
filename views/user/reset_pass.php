@@ -1,20 +1,17 @@
-<div class="account-container">
+<?php echo Form::open($action, array('class' => 'col-md-8 form form-horizontal')) ?>
+
 	<?php include Kohana::find_file('views', 'errors/partial'); ?>
-	<div class="content clearfix">
-		<?php echo Form::open($action) ?>
-			<legend><?php echo __('Reset password'); ?></legend>
-			<div class="control-group <?php echo isset($errors['mail']) ? 'error': ''; ?>">
-				<?php echo Form::label('mail', __('Email')); ?>
-				<div class="input-prepend">
-					<span class="add-on">@</span>
-					<?php echo Form::input('mail', $post['mail'], array('class' => 'input-xlarge')); ?>
-				</div>
+
+	<div class="form-group <?php echo isset($errors['mail']) ? 'error': ''; ?>">
+		<?php echo Form::label('mail', __('Email'), array('class' => 'control-label')); ?>
+		<div class="controls">
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<?php echo Form::input('mail', $post['mail'], array('class' => 'form-control input-lg')); ?>
 			</div>
-
-			<hr>
-			<?php echo Form::button('reset_pass', __('Reset'), array('class' => 'btn btn-danger pull-right', 'type' => 'submit')); ?>
-			<div class="clearfix"></div>
-
-		<?php echo Form::close(); ?>
+		</div>
 	</div>
-</div>
+
+	<?php echo Form::submit('reset_pass', __('Reset'), array('class' => 'btn btn-danger')); ?>
+
+<?php echo Form::close() ?>

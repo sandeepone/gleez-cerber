@@ -1,13 +1,13 @@
 <?php defined('SYSPATH') OR die('No direct script access.'); ?>
-<div class="row-fluid">
-<div class="span4 vcard" itemscope itemtype="http://schema.org/Person">
+<div class="row">
+<div class="col-md-4 vcard" itemscope itemtype="http://schema.org/Person">
 	<div class="avatar">
 		<?php if ($is_owner): ?>
 			<a href="/user/photo" id="add-pic" rel="tooltip" data-placement="bottom" title="<?php echo __('Change your avatar') ?>">
-				<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="icon-camera-retro icon-4x"></i></div>'; ?>
+				<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="fa fa-camera-retro fa-4x"></i></div>'; ?>
 			</a>
 		<?php else: ?>
-			<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="icon-camera-retro icon-4x"></i></div>'; ?>
+			<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="fa fa-camera-retro fa-4x"></i></div>'; ?>
 		<?php endif; ?>
 		<h1>
 			<span itemprop="name"><?php echo $user->nick; ?></span>
@@ -15,37 +15,37 @@
 		</h1>
 		<div class="details">
 			<dl>
-				<dt><i class="icon-signin"></i></dt>
+				<dt><i class="fa fa-sign-in"></i></dt>
 				<dd><span class="caption-label"><?php echo __('Joined on') ?></span><?php echo date('M d, Y', $user->created) ?></dd>
 			</dl>
 			<dl>
-				<dt><i class="icon-off"></i></dt>
+				<dt><i class="fa fa-off"></i></dt>
 				<dd><span class="caption-label"><?php echo __('Visits') ?></span><?php echo $user->logins ?></dd>
 			</dl>
 			<dl title="<?php echo __('Last Active') ?>">
-				<dt><i class="icon-fire"></i></dt>
+				<dt><i class="fa fa-fire"></i></dt>
 				<dd><?php echo date('M d, Y', $user->login) . __(' @ ') .  date('h:i a', $user->login) ?></dd>
 			</dl>
 			<?php if ($is_owner OR User::is_admin()): ?>
 				<dl title="<?php echo __('Email') ?>">
-					<dt><i class="icon-envelope"></i></dt>
+					<dt><i class="fa fa-envelope"></i></dt>
 					<dd><a class="email" data-email="<?php echo $user->mail ?>" href="mailto:<?php echo $user->mail ?>"><?php echo $user->mail ?></a></dd>
 				</dl>
 			<?php endif; ?>
 			<?php if ($user->homepage): ?>
 				<dl title="<?php echo __('Home Page') ?>">
-					<dt><i class="icon-link"></i></dt>
+					<dt><i class="fa fa-link"></i></dt>
 					<dd><?php echo HTML::anchor($user->homepage, $user->homepage, array('itemprop' => 'url')); ?></dd>
 				</dl>
 			<?php endif; ?>
 
 			<dl title="<?php echo __('Birthday') ?>">
-				<dt><i class="icon-calendar"></i></dt>
+				<dt><i class="fa fa-calendar"></i></dt>
 				<dd itemprop="birthDate"><?php echo date('M d, Y', $user->dob) ?></dd>
 			</dl>
 			<?php if (User::is_admin()): ?>
 				<dl>
-					<dt><i class="icon-group"></i></dt>
+					<dt><i class="fa fa-group"></i></dt>
 					<dd class="tagcloud">
 						<?php foreach ($user->roles() as $role): ?>
 							<span><?php echo Text::plain(ucfirst($role)); ?></span>
@@ -56,16 +56,16 @@
 		</div>
 	</div>
 </div>
-<div class="span8">
-	<ul class="tabnav span12">
+<div class="col-md-8">
+	<ul class="tabnav">
 		<li>
-			<?php echo HTML::anchor('user/edit', '<i class="icon-pencil"></i> '.__('Edit Account'), array('class' => 'btn')); ?>
+			<?php echo HTML::anchor('user/edit', '<i class="fa fa-pencil"></i> '.__('Edit Account'), array('class' => 'btn btn-default')); ?>
 		</li>
 		<li>
-			<?php echo HTML::anchor('user/password', '<i class="icon-cog"></i> '.__('Change Password'), array('class' => 'btn')); ?>
+			<?php echo HTML::anchor('user/password', '<i class="fa fa-cog"></i> '.__('Change Password'), array('class' => 'btn btn-default')); ?>
 		</li>
 	</ul>
-	<div class="span12">
+	<div class="col-md-12">
 		<?php if ($user->bio): ?>
 			<div class="widget">
 				<div class="widget-header">
