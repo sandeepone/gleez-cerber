@@ -344,15 +344,6 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 }
 
 /* Sign Up form */
-#signup {
-	width: 48%;
-	float: left;
-}
-
-#signin {
-	width: 48%;
-	float: right;
-}
 
 #signup .title,
 #signin .title {
@@ -465,13 +456,6 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 }
 
 
-#signup .form-horizontal .form-group, .form-group {
-    margin-left: 15px;
-    }
-    
-.form-control {
-width:90%
-}
 
 form .captcha {
 display: block;
