@@ -3,10 +3,12 @@
 <head>
 	<title><?php echo $head_title ?></title>
 	<?php echo Meta::tags(); ?>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<?php echo Meta::links(); ?>
-	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!-- HTML5 shim and Respond.js, for IE6-8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="/media/js/html5.js"></script>
+		<script src="/media/js/respond.min.js"></script>
 	<![endif]-->
 	<?php echo Assets::css(); ?>
 </head>
