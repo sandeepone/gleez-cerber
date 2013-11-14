@@ -43,7 +43,7 @@ body {
 	font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
-	padding-top: 59px;
+	padding-top: 60px;
 }
 
 body.backend  {background-image: url('../images/bg/bg3.png');}
@@ -64,6 +64,18 @@ hr {border-top: 1px solid #eaeaea;}
 
 a {text-decoration: none;}
 
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -100px;
+}
+/* Set the fixed height of the footer here */
+#push, #footer {
+	height: 100px;
+} 
 /*-------------------------------------------------------------------
                            2. Navbar
 -------------------------------------------------------------------*/
@@ -305,3 +317,49 @@ div.page-header h1 {
 	margin-bottom: 40px;
 	font-size: 14px;
 }
+
+
+
+/*-------------------------------------------------------------------
+                           1. Admin
+-------------------------------------------------------------------*/
+
+*
+{
+    margin:0;padding:0;
+}
+html#backend, body.backend
+{
+    height:100%;
+}
+#backend .admin-container.container, #backend .admin-nav.container
+{
+	min-height: 100%;
+	overflow: hidden;
+}
+#backend .sidebar, #backend .main-content {
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+body.backend {
+	padding-top: 50px;
+}
+#backend .navbar {
+    box-shadow: none;
+}
+#backend .admin-container.container, #backend .admin-nav.container
+{
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.backend .content.row
+{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
