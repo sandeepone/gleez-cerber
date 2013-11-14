@@ -7,7 +7,7 @@
     Project:      Cerber Theme
     Description:  New responsive cool theme for Gleez CMS with left & right sidebar
     Version:      1.0.0
-    Author:       Sergey Yakovlev - Gleez
+    Author:       Gleez Team
     Copyright:    (c) 2011-2013 Gleez Technologies
     License:      http://gleezcms.org/license Gleez CMS License
     URL:          https://github.com/sergeyklay/gleez-cerber
@@ -17,15 +17,9 @@
 
     1.  General
     2.  Navbar
-    3.  Buttons
+    3.  Messages
     4.  Main
-    5.  Widgets
-    6.  Footer
-    7.  Messages
-    8.  Blogs
-    9.  Miscellaneous
-    10. Tables
-    11. Responsive
+    5.  Admin
 
 -------------------------------------------------------------------*/
 
@@ -34,6 +28,11 @@
                            1. General
 -------------------------------------------------------------------*/
 
+*
+{
+    margin:0;
+    padding:0;
+}
 
 body {
 	font: 13px/1.7em "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -108,7 +107,7 @@ a {text-decoration: none;}
     padding: 10px 15px;
 }
 /*-------------------------------------------------------------------
-                           7. Messages
+                           3. Messages
 -------------------------------------------------------------------*/
 
 
@@ -319,15 +318,10 @@ div.page-header h1 {
 }
 
 
-
 /*-------------------------------------------------------------------
-                           1. Admin
+                           5. Admin
 -------------------------------------------------------------------*/
 
-*
-{
-    margin:0;padding:0;
-}
 html#backend, body.backend
 {
     height:100%;
