@@ -1,4 +1,3 @@
-<?php defined('SYSPATH') OR die('No direct script access.'); ?>
 <div class="row">
 <div class="col-md-4 vcard" itemscope itemtype="http://schema.org/Person">
 	<div class="avatar">
