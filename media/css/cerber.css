@@ -368,6 +368,22 @@ body.backend {
 	padding: 9px 14px;
 	border: 1px solid #e1e1e8;
 	border-top: none;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	-o-border-radius: 0 0 4px 4px;
+	-khtml-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+/* Statically Located Wrapper for some content */
+.sl-wrapper {
+	padding: 1.2em 1em;
+	background: #fff;
+	border: 1px solid #e1e1e8;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	-o-border-radius: 0 0 4px 4px;
+	-khtml-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px;
 }
 
