@@ -52,8 +52,12 @@
 			<div class="form-group <?php echo isset($errors['gender']) ? 'has-error': ''; ?>">
 				<?php echo Form::label('gender', __('Gender'), array('class' => 'col-sm-3 control-label')); ?>
 				<div class="col-xs-12 col-sm-8">
-					<?php echo Form::label('gender1', Form::radio('gender', 1, $male) . __('Male'), array('class' => 'radio')); ?>
-					<?php echo Form::label('gender2', Form::radio('gender', 2, $female) . __('Female'), array('class' => 'radio')); ?>
+					<div class="radio">
+						<?php echo Form::label('gender1', Form::radio('gender', 1, $male) . __('Male')); ?>
+					</div>
+					<div class="radio">
+						<?php echo Form::label('gender2', Form::radio('gender', 2, $female) . __('Female')); ?>
+					</div>
 				</div>
 			</div>
 
@@ -80,9 +84,11 @@
 					<div class="clearfix"></div><br>
 				</div>
 			<?php endif; ?>
-
-			<div class="actions">
-				<?php echo Form::submit('register', __('Register new account'), array('class' => 'btn btn-default btn-lg', 'tabindex' => 11)) ?>
+			<hr>
+			<div class="form-group">
+				<div class="col-md-12">
+					<?php echo Form::button('register', __('Register new account'), array('class' => 'btn btn-success pull-right', 'tabindex' => 11, 'type' => 'submit')) ?>
+				</div>
 			</div>
 		</fieldset>
 	<?php echo Form::close(); ?>
