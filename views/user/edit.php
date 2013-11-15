@@ -9,7 +9,7 @@
 	<div class="tab-content col-md-12" id="profile-tabs-content">
 		<div class="tab-pane fade in active" id="profile">
 
-			<div class="form-group <?php echo isset($errors['nick']) ? 'error': ''; ?>">
+			<div class="form-group <?php echo isset($errors['nick']) ? 'has-error': ''; ?>">
 				<?php echo Form::label('nick', __('Display Name'), array('class' => 'col-md-3 control-label')) ?>
 				<div class="col-md-9">
 					<div class="row">
@@ -21,19 +21,19 @@
 				</div>
 			</div>
 
-			<div class="form-group <?php echo isset($errors['gender']) ? 'error': ''; ?>">
+			<div class="form-group <?php echo isset($errors['gender']) ? 'has-error': ''; ?>">
 				<?php echo Form::label('gender', __('Gender'), array('class' => 'col-md-3 control-label')) ?>
 				<div class="col-md-9">
-					<div class="radio"
+					<div class="radio">
 						<?php echo Form::label('gender1', Form::radio('gender', 1, $male).__('Male')) ?>
 					</div>
-					<div class="radio"
+					<div class="radio">
 						<?php echo Form::label('gender2', Form::radio('gender', 2, $female).__('Female')) ?>
 					</div>
 				</div>
 			</div>
 
-			<div class="form-group <?php echo isset($errors['dob']) ? 'error': ''; ?>">
+			<div class="form-group <?php echo isset($errors['dob']) ? 'has-error': ''; ?>">
 				<?php echo Form::label('dob', __('Birthday'), array('class' => 'col-md-3 control-label')) ?>
 				<div class="col-md-9">
 					<div class="row">
@@ -50,7 +50,7 @@
 				</div>
 			</div>
 
-			<div class="form-group <?php echo isset($errors['homepage']) ? 'error': ''; ?>">
+			<div class="form-group <?php echo isset($errors['homepage']) ? 'has-error': ''; ?>">
 				<?php echo Form::label('homepage', __('Home Page'), array('class' => 'col-md-3 control-label')) ?>
 				<div class="col-md-9">
 					<div class="row">
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 
-			<div class="form-group <?php echo isset($errors['bio']) ? 'error': ''; ?>">
+			<div class="form-group <?php echo isset($errors['bio']) ? 'has-error': ''; ?>">
 				<?php echo Form::label('bio', __('Bio'), array('class' => 'col-md-3 control-label')) ?>
 				<div class="col-md-9">
 					<div class="row">
@@ -78,7 +78,7 @@
 
 		<div class="tab-pane fade" id="settings">
 
-			<div class="form-group <?php echo isset($errors['name']) ? 'error': ''; ?>">
+			<div class="form-group <?php echo isset($errors['name']) ? 'has-error': ''; ?>">
 				<?php echo Form::label('name', __('Username'), array('class' => 'col-md-3 control-label')) ?>
 				<div class="col-md-9">
 					<div class="row">
@@ -90,7 +90,7 @@
 				</div>
 			</div>
 
-			<div class="form-group <?php echo isset($errors['mail']) ? 'error': ''; ?>">
+			<div class="form-group <?php echo isset($errors['mail']) ? 'has-error': ''; ?>">
 				<?php echo Form::label('mail', __('Mail'), array('class' => 'col-md-3 control-label')) ?>
 				<div class="col-md-9">
 					<div class="row">
