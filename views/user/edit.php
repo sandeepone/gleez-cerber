@@ -105,7 +105,7 @@
 		</div>
 	</div>
 
-	<div class="form-group" id="profile-tabs-button">
+	<div class="form-group ab-wrapper">
 		<div class="col-md-12">
 			<?php echo Form::button('user_edit', __('Save'), array('class' => 'btn btn-success pull-right', 'type' => 'submit'))?>
 		</div>

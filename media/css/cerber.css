@@ -375,7 +375,7 @@ body.backend {
 	border-radius: 0 0 4px 4px;
 }
 
-/* Statically Located Wrapper for some content */
+/* Statically Located Wrapper: Container for some content */
 .sl-wrapper {
 	padding: 1.2em 1em;
 	background: #fff;
@@ -385,5 +385,10 @@ body.backend {
 	-o-border-radius: 0 0 4px 4px;
 	-khtml-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px;
+}
+
+/* After Button Wrapper: Container for buttons after content */
+.ab-wrapper {
+	padding: 1.2em 0;
 }
 
