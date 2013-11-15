@@ -114,7 +114,8 @@ a {text-decoration: none;}
 
 #messages {
 	top: 60px;
-	text-align: left!important;
+	text-align: left;
+	position: absolute;
 }
 
 .alert {
