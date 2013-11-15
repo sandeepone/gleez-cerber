@@ -3,7 +3,6 @@
 
 	<div class="content clearfix">
 		<?php echo Form::open(Route::get('user')->uri($params).URL::query(array('destination' => Request::initial()->uri($destination))), array('class' => 'row form-password')); ?>
-			<h1><?php echo __('Change Password') ?></h1>
 
 			<div class="login-fields">
 				<div class="field">
@@ -40,8 +39,19 @@
 					</div>
 				</div>
 				<hr>
-				<?php echo HTML::anchor('user/profile', '<i class="fa fa-arrow-left"></i> '.__('Profile'), array('class' => 'btn pull-left')); ?>
-				<?php echo Form::submit('change_pass', __('Save'), array('class' => 'btn btn-info pull-right')); ?>
+
+				<div class="form-group">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-6">
+								<?php echo HTML::anchor('user/profile', '<i class="fa fa-arrow-left"></i> '.__('Profile'), array('class' => 'btn pull-left')); ?>
+							</div>
+							<div class="col-xs-6">
+								<?php echo Form::submit('change_pass', __('Save'), array('class' => 'btn btn-info pull-right')); ?>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		<?php echo Form::close(); ?>
 	</div>
