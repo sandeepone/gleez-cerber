@@ -6,7 +6,7 @@
 		<li class="active"><a href="#profile" data-toggle="tab"><?php _e('Profile')?></a></li>
 		<li><a href="#settings" data-toggle="tab"><?php _e('Settings')?></a></li>
 	</ul>
-	<div class="tab-content col-md-12" id="profile-tabs-content">
+	<div class="tab-content col-md-12">
 		<div class="tab-pane fade in active" id="profile">
 
 			<div class="form-group <?php echo isset($errors['nick']) ? 'has-error': ''; ?>">
