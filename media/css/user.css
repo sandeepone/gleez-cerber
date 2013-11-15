@@ -371,7 +371,7 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 #signin .signin-wrapper {
 	width: auto;
 	margin: 0;
-	padding: 2.7em 0 0 0;
+	padding: 2.7em 1em 0;
 	background-color: #FFF;
 	border: 1px solid #DDD;
 	border-top: none;
