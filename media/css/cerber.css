@@ -15,12 +15,13 @@
 
 [Table of contents]
 
-    1.  General
-    2.  Navbar
-    3.  Messages
-    4.  Main
-    5.  Admin
-    6.  Misc
+    1. General
+    2. Navbar
+    3. Messages
+    4. Main
+    5. Admin
+    6. Widgets
+    7. Misc
 
 -------------------------------------------------------------------*/
 
@@ -46,9 +47,9 @@ body {
 	padding-top: 60px;
 }
 
-body.backend  {background-image: url('../images/bg/bg3.png');}
-
-blockquote {color: #777;}
+blockquote {
+	color: #777;
+}
 
 blockquote p {
 	font-size: 1.2em;
@@ -60,9 +61,13 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
-hr {border-top: 1px solid #eaeaea;}
+hr {
+	border-top: 1px solid #eaeaea;
+}
 
-a {text-decoration: none;}
+a {
+	text-decoration: none;
+}
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -75,7 +80,7 @@ a {text-decoration: none;}
 /* Set the fixed height of the footer here */
 #push, #footer {
 	height: 100px;
-} 
+}
 /*-------------------------------------------------------------------
                            2. Navbar
 -------------------------------------------------------------------*/
@@ -324,12 +329,17 @@ div.page-header h1 {
                            5. Admin
 -------------------------------------------------------------------*/
 
-html#backend, body.backend
-{
+html#backend, body.backend {
     height:100%;
 }
-#backend .admin-container.container, #backend .admin-nav.container
-{
+
+body.backend {
+	background-image: url('../images/bg/bg3.png');
+	padding-top: 50px;
+}
+
+#backend .admin-container.container,
+#backend .admin-nav.container {
 	min-height: 100%;
 	overflow: hidden;
 }
@@ -337,30 +347,29 @@ html#backend, body.backend
 	margin-bottom: -9999px;
 	padding-bottom: 9999px;
 }
-body.backend {
-	padding-top: 50px;
-}
+
 #backend .navbar {
     box-shadow: none;
 }
-#backend .admin-container.container, #backend .admin-nav.container
-{
+
+#backend .admin-container.container,
+#backend .admin-nav.container {
     width: 100%;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.backend .content.row
-{
-    margin-right: 0px;
-    margin-left: 0px;
+
+.backend .content.row {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 /*-------------------------------------------------------------------
-                           6. Misc
+                           7. Misc
 -------------------------------------------------------------------*/
 
 .tab-content {
