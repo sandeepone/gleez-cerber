@@ -462,11 +462,11 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 
 
 form .captcha {
-display: block;
+	display: block;
 }
 
 ul{
-list-style:none;
+	list-style:none;
 }
 
 ul.tabnav > li {
@@ -478,10 +478,15 @@ ul.tabnav > li {
     margin: 0 5px 0 0;
 }
 
-#profile-tabs-content {
+#profile-tabs-content,
+.reset_password .account-container > .content {
 	padding: 2em 0;
 }
 
 #profile-tabs-button {
 	padding: 1.2em 0;
+}
+
+.reset_password legend {
+	padding: 0 1em;
 }
