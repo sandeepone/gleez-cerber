@@ -204,6 +204,10 @@ a#add-pic:hover {
 	margin-bottom: 1.25em;
 }
 
+.user-password .login-fields {
+	margin-top: 1em;
+}
+
 .widget .account-container .login-fields,
 .widget .account-container .login-actions {
 	margin-bottom: 0;
