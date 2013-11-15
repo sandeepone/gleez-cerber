@@ -11,7 +11,7 @@
 				<p><?php echo __('Sign in using your registered account'); ?></p>
 
 				<div class="form-group <?php echo isset($errors['name']) ? 'has-error': ''; ?>">
-					<?php echo Form::input('name', $post->name, array('class' =>'form-control', 'placeholder' => __('Email'))); ?>
+					<?php echo Form::input('name', $post->name, array('class' =>'form-control', 'placeholder' => __('User name'))); ?>
 				</div>
 
 				<div class="form-group <?php echo isset($errors['password']) ? 'has-error': ''; ?>">
