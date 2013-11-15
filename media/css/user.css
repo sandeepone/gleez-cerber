@@ -473,3 +473,11 @@ ul.tabnav > li {
     list-style-type: none;
     margin: 0 5px 0 0;
 }
+
+#profile-tabs-content {
+	padding: 2em 0;
+}
+
+#profile-tabs-button {
+	padding: 1.2em 0;
+}

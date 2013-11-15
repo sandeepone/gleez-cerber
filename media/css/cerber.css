@@ -20,6 +20,7 @@
     3.  Messages
     4.  Main
     5.  Admin
+    6.  Misc
 
 -------------------------------------------------------------------*/
 
@@ -355,5 +356,17 @@ body.backend {
 {
     margin-right: 0px;
     margin-left: 0px;
+}
+
+/*-------------------------------------------------------------------
+                           6. Misc
+-------------------------------------------------------------------*/
+
+.tab-content {
+	background: #fff;
+	padding: 9px 14px;
+	border: 1px solid #e1e1e8;
+	border-top: none;
+	border-radius: 0 0 4px 4px;
 }
 
