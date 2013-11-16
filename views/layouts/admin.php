@@ -15,21 +15,20 @@
 <body id="<?php echo $page_id; ?>" class="<?php echo $page_class; ?>">
 
 	<!-- ########## Navbar start ########## -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      	<div class="admin-nav container">
-	        <div class="navbar-header">
-	          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		            <span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-	          	</button>
-	          	<?php echo HTML::anchor('/', $site_name, array('class' => 'navbar-brand', 'title' => $site_name)) ?>
-	        </div>
-        	<div class="navbar-collapse collapse">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="admin-nav container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only"><?php _e('Toggle navigation'); ?></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<?php echo HTML::anchor('/', $site_name, array('class' => 'navbar-brand', 'title' => $site_name)) ?>
+			</div>
+			<div class="navbar-collapse collapse">
 
-
-          		<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 							<i class="icon-user"></i><?php echo $_user->nick; ?><b class="caret"></b>
@@ -46,10 +45,10 @@
 							<li><a href="<?php echo URL::site('/user/logout'); ?>"><i class="fa fa-sign-out"></i> <?php echo __('Sign Out') ?></a></li>
 						</ul>
 					</li>
-          		</ul>
-        	</div><!--/.nav-collapse -->
-      	</div>
-    </div>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
 	<!-- ########## Navbar end ########## -->
 
 	<!-- ########## admin / container start ########## -->

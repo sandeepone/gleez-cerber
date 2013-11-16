@@ -15,27 +15,27 @@
 <body id="<?php echo $page_id; ?>" class="<?php echo $page_class; ?>">
 
 	<!-- ########## Navbar start ########## -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      	<div class="container">
-	        <div class="navbar-header">
-	          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		            <span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-	          	</button>
-	          	<?php echo HTML::anchor('/', HTML::image($site_logo, array('alt' => $site_slogan, 'class' => 'logo')), array('class' => 'navbar-brand', 'title' => $site_name)) ?>
-	        </div>
-        	<div class="navbar-collapse collapse">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only"><?php _e('Toggle navigation'); ?></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<?php echo HTML::anchor('/', HTML::image($site_logo, array('alt' => $site_slogan, 'class' => 'logo')), array('class' => 'navbar-brand', 'title' => $site_name)) ?>
+			</div>
+			<div class="navbar-collapse collapse">
 				<?php echo $primary_menu; ?>
 
-          		<ul class="nav navbar-nav navbar-right">
-						<?php if (User::is_guest()): ?>
-							<?php if (Kohana::$config->load('auth')->get('register')): ?>
-								<li><a href="<?php echo URL::site('/user/register'); ?>"><?php echo __('Sign Up')?></a></li>
-							<?php endif; ?>
-							<li><a href="<?php echo URL::site('/user/login'); ?>"><i class="fa fa-white fa-chevron-left"></i><?php echo __('Sign In') ?></a></li>
-						<?php else:  ?>
+				<ul class="nav navbar-nav navbar-right">
+					<?php if (User::is_guest()): ?>
+						<?php if (Kohana::$config->load('auth')->get('register')): ?>
+							<li><a href="<?php echo URL::site('/user/register'); ?>"><?php echo __('Sign Up')?></a></li>
+						<?php endif; ?>
+						<li><a href="<?php echo URL::site('/user/login'); ?>"><i class="fa fa-white fa-chevron-left"></i><?php echo __('Sign In') ?></a></li>
+					<?php else:  ?>
 						<li class="dropdown">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<i class="fa fa-user"></i><?php echo $_user->nick; ?><b class="caret"></b>
@@ -52,11 +52,11 @@
 								<li><a href="<?php echo URL::site('/user/logout'); ?>"><i class="fa fa-sign-out"></i> <?php echo __('Sign Out') ?></a></li>
 							</ul>
 						</li>
-						<?php endif; ?>
-          		</ul>
-        	</div><!--/.nav-collapse -->
-      	</div>
-    </div>
+					<?php endif; ?>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
 	<!-- ########## Navbar end ########## -->
 
 	<!-- ########## template / container start ########## -->
