@@ -59,14 +59,14 @@
     </div>
 	<!-- ########## Navbar end ########## -->
 
-	<!-- ########## template / container-fluid start ########## -->
+	<!-- ########## template / container start ########## -->
 	<div class="container" itemscope itemtype="http://schema.org/WebPage">
 		<?php
 			$tpl = $is_admin ? 'admin' : 'default';
 			include Kohana::find_file('views', $tpl.'.tpl');
 		?>
 	</div>
-	<!-- ########## template / container-fluid end ########## -->
+	<!-- ########## template / container end ########## -->
 	<!-- ########## Footer start ########## -->
 	<footer class="footer">
 		<?php $footer = Widgets::instance()->render('footer', 'footer'); ?>
