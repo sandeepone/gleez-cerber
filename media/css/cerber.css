@@ -292,6 +292,7 @@ div.page-header h1 {
 .gleez-docbody {
 	text-align: justify;
 	text-justify: inter-word;
+	text-rendering: auto; //android webview bug, without this property text-align dosen't work
 	margin: 30px 0;
 }
 
