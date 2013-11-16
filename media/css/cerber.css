@@ -247,7 +247,6 @@ div.page-header h1 {
 	color: #777;
 	background-color: #fafafa;
 	border: 1px solid #e5e5e5;
-	margin: 60px 0 100px;
 }
 
 .gleez-dochead .container-fluid {
@@ -280,6 +279,8 @@ div.page-header h1 {
 }
 
 .gleez-docbody {
+	text-align: justify;
+	text-justify: inter-word;
 	margin: 30px 0;
 }
 
@@ -300,16 +301,6 @@ div.page-header h1 {
 
 .gleez-features h4 {
 	text-transform: none;
-}
-
-.gleez-features i {
-	background-color: #333;
-	color: white;
-	padding: 10px;
-	border-radius: 100%;
-	display: inline-block;
-	height: 60px;
-	width: 60px;
 }
 
 .gleez-features p {
