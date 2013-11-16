@@ -335,11 +335,11 @@ body.backend {
 	padding-top: 50px;
 }
 
-#backend .admin-container.container,
-#backend .admin-nav.container {
+#backend .admin-container.container {
 	min-height: 100%;
 	overflow: hidden;
 }
+
 #backend .sidebar, #backend .main-content {
 	margin-bottom: -9999px;
 	padding-bottom: 9999px;
@@ -349,8 +349,7 @@ body.backend {
     box-shadow: none;
 }
 
-#backend .admin-container.container,
-#backend .admin-nav.container {
+#backend .admin-container.container {
     width: 100%;
     margin-top: 0;
     padding-top: 0;
