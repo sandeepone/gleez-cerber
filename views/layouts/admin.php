@@ -24,7 +24,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<?php echo HTML::anchor('/', $site_name, array('class' => 'navbar-brand', 'title' => $site_name)) ?>
+				<?php echo HTML::anchor($site_url, $site_name, array('class' => 'navbar-brand', 'title' => $site_name)) ?>
 			</div>
 			<div class="navbar-collapse collapse">
 
