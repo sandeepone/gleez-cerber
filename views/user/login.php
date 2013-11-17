@@ -11,10 +11,12 @@
 				<p><?php echo __('Sign in using your registered account'); ?></p>
 
 				<div class="form-group <?php echo isset($errors['name']) ? 'has-error': ''; ?>">
-					<?php echo Form::input('name', $post->name, array('class' =>'form-control', 'placeholder' => __('User name'))); ?>
+					<?php echo Form::label('name', __('Username/Email'), array('class' => 'sr-only control-label')) ?>
+					<?php echo Form::input('name', $post->name, array('class' =>'form-control', 'placeholder' => __('Username/Email'))); ?>
 				</div>
 
 				<div class="form-group <?php echo isset($errors['password']) ? 'has-error': ''; ?>">
+					<?php echo Form::label('name', __('Password'), array('class' => 'sr-only control-label')) ?>
 					<?php echo Form::password('password', NULL, array('class' =>'form-control', 'placeholder' => __('Password'))); ?>
 				</div>
 			</div>
