@@ -495,3 +495,7 @@ body.backend {
 .help p:last-child {
 	margin-bottom: 0;
 }
+
+.sidebar .panel:first-child{
+	margin-top: 1em;
+}
