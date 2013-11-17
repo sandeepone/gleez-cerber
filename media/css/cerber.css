@@ -472,3 +472,10 @@ body.backend {
 	padding: 1.2em 0;
 }
 
+.widget .panel-title {
+	font-weight: 900;
+	font-size: 1em;
+	color: #555;
+	text-shadow: 0 1px 0 #fff;
+	text-transform: none;
+}
