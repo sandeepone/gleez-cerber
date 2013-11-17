@@ -336,7 +336,8 @@ body.backend {
 	padding-top: 50px;
 }
 
-#backend .admin-container.container {
+#backend .admin-container.container,
+#backend .admin-nav.container {
 	min-height: 100%;
 	overflow: hidden;
 }
@@ -350,7 +351,8 @@ body.backend {
     box-shadow: none;
 }
 
-#backend .admin-container.container {
+#backend .admin-container.container,
+#backend .admin-nav.container {
     width: 100%;
     margin-top: 0;
     padding-top: 0;
