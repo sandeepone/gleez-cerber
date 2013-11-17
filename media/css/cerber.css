@@ -366,6 +366,79 @@ body.backend {
     margin-left: 0;
 }
 
+.widget-menu-management .panel-body {
+	padding: 0;
+}
+
+.panel-body ul.menus {
+	margin: 0;
+	list-style: none;
+	background: #efefef;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.panel-body ul.menus li {
+	float: left;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.panel-body ul.menus li .fa {
+	padding-right: 5px;
+	color: #999;
+	transition: color .25s ease-in;
+	-webkit-transition: color .25s ease-in 0;
+	-moz-transition: color .25s ease-in 0;
+	-o-transition: color .25s ease-in 0;
+	-ms-transition: color .25s ease-in 0;
+}
+
+.panel-body ul.menus li a {
+	padding: 4px 10px;
+	display: block;
+	font-weight: 500;
+	font-size: 13px;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 30px;
+	text-shadow: 0 1px 0 #fff;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #fff;
+}
+
+.panel-body ul.menus li:last-child a {
+	border-bottom: none;
+}
+
+.panel-body ul.menus li.active a {
+	background: #fff;
+	font-weight: bold;
+	cursor: default;
+	box-shadow: inset 0 0 1px rgba(0,0,0,.1);
+}
+
+.panel-body ul.menus li.active a:after {
+	content: "";
+	position: absolute;
+	width: 3px;
+	top: -1px;
+	bottom: -1px;
+	left: -1px;
+	background-color: #ba5d0f;
+	background-image: -moz-linear-gradient(#d26911, #ba5d0f);
+	background-image: -webkit-linear-gradient(#d26911, #ba5d0f);
+	background-image: linear-gradient(#d26911, #ba5d0f);
+	background-repeat: repeat-x;
+	box-shadow: inset -1px -1px 0 rgba(0,0,0,0.1);
+}
+
+.panel-body ul.menus li.active a,
+.panel-body ul.menus li.active a .fa {
+	color: #222;
+}
+
 /*-------------------------------------------------------------------
                            6. Misc
 -------------------------------------------------------------------*/
