@@ -20,7 +20,8 @@
     3. Messages
     4. Main
     5. Admin
-    6. Misc
+    6. Post
+    7. Misc
 
 -------------------------------------------------------------------*/
 
@@ -114,6 +115,14 @@ a {
 
 .navbar .nav a .fa {
 	padding: 0 4px;
+}
+
+/* Active tab */
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+	border-top: 2px solid #4c8fbd;
+	color: #555;
 }
 
 /*-------------------------------------------------------------------
@@ -321,6 +330,10 @@ div.page-header h1 {
 	font-size: 14px;
 }
 
+.frontend #content {
+	margin-bottom: 20px;
+}
+
 
 /*-------------------------------------------------------------------
                            5. Admin
@@ -359,6 +372,10 @@ body.backend {
     padding-right: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+#backend #messages {
+	position: static;
 }
 
 .backend .content.row {
@@ -445,7 +462,58 @@ body.backend {
 }
 
 /*-------------------------------------------------------------------
-                           6. Misc
+                           6. Post
+-------------------------------------------------------------------*/
+
+.page-list article {
+	margin: 30px 0;
+	border-bottom: .1em solid #ddd;
+}
+
+.page-list article:first-child {
+	margin-top: 0;
+}
+
+.page-list article:last-child {
+	margin-bottom: 0;
+}
+
+.post-rss {
+	color: #FA6E2D;
+}
+
+.post-title {
+	text-transform: none;
+}
+
+.post-meta {
+	color: #9f9f9f;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.post-entry {
+	clear: both;
+}
+
+.post-postarea {
+	clear: both;
+	padding: 10px 0 30px;
+}
+
+.readmore {
+	background-color: #dd9933 !important;
+	border-color: #dd9933 !important;
+	color: #fff !important;
+}
+
+.readmore:hover {
+	background-color: #c48c2d !important;
+	border-color: #c48c2d !important;
+}
+
+/*-------------------------------------------------------------------
+                           7. Misc
 -------------------------------------------------------------------*/
 
 .tab-content {
