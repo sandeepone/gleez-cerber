@@ -21,7 +21,8 @@
     4. Main
     5. Admin
     6. Post
-    7. Misc
+    7. Menus
+    8. Misc
 
 -------------------------------------------------------------------*/
 
@@ -387,6 +388,80 @@ body.backend {
 	padding: 0;
 }
 
+.page-settings-form .set-check .checkbox {
+	margin-left: 22em;
+}
+
+.blog-settings-form .set-check .checkbox {
+	margin-left: 22em;
+}
+
+.page-stats h3 {
+	color: #666;
+	font: normal 18px/30px "Oswald", Verdana, Arial, Helvetica, sans-serif;
+	margin: 10px 0;
+}
+
+#backend .page-header {
+	padding-bottom: 0;
+	border: none;
+}
+
+/*-------------------------------------------------------------------
+                           6. Post
+-------------------------------------------------------------------*/
+
+.page-list article {
+	margin: 30px 0;
+	border-bottom: .1em solid #ddd;
+}
+
+.page-list article:first-child {
+	margin-top: 0;
+}
+
+.page-list article:last-child {
+	margin-bottom: 0;
+}
+
+.post-rss {
+	color: #FA6E2D;
+}
+
+.post-title {
+	text-transform: none;
+}
+
+.post-meta {
+	color: #9f9f9f;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.post-entry {
+	clear: both;
+}
+
+.post-postarea {
+	clear: both;
+	padding: 10px 0 30px;
+}
+
+.readmore {
+	background-color: #dd9933 !important;
+	border-color: #dd9933 !important;
+	color: #fff !important;
+}
+
+.readmore:hover {
+	background-color: #c48c2d !important;
+	border-color: #c48c2d !important;
+}
+
+/*-------------------------------------------------------------------
+                           7. Menus
+-------------------------------------------------------------------*/
+
 .panel-body ul.menus {
 	margin: 0;
 	list-style: none;
@@ -463,64 +538,8 @@ body.backend {
 	right: -1px;
 }
 
-#backend .page-header {
-	padding-bottom: 0;
-	border: none;
-}
-
 /*-------------------------------------------------------------------
-                           6. Post
--------------------------------------------------------------------*/
-
-.page-list article {
-	margin: 30px 0;
-	border-bottom: .1em solid #ddd;
-}
-
-.page-list article:first-child {
-	margin-top: 0;
-}
-
-.page-list article:last-child {
-	margin-bottom: 0;
-}
-
-.post-rss {
-	color: #FA6E2D;
-}
-
-.post-title {
-	text-transform: none;
-}
-
-.post-meta {
-	color: #9f9f9f;
-	font-size: 13px;
-	margin-bottom: 10px;
-}
-
-.post-entry {
-	clear: both;
-}
-
-.post-postarea {
-	clear: both;
-	padding: 10px 0 30px;
-}
-
-.readmore {
-	background-color: #dd9933 !important;
-	border-color: #dd9933 !important;
-	color: #fff !important;
-}
-
-.readmore:hover {
-	background-color: #c48c2d !important;
-	border-color: #c48c2d !important;
-}
-
-/*-------------------------------------------------------------------
-                           7. Misc
+                           8. Misc
 -------------------------------------------------------------------*/
 
 .tab-content {
@@ -571,49 +590,31 @@ body.backend {
 	margin-bottom: 0;
 }
 
-.sidebar .panel:first-child{
+.sidebar .panel:first-child {
 	margin-top: 1em;
 }
 
-
-
-
-.page-header h1{
+.page-header h1 {
 	font-size:25px;
-	}
-	
-.title-holder h2{
-	font-size:18px;
-}
-#publishing-action .btn{
-margin-right:20px;
 }
 
-.page-img .form-control{
-	height:auto;
+.title-holder h2 {
+	font-size: 18px;
 }
 
-.contact-form .row{
-	 margin-left: 15px;
-    margin-right: 15px;
+#publishing-action .btn {
+	margin-right: 20px;
 }
 
-.page-stats h3 {
-    color: #666666;
-    font-family: "Oswald";
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 30px;
-    margin: 10px 0;
+.page-img .form-control {
+	height: auto;
 }
 
-.blog-settings-form .set-check .checkbox{
-    margin-left:22em;
+.contact-form .row {
+	margin-left: 15px;
+	margin-right: 15px;
 }
-.page-settings-form .set-check .checkbox{
-    margin-left:22em;
 
-}
-.table_head{
-    height:45px;
+.table_head {
+    height: 45px;
 }
