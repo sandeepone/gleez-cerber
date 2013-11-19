@@ -11,7 +11,7 @@
 						<?php echo Form::label('pass', __('New password'), array('class' => 'control-label')); ?>
 						<div class="controls">
 							<div class="input-prepend">
-								<span class="add-on"><i class="icon-large icon-key"></i></span>
+								<span class="add-on"><i class="fa fa-key"></i></span>
 								<?php echo Form::password('pass', NULL); ?>
 							</div>
 						</div>
@@ -21,7 +21,7 @@
 						<?php echo Form::label('pass_confirm', __('New password (again)'), array('class' => 'control-label')); ?>
 						<div class="controls">
 							<div class="input-prepend">
-								<span class="add-on"><i class="icon-large icon-key"></i></span>
+								<span class="add-on"><i class="fa fa-key"></i></span>
 								<?php echo Form::password('pass_confirm', NULL); ?>
 							</div>
 						</div>
