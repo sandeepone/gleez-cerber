@@ -574,3 +574,46 @@ body.backend {
 .sidebar .panel:first-child{
 	margin-top: 1em;
 }
+
+
+
+
+.page-header h1{
+	font-size:25px;
+	}
+	
+.title-holder h2{
+	font-size:18px;
+}
+#publishing-action .btn{
+margin-right:20px;
+}
+
+.page-img .form-control{
+	height:auto;
+}
+
+.contact-form .row{
+	 margin-left: 15px;
+    margin-right: 15px;
+}
+
+.page-stats h3 {
+    color: #666666;
+    font-family: "Oswald";
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+.blog-settings-form .set-check .checkbox{
+    margin-left:22em;
+}
+.page-settings-form .set-check .checkbox{
+    margin-left:22em;
+
+}
+.table_head{
+    height:45px;
+}
