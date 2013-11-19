@@ -87,9 +87,6 @@ body.user-register {
     vertical-align: middle;
     white-space: nowrap;
 }
-.avatar {
-	position: relative;
-}
 
 .vcard img,
 .empty-photo {
