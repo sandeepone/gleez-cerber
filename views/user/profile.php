@@ -1,60 +1,61 @@
 <div class="row">
 <div class="col-md-4 vcard" itemscope itemtype="http://schema.org/Person">
-	<div class="avatar">
-		<?php if ($is_owner): ?>
-			<a href="/user/photo" id="add-pic" rel="tooltip" data-placement="bottom" title="<?php echo __('Change your avatar') ?>">
-				<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="fa fa-camera-retro fa-4x"></i></div>'; ?>
-			</a>
-		<?php else: ?>
-			<?php echo ( ! empty($user->picture)) ? HTML::resize($user->picture, array('alt' => $user->nick, 'height' => 210, 'width' => 210, 'type' => 'resize', 'itemprop' => 'image')) : '<div class="empty-photo"><i class="fa fa-camera-retro fa-4x"></i></div>'; ?>
+	<div class="vcard-avatar">
+		<?php echo User::getAvatar($user, array('size' => 220)); ?>
+	</div>
+	<h1 class="vcard-names">
+		<span itemprop="name"><?php echo $user->nick; ?></span>
+		<em itemprop="additionalName"><?php echo $user->name; ?></em>
+	</h1>
+	<div class="vcard-details">
+		<?php if ($is_owner AND ( ! Config::get('site.use_gravatars', FALSE))): ?>
+		<dl>
+			<dt><i class="fa fa-upload"></i></dt>
+			<dd><?php echo HTML::anchor('user/photo', __('Change Avatar'), array('id' => 'add-pic', 'title' => __('Change your avatar'), 'data-toggle' => 'popup')) ?></dd>
+		</dl>
 		<?php endif; ?>
-		<h1>
-			<span itemprop="name"><?php echo $user->nick; ?></span>
-			<em itemprop="additionalName"><?php echo $user->name; ?></em>
-		</h1>
-		<div class="details">
-			<dl>
-				<dt><i class="fa fa-sign-in"></i></dt>
-				<dd><span class="caption-label"><?php echo __('Joined on') ?></span><?php echo date('M d, Y', $user->created) ?></dd>
+		<dl>
+			<dt><i class="fa fa-sign-in"></i></dt>
+			<dd><span class="caption-label"><?php echo __('Joined on') ?></span><?php echo date('M d, Y', $user->created) ?></dd>
+		</dl>
+		<dl>
+			<dt><i class="fa fa-off"></i></dt>
+			<dd><span class="caption-label"><?php echo __('Visits') ?></span><?php echo $user->logins ?></dd>
+		</dl>
+		<dl title="<?php echo __('Last Active') ?>">
+			<dt><i class="fa fa-fire"></i></dt>
+			<dd><?php echo date('M d, Y', $user->login) . __(' @ ') .  date('h:i a', $user->login) ?></dd>
+		</dl>
+		<?php if ($is_owner OR User::is_admin()): ?>
+			<dl title="<?php echo __('Email') ?>">
+				<dt><i class="fa fa-envelope"></i></dt>
+				<dd><a class="email" data-email="<?php echo $user->mail ?>" href="mailto:<?php echo $user->mail ?>"><?php echo $user->mail ?></a></dd>
 			</dl>
-			<dl>
-				<dt><i class="fa fa-off"></i></dt>
-				<dd><span class="caption-label"><?php echo __('Visits') ?></span><?php echo $user->logins ?></dd>
+		<?php endif; ?>
+		<?php if ($user->homepage): ?>
+			<dl title="<?php echo __('Home Page') ?>">
+				<dt><i class="fa fa-link"></i></dt>
+				<dd><?php echo HTML::anchor($user->homepage, $user->homepage, array('itemprop' => 'url')); ?></dd>
 			</dl>
-			<dl title="<?php echo __('Last Active') ?>">
-				<dt><i class="fa fa-fire"></i></dt>
-				<dd><?php echo date('M d, Y', $user->login) . __(' @ ') .  date('h:i a', $user->login) ?></dd>
-			</dl>
-			<?php if ($is_owner OR User::is_admin()): ?>
-				<dl title="<?php echo __('Email') ?>">
-					<dt><i class="fa fa-envelope"></i></dt>
-					<dd><a class="email" data-email="<?php echo $user->mail ?>" href="mailto:<?php echo $user->mail ?>"><?php echo $user->mail ?></a></dd>
-				</dl>
-			<?php endif; ?>
-			<?php if ($user->homepage): ?>
-				<dl title="<?php echo __('Home Page') ?>">
-					<dt><i class="fa fa-link"></i></dt>
-					<dd><?php echo HTML::anchor($user->homepage, $user->homepage, array('itemprop' => 'url')); ?></dd>
-				</dl>
-			<?php endif; ?>
+		<?php endif; ?>
 
-			<dl title="<?php echo __('Birthday') ?>">
-				<dt><i class="fa fa-calendar"></i></dt>
-				<dd itemprop="birthDate"><?php echo date('M d, Y', $user->dob) ?></dd>
+		<dl title="<?php echo __('Birthday') ?>">
+			<dt><i class="fa fa-calendar"></i></dt>
+			<dd itemprop="birthDate"><?php echo date('M d, Y', $user->dob) ?></dd>
+		</dl>
+		<?php if (User::is_admin()): ?>
+			<dl>
+				<dt><i class="fa fa-group"></i></dt>
+				<dd class="tagcloud">
+					<?php foreach ($user->roles() as $role): ?>
+						<span><?php echo Text::plain(ucfirst($role)); ?></span>
+					<?php endforeach; ?>
+				</dd>
 			</dl>
-			<?php if (User::is_admin()): ?>
-				<dl>
-					<dt><i class="fa fa-group"></i></dt>
-					<dd class="tagcloud">
-						<?php foreach ($user->roles() as $role): ?>
-							<span><?php echo Text::plain(ucfirst($role)); ?></span>
-						<?php endforeach; ?>
-					</dd>
-				</dl>
-			<?php endif; ?>
-		</div>
+		<?php endif; ?>
 	</div>
 </div>
+
 <div class="col-md-8">
 	<ul class="tabnav">
 		<li>
