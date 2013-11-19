@@ -442,7 +442,6 @@ body.backend {
 	width: 3px;
 	top: -1px;
 	bottom: -1px;
-	left: -1px;
 	background-color: #ba5d0f;
 	background-image: -moz-linear-gradient(#d26911, #ba5d0f);
 	background-image: -webkit-linear-gradient(#d26911, #ba5d0f);
@@ -454,6 +453,14 @@ body.backend {
 .panel-body ul.menus li.active a,
 .panel-body ul.menus li.active a .fa {
 	color: #222;
+}
+
+.frontend .panel-body ul.menus li.active a:after {
+	left: -1px;
+}
+
+#backend .panel-body ul.menus li.active a:after {
+	right: -1px;
 }
 
 #backend .page-header {
