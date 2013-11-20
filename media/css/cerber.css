@@ -301,7 +301,8 @@ div.page-header h1 {
 .gleez-docbody {
 	text-align: justify;
 	text-justify: inter-word;
-	text-rendering: auto; //android webview bug, without this property text-align dosen't work
+	/* android webview bug, without this property text-align dosen't work */
+	text-rendering: auto;
 	margin: 30px 0;
 }
 
@@ -412,8 +413,43 @@ body.backend {
 -------------------------------------------------------------------*/
 
 .page-list article {
-	margin: 30px 0;
-	border-bottom: .1em solid #ddd;
+	padding: 1em;
+	margin: 2.3em 0;
+	background-color: #fff;
+	position: relative;
+}
+
+
+.page-list article:before,
+.page-list article:after {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width:300px;
+	background: #777;
+	-webkit-box-shadow: 0 15px 10px #777;
+	-moz-box-shadow: 0 15px 10px #777;
+	box-shadow: 0 15px 10px #777;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.page-list article:after
+{
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+	right: 10px;
+	left: auto;
 }
 
 .page-list article:first-child {
@@ -425,11 +461,27 @@ body.backend {
 }
 
 .post-rss {
-	color: #FA6E2D;
+	color: #dd9933;
+}
+
+.post-rss:hover {
+	color: #c48c2d;
 }
 
 .post-title {
 	text-transform: none;
+	font-size: 1.8em;
+}
+
+.post-bookmark {
+	background: transparent url("../images/bookmark.png") no-repeat 0 0;
+	display: inline-block;
+	speak: none;
+	position: absolute;
+	width: 42px;
+	height: 46px;
+	right: 10px;
+	top: 0;
 }
 
 .post-meta {
@@ -444,7 +496,7 @@ body.backend {
 
 .post-postarea {
 	clear: both;
-	padding: 10px 0 30px;
+	padding: 10px 0;
 }
 
 .readmore {
