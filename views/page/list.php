@@ -12,9 +12,9 @@
 		</header>
 
 		<div id="post-<?php echo $post->id; ?>" class="post-list <?php echo ($post->sticky) ? ' sticky' : ' post-'.$post->status; ?>">
-			<?php /* if ($post->promote): */ ?>
-			<!-- i class="post-bookmark clearfix"></i -->
-			<?php /* endif; */ ?>
+			<?php if ($post->promote): ?>
+			<i class="post-bookmark clearfix"></i>
+			<?php endif; ?>
 			<?php
 			echo View::factory('page/teaser')
 				->set('post',       $post)
