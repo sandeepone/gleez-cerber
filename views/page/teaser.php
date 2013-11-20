@@ -1,14 +1,16 @@
-<?php if($post->taxonomy OR $config->use_submitted): ?>
+<?php if ($post->taxonomy OR $config->use_submitted): ?>
 	<section class="post-meta row">
 		<?php if ($config->use_submitted): ?>
 			<div class="col-md-7">
 				<span class="post-created">
 					<i class="fa fa-calendar"></i>
-					<?php echo Date::date_format($post->created); ?>
+					<time itemprop="datePublished" content="<?php echo Date::date_format($post->created, DateTime::ISO8601)?>" datetime="<?php echo Date::date_format($post->created, DateTime::ISO8601)?>">
+						<?php echo Date::date_format($post->created); ?>
+					</time>
 				</span>
 				<span class="post-author">
 					<i class="fa fa-user"></i>
-					<?php echo HTML::anchor($post->user->url, $post->user->nick, array('title' => $post->user->nick)); ?>
+					<?php echo HTML::anchor($post->user->url, $post->user->name, array('title' => $post->user->nick, 'itemprop' => 'author')); ?>
 				</span>
 			</div>
 		<?php endif;?>
@@ -21,13 +23,17 @@
 <?php endif;?>
 
 <section class="post-entry">
-	<?php echo $post->teaser; ?>
+	<div class="teaser" itemprop="articleSection">
+		<?php echo $post->teaser; ?>
+	</div>
 	<?php if ($post->tagcloud): ?>
-		<section class="post-tags row">
-			<?php echo $post->teaser; ?>
-		</section>
+		<div class="post-tags row">
+			<span class="tagcloud">
+				<?php echo __('Tagged with :tag', array(':tag' => $post->tagcloud)); ?>
+			</span>
+		</div>
 	<?php endif;?>
 	<div class="post-postarea">
-		<?php echo HTML::anchor($post->url, __('Read More'), array('title' => __('Read more about :title', array(':title' => $post->title)), 'class' => 'readmore btn btn-default btn-xs')); ?>
+		<?php echo HTML::anchor($post->url, __('Read More'), array('title' => __('Read more about :title', array(':title' => $post->title)), 'class' => 'readmore btn btn-default btn-xs', 'itemprop' => 'url')); ?>
 	</div>
 </section>
