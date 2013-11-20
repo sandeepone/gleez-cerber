@@ -4,13 +4,12 @@
 	</div>
 </div>
 <?php foreach($posts as $i => $post): ?>
-	<article id="post-<?php echo $post->id; ?>" class="post-list <?php echo ($post->sticky) ? ' sticky' : ' post-'.$post->status; ?>">
+	<article id="post-<?php echo $post->id; ?>" class="post-list <?php echo ($post->sticky) ? ' sticky' : ' post-'.$post->status; ?>" itemscope itemtype="http://schema.org/Article">
 		<header>
-			<h2 class="post-title">
-				<?php echo HTML::anchor($post->url, $post->title); ?>
+			<h2 class="post-title" itemprop="name">
+				<?php echo HTML::anchor($post->url, $post->title, array('itemprop' => 'url')); ?>
 			</h2>
 		</header>
-		<section class="post-meta"></section>
 
 		<div id="post-<?php echo $post->id; ?>" class="post-list <?php echo ($post->sticky) ? ' sticky' : ' post-'.$post->status; ?>">
 			<?php /* if ($post->promote): */ ?>
