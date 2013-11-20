@@ -12,7 +12,7 @@
 	<![endif]-->
 	<?php echo Assets::css(); ?>
 </head>
-<body id="<?php echo $page_id; ?>" class="<?php echo $page_class; ?>" itemscope itemtype="http://schema.org/WebPage">
+<body id="<?php echo $page_id; ?>" class="<?php echo $page_class; ?>" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 
 	<!-- ########## Navbar start ########## -->
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
