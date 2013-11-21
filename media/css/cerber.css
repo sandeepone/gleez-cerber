@@ -295,7 +295,15 @@ div.page-header h1 {
 .gleez-docbody {
 	text-align: justify;
 	text-justify: inter-word;
-	/* android webview bug, without this property text-align dosen't work */
+	/**
+	 * Android webview bug, without this property text-align dosen't work.
+	 * -
+	 * Chrome treats this as optimizeSpeed.
+	 * Work is continuing on https://bugs.webkit.org/show_bug.cgi?id=41363
+	 * -
+	 * Safari treats this as optimizeSpeed.
+	 * Work is continuing on https://bugs.webkit.org/show_bug.cgi?id=41363
+	 */
 	text-rendering: auto;
 	margin: 30px 0;
 }
