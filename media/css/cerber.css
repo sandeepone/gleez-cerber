@@ -42,9 +42,6 @@ body {
 	color: #333;
 	background: #E9E9E9 url('../images/bg/bg1.png') repeat 0 0;
 	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	   -moz-font-smoothing: antialiased;
-	        font-smoothing: antialiased;
 	padding-top: 60px;
 }
 
@@ -169,7 +166,6 @@ a {
 	right: 0;
 	line-height: 1;
 	top: 2px;
-	-webkit-font-smoothing: antialiased;
 }
 
 .close:hover,.close:focus{
