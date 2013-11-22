@@ -225,190 +225,16 @@ div.page-header h1 {
 	color: #333;
 }
 
-/* Homepage masthead */
-.gleez-masthead {
-	position: relative;
-	padding: 30px 15px;
-	text-align: center;
-}
-
-.gleez-masthead h1 {
-	font-family: 'Kaushan Script', cursive;
-	font-size: 50px;
-	line-height: 1;
-	text-transform: none;
-}
-
-.gleez-masthead-links {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding-left: 0;
-	list-style: none;
-	text-align: center;
-}
-
-.gleez-masthead-links li {
-	display: inline;
-	color: #999;
-}
-
-.gleez-masthead-links li + li {
-	margin-left: 20px;
-}
-
-.gleez-dochead {
-	padding: 15px 20px;
-	color: #777;
-	background-color: #fafafa;
-	border: 1px solid #e5e5e5;
-}
-
-.gleez-dochead .container-fluid {
-	padding-top: 0;
-}
-
-.gleez-dochead p {
-	margin: 0;
-}
-
-.gleez-dochead .container-fluid {
-	text-align: center;
-}
-
-.gleez-social {
-	margin: 20px 0 30px;
-	text-align: center;
-}
-
-.gleez-social-buttons {
-	display: inline-block;
-	margin-bottom: 0;
-	padding-left: 0;
-	list-style: none;
-}
-
-.gleez-social-buttons li {
-	display: inline-block;
-	line-height: 1;
-}
-
-.gleez-docbody {
-	text-align: justify;
-	text-justify: inter-word;
-	/**
-	 * Android webview bug, without this property text-align dosen't work.
-	 * -
-	 * Chrome treats this as optimizeSpeed.
-	 * Work is continuing on https://bugs.webkit.org/show_bug.cgi?id=41363
-	 * -
-	 * Safari treats this as optimizeSpeed.
-	 * Work is continuing on https://bugs.webkit.org/show_bug.cgi?id=41363
-	 */
-	text-rendering: auto;
-	margin: 30px 0;
-}
-
-.gleez-docbody h3 {
-	text-transform: none;
-}
-
-.gleez-docbody p {
-	color: #777;
-	font-size: 16px;
-	line-height: 1.6;
-}
-
-.gleez-features {
-	margin-top: 30px;
-	text-align: center;
-}
-
-.gleez-features h4 {
-	text-transform: none;
-}
-
-.gleez-features p {
-	text-align: justify;
-	text-justify: inter-word;
-	margin-bottom: 40px;
-	font-size: 14px;
-}
-
 .frontend #content {
 	margin-bottom: 20px;
 }
 
-
-/*-------------------------------------------------------------------
-                           5. Admin
--------------------------------------------------------------------*/
-
-html#backend, body.backend {
-    height:100%;
-}
-
-body.backend {
-	background-image: url('../images/bg/bg3.png');
-	padding-top: 50px;
-}
-
-#backend .admin-container.container,
-#backend .admin-nav.container {
-	min-height: 100%;
-	overflow: hidden;
-}
-
-#backend .sidebar, #backend .main-content {
-	margin-bottom: -9999px;
-	padding-bottom: 9999px;
-}
-
-#backend .navbar {
-    box-shadow: none;
-}
-
-#backend .admin-container.container,
-#backend .admin-nav.container {
-    width: 100%;
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-
-#backend #messages {
-	position: static;
-}
-
-.backend .content.row {
-    margin-right: 0;
-    margin-left: 0;
+#content.with-tabs {
+    margin-top:10px;
 }
 
 .widget-menu-management .panel-body {
 	padding: 0;
-}
-
-.page-settings-form .set-check .checkbox {
-	margin-left: 22em;
-}
-
-.blog-settings-form .set-check .checkbox {
-	margin-left: 22em;
-}
-
-.page-stats h3 {
-	color: #666;
-	font: normal 18px/30px "Oswald", Verdana, Arial, Helvetica, sans-serif;
-	margin: 10px 0;
-}
-
-#backend .page-header {
-	padding-bottom: 0;
-	border: none;
 }
 
 /*-------------------------------------------------------------------
@@ -700,10 +526,4 @@ body.backend {
 .contact-form .row {
 	margin-left: 15px;
 	margin-right: 15px;
-}
-
-
-
-#page .with-tabs {
-    margin-top:10px;
 }
