@@ -543,16 +543,18 @@ body.backend {
 }
 
 .panel-body ul.menus li a {
-	padding: 4px 10px;
+	padding: 4px 10px 4px 15px;
 	display: block;
 	font-weight: 500;
 	font-size: 13px;
 	text-decoration: none;
-	white-space: nowrap;
 	line-height: 30px;
 	text-shadow: 0 1px 0 #fff;
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #fff;
+}
+.panel-body ul.menus li a span {
+	margin-left: 6px;
 }
 
 .panel-body ul.menus li:last-child a {
@@ -585,6 +587,36 @@ body.backend {
 .panel-body ul.menus li.active a,
 .panel-body ul.menus li.active a .fa {
 	color: #222;
+}
+
+.panel-body ul.menus li.parent {
+	/*background: #ccc;*/
+	border-bottom: 1px solid #DDDDDD;
+}
+.panel-body ul.menus li.parent ul {
+	list-style: none;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.panel-body ul.menus li.parent ul li {
+	list-style: none;
+	border-left: 1px dotted #CCCCCC;
+	border-right: 1px dotted #CCCCCC;
+}
+
+.panel-body ul.menus li a i.submenu {
+	float: right;
+	padding-top: 9px;
+}
+
+.panel-body ul.menus li.parent ul li a {
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.panel-body ul.menus li.parent ul li:last-child a,
+.panel-body ul.menus li a.collapsed {
+	border-bottom: none;
 }
 
 .frontend .panel-body ul.menus li.active a:after {
@@ -661,7 +693,7 @@ body.backend {
 	margin-right: 20px;
 }
 
-.page-img .form-control {
+.page-img .form-control, .blog-img .form-control {
 	height: auto;
 }
 
@@ -670,6 +702,8 @@ body.backend {
 	margin-right: 15px;
 }
 
-.table_head {
-    height: 45px;
+
+
+#page .with-tabs {
+    margin-top:10px;
 }
