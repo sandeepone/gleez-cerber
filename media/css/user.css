@@ -1,6 +1,9 @@
-body {color: #404040;}
+body {
+	color: #404040;
+}
+
 body.user-register {
-	background: #FAFAFA url("../images/bg/bg3.png") repeat 0 0!important;
+	background: #FAFAFA url("../images/alt-bg.png") repeat 0 0!important;
 }
 
 .user-register #content {
@@ -8,14 +11,22 @@ body.user-register {
 }
 
 .user-register .form-horizontal,
-.user-edit  .form-horizontal {
+.user-edit  .form-horizontal,
+.vcard dl:first-child {
 	margin-top: 0;
 }
 
-.form-password {margin-bottom: 0;}
-.form-password .login-fields {margin-bottom: 0;}
-.form-password .form-actions {margin-bottom: 0;}
-.form-password .btn {min-width: 120px;}
+.form-password,
+.form-password .login-fields,
+.form-password .form-actions,
+.widget .account-container .login-fields,
+.widget .account-container .login-actions {
+	margin-bottom: 0;
+}
+
+.form-password .btn {
+	min-width: 120px;
+}
 
 .profile-container {
 	margin-top: 2.5em;
@@ -24,28 +35,28 @@ body.user-register {
 
 .account-container {
 	padding: 0;
+	margin: 60px auto 0 auto;
+	display: block;
 	float: none;
 	position: relative;
-	display: block;
-	margin: 60px auto 0 auto;
 	background: #F9F9F9;
 	border: 1px solid #D5D5D5;
-	box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
-	-moz-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
-	-webkit-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
-	border-radius: 5px;
+	-webkit-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
+	   -moz-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
+	        box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
 	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
 }
 
 .widget .account-container {
 	margin: 0;
 	width: auto;
 	background: transparent;
-	border: 0;
-	box-shadow: none;
-	-moz-box-shadow: none;
+	border: none;
 	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
 }
 
 .account-container .content {
@@ -63,7 +74,6 @@ body.user-register {
 
 .login .account-container .btn {
 	display: inline-block;
-	/*margin-top: 18px;*/
 	min-width: 120px;
 }
 
@@ -92,14 +102,14 @@ body.user-register {
 .empty-photo {
 	padding: 5px;
 	background: #FFF;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
-	-webkit-box-shadow: 0 0 20px #DADADA, inset 0px 0px 0px #E6E6E6;
 	width: 210px;
 	height: 210px;
 	border: 1px solid #DDD;
 	margin: 0 auto;
 	display: block;
+	-webkit-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
+	   -moz-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
+	                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .empty-photo i {
@@ -153,7 +163,6 @@ a#add-pic:hover {
 	margin-bottom: 12px;
 	vertical-align: top;
 	letter-spacing: 0;
-	-webkit-font-smoothing: antialiased;
 }
 
 .vcard .details {
@@ -161,17 +170,11 @@ a#add-pic:hover {
 	border-bottom: 1px solid #DDD;
 	margin: 0 0 8px 0;
 	padding: 18px 0 15px 0;
-	-webkit-font-smoothing: antialiased;
 }
 
 .vcard dl {
 	margin: 5px 0 0 0;
 	font-size: 14px;
-	-webkit-font-smoothing: antialiased;
-}
-
-.vcard dl:first-child {
-	margin-top: 0;
 }
 
 .vcard dl dt {
@@ -205,15 +208,10 @@ a#add-pic:hover {
 	margin-top: 1em;
 }
 
-.widget .account-container .login-fields,
-.widget .account-container .login-actions {
-	margin-bottom: 0;
-}
-
 .widget .account-container .login-fields > p {
 	color: #9F9F9F;
-	font-size: 0.85em;
-	padding-top: 0.5em;
+	font-size: .85em;
+	padding-top: .5em;
 }
 
 .login-fields .field {
@@ -229,8 +227,9 @@ a#add-pic:hover {
 	padding: 0 10px;
 	display: block;
 	margin: 0;
-	-moz-box-shadow: inset 2px 2px 4px #F1F1F1;
 	-webkit-box-shadow: inset 2px 2px 4px #F1F1F1;
+	   -moz-box-shadow: inset 2px 2px 4px #F1F1F1;
+	        box-shadow: inset 2px 2px 4px #F1F1F1;
 }
 
 .widget .login-fields input[type="password"],
@@ -245,7 +244,7 @@ a#add-pic:hover {
 
 .login-fields .icon-large:before {
 	font-size: 1.8em;
-	padding-top: 0.1em;
+	padding-top: .1em;
 }
 
 span.login-checkbox {
@@ -311,13 +310,13 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	position: relative;
 	height: 32px;
 	width: 156px;
-	border-radius: 3px;
-	margin-bottom: 0.4em;
+	margin-bottom: .4em;
 	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
 	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
-	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
-	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
+	   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
+	        box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
 }
 
 .login-social div.twitter  {background: #00b0ef url('../images/social/twitter-32.png') no-repeat 0 0;}
@@ -355,13 +354,13 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	color: #444;
 	width: auto;
 	border: 1px solid #DDD;
-	background: #F7F7F7 url("../images/bg/bg4.png");
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
+	background: #F7F7F7 url("../images/sign-bg.png");
 	-webkit-border-top-left-radius: 6px;
+	    -moz-border-radius-topleft: 6px;
+	        border-top-left-radius: 6px;
 	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
+	    -moz-border-radius-topright: 6px;
+	        border-top-right-radius: 6px;
 }
 
 #signup fieldset,
@@ -372,12 +371,12 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	background-color: #FFF;
 	border: 1px solid #DDD;
 	border-top: none;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
 	-webkit-border-bottom-left-radius: 6px;
+	    -moz-border-radius-bottomleft: 6px;
+	        border-bottom-left-radius: 6px;
 	-webkit-border-bottom-right-radius:6px;
-	-moz-border-radius-bottomleft: 6px;
-	-moz-border-radius-bottomright: 6px;
+	   -moz-border-radius-bottomright: 6px;
+	       border-bottom-right-radius: 6px;
 }
 
 #signin .signin-wrapper {
@@ -391,9 +390,9 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	margin: 2em 0 0 0;
 	padding: 1em 0 2em 2em;
 	border-top: 1px solid #DDD;
-	border-radius: 0 0 3px 3px;
 	-webkit-border-radius: 0 0 3px 3px;
-	-moz-border-radius: 0 0 3px 3px;
+	   -moz-border-radius: 0 0 3px 3px;
+	        border-radius: 0 0 3px 3px;
 }
 
 #signup label.control-label,
@@ -411,15 +410,16 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	list-style: none;
 	width: 156px;
 	height: 32px;
-	border-radius: 3px;
-	margin-bottom: 0.4em;
+	margin-bottom: .4em;
 	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
 	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
-	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
-	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
+	   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
+	        box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 1px rgba(0,0,0,.3);
 }
 
+/* @todo Deprecated. Use FontAwesome 4.x */
 .user-register li.base     {background: #7a0c7b url('../images/social/gleez-24.png')      5px 5px no-repeat;}
 .user-register li.twitter  {background: #00b0ef url('../images/social/twitter-24.png')    5px 5px no-repeat;}
 .user-register li.facebook {background: #265999 url('../images/social/facebook-24.png')   5px 5px no-repeat;}
@@ -431,7 +431,6 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 .user-register .provider a {
 	text-decoration: none;
 	text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
-	/*padding: 0 0 0 48px;*/
 	vertical-align: middle;
 	height: 32px;
 	width: 108px;
@@ -445,18 +444,16 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 .help-signin {
 	color: #333;
 	background: #FDFDFD;
-	margin: 1em 0.2em;
-	font-family: Cambria, Georgia,serif;
+	margin: 1em .2em;
+	font-family: Cambria, Georgia ,serif;
 	font-size: 100%;
 	line-height: 120%;
 	padding: .8em .9em;
 	border: 1px dashed #E4E4E4;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
 }
-
-
 
 form .captcha {
 	display: block;
@@ -467,7 +464,7 @@ ul{
 }
 
 ul.tabnav > li {
-    color: #333333;
+    color: #333;
     display: inline;
     float: right;
     font-size: 11px;
