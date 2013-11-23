@@ -420,8 +420,8 @@ div.page-header h1 {
 }
 .panel-body ul.menus li.parent ul {
 	list-style: none;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 .panel-body ul.menus li.parent ul li {
@@ -437,6 +437,7 @@ div.page-header h1 {
 
 .panel-body ul.menus li.parent ul li a {
 	border-bottom: 1px dotted #CCCCCC;
+	padding: 5px;
 }
 
 .panel-body ul.menus li.parent ul li:last-child a,
