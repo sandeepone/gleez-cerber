@@ -30,20 +30,10 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
-						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-							<i class="fa fa-user"></i><?php echo $_user->nick; ?><b class="caret"></b>
-						</a>
-
-						<ul class="dropdown-menu">
-							<?php if (User::is_admin()): ?>
-								<li><a href="<?php echo URL::site('/admin') ?>"><i class="fa fa-dashboard"></i> <?php echo __('Dashboard') ?></a></li>
-								<li class="divider"></li>
-							<?php endif; ?>
-							<li><a href="<?php echo URL::site('/user/profile') ?>"><i class="fa fa-cog"></i> <?php echo __('Profile') ?></a></li>
-							<li><a href="<?php echo URL::site("/user/edit") ?>"><i class="fa fa-pencil"></i> <?php echo __('Account') ?></a></li>
-							<li class="divider"></li>
-							<li><a href="<?php echo URL::site('/user/logout'); ?>"><i class="fa fa-sign-out"></i> <?php echo __('Sign Out') ?></a></li>
-						</ul>
+						<a href="<?php echo URL::site('/user/profile'); ?>"><i class="fa fa-user"></i> <?php echo $_user->nick; ?></a>
+					</li>
+					<li>
+						<a href="<?php echo URL::site('/user/logout'); ?>" title="<?php echo __('Sign Out') ?>"><i class="fa fa-power-off"></i></a>
 					</li>
 				</ul>
 			</div><!--/.nav-collapse -->
