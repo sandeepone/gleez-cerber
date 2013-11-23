@@ -29,7 +29,7 @@
 			<div class="navbar-collapse collapse">
 
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
+					<li>
 						<a href="<?php echo URL::site('/user/profile'); ?>"><i class="fa fa-user"></i> <?php echo $_user->nick; ?></a>
 					</li>
 					<li>
