@@ -19,10 +19,9 @@
     2. Navbar
     3. Messages
     4. Main
-    5. Admin
-    6. Post
-    7. Menus
-    8. Misc
+    5. Post
+    6. Menus
+    7. Misc
 
 -------------------------------------------------------------------*/
 
@@ -40,7 +39,7 @@
 body {
 	font: 13px/1.7em "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #333;
-	background: #E9E9E9 url('../images/bg/bg1.png') repeat 0 0;
+	background: #E9E9E9 url('../images/front-bg.png') repeat 0 0;
 	text-rendering: optimizeLegibility;
 	padding-top: 60px;
 }
@@ -238,7 +237,7 @@ div.page-header h1 {
 }
 
 /*-------------------------------------------------------------------
-                           6. Post
+                           5. Post
 -------------------------------------------------------------------*/
 
 .page-list article {
@@ -340,7 +339,7 @@ div.page-header h1 {
 }
 
 /*-------------------------------------------------------------------
-                           7. Menus
+                           6. Menus
 -------------------------------------------------------------------*/
 
 .panel-body ul.menus {
@@ -449,12 +448,8 @@ div.page-header h1 {
 	left: -1px;
 }
 
-#backend .panel-body ul.menus li.active a:after {
-	right: -1px;
-}
-
 /*-------------------------------------------------------------------
-                           8. Misc
+                           7. Misc
 -------------------------------------------------------------------*/
 
 .tab-content {
