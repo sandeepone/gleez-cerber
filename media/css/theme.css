@@ -21,7 +21,8 @@
     4. Main
     5. Post
     6. Menus
-    7. Misc
+    7. Widgets/Panels
+    8. Misc
 
 -------------------------------------------------------------------*/
 
@@ -450,7 +451,156 @@ div.page-header h1 {
 }
 
 /*-------------------------------------------------------------------
-                           7. Misc
+                           7. Widgets/Panels
+-------------------------------------------------------------------*/
+
+.microwidget {
+	position: relative;
+	padding: 30px 20px;
+	background-color: #eee;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+	overflow: hidden;
+}
+
+.microwidget,
+.microwidget:hover {
+	color: #666;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+	outline: none;
+}
+
+microwidget i,
+.microwidget:hover i {
+	color: #e4e4e4;
+}
+.microwidget:hover {
+	background-color: #e6e6e6;
+}
+.microwidget:hover i {
+	color: #dcdcdc;
+}
+
+
+.microwidget.primary,
+.microwidget.primary:hover{
+	color: #FFF;
+	background-color: #e5412d;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.microwidget.primary i,
+.microwidget.primary:hover i {
+	color: #dd301b;
+}
+.microwidget.primary:hover {
+	background-color: #e3351f;
+}
+.microwidget.primary:hover i {
+	color: #d42e1a;
+}
+
+.microwidget.secondary,
+.microwidget.secondary:hover {
+	color: #FFF;
+	background-color: #f0ad4e;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.microwidget.secondary i,
+.microwidget.secondary:hover i {
+	color: #eea236;
+}
+.microwidget.secondary:hover {
+	background-color: #eea236;
+}
+.microwidget.secondary:hover i {
+	color: #ec9924;
+}
+.microwidget.tertiary,
+.microwidget.tertiary:hover {
+	color: #FFF;
+	background-color: #888888;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.microwidget.tertiary i,
+.microwidget.tertiary:hover i {
+	color: #7b7b7b;
+}
+.microwidget.tertiary:hover {
+	background-color: #7b7b7b;
+}
+.microwidget.tertiary:hover i {
+	color: #717171;
+}
+
+.microwidget .visual {
+	z-index: 10;
+	float: right;
+	width: 54px;
+	height: 100%;
+}
+
+.microwidget .details {
+	position: relative;
+	z-index: 11;
+	float: left;
+	margin-top: -10px;
+	text-align: left;
+}
+
+.microwidget .value {
+	display: block;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.microwidget .content {
+	display: block;
+	margin-bottom: 1em;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.microwidget .visual i {
+	position: absolute;
+	left: 0;
+	left: auto;
+	right: 0;
+	bottom: 0;
+	display: block;
+	height: 72px;
+	font-size: 72px;
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	text-shadow: none;
+}
+
+.microwidget .more {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.25) !important;
+	text-shadow: none;
+}
+
+
+/*-------------------------------------------------------------------
+                           8. Misc
 -------------------------------------------------------------------*/
 
 .tab-content {
