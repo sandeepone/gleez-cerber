@@ -481,7 +481,7 @@ div.page-header h1 {
 	outline: none;
 }
 
-microwidget i,
+.microwidget i,
 .microwidget:hover i {
 	color: #e4e4e4;
 }
@@ -698,13 +698,19 @@ microwidget i,
 
 
 #user .list-group .list-group-item .list-group-chevron {
-    color: #BBBBBB;
+    color: #BBB;
     float: right;
     margin-top: 5px;
 }
+
 #user .vcard .caption-label{
-    padding-right:10px;
+    padding-right: 10px;
 }
+
 #user .list-group-chevron + .badge {
     margin-right: 10px;
+}
+
+.btn-sm .fa, .btn-xs .fa {
+	font-size: 13px;
 }
