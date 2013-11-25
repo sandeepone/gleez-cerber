@@ -2,14 +2,14 @@
 	<div class="row">
 		<div class="col-md-3 col-sm-4">
 			<?php include Kohana::find_file('views', 'user/edit_link'); ?>
-		</div> <!-- /.col -->
-		
+		</div>
+
 		<div class="col-md-9 col-sm-8">
 			<?php include Kohana::find_file('views', 'errors/partial'); ?>
 			<?php echo Form::open($action, array('class' => 'form-horizontal', 'role' => 'form')); ?>
 
 			<div class="tab-content stacked-content">
-				<div class="tab-pane fade in active" id="profile-tab">	
+				<div class="tab-pane fade in active" id="profile-tab">
 					<div class="form-group <?php echo isset($errors['nick']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('nick', __('Display Name'), array('class' => 'col-sm-3 control-label')) ?>
 						<div class="col-sm-9">
@@ -21,7 +21,7 @@
 							</div>
 						</div>
 					</div>
-			
+
 					<div class="form-group <?php echo isset($errors['gender']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('gender', __('Gender'), array('class' => 'col-sm-3 control-label')) ?>
 						<div class="col-sm-9">
@@ -33,24 +33,24 @@
 							</div>
 						</div>
 					</div>
-			
+
 					<div class="form-group <?php echo isset($errors['dob']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('dob', __('Birthday'), array('class' => 'col-sm-3 control-label')) ?>
 						<div class="col-sm-9">
 							<div class="row">
-								<div class="col-sm-2">
+								<div class="col-sm-3">
 									<?php echo Form::select('month', Date::months(Date::MONTHS_SHORT), date('n', $user->dob), array('class' => 'form-control input-sm')) ?>
 								</div>
-								<div class="col-sm-2">
+								<div class="col-sm-3">
 									<?php echo Form::select('days',  Date::days(Date::DAY), date('j', $user->dob), array('class' => 'form-control input-sm')) ?>
 								</div>
-								<div class="col-sm-2">
+								<div class="col-sm-3">
 									<?php echo Form::select('years', Date::years(date('Y') - 95,date('Y') - 5), date('Y', $user->dob), array('class' => 'form-control input-sm')) ?>
 								</div>
 							</div>
 						</div>
 					</div>
-			
+
 					<div class="form-group <?php echo isset($errors['homepage']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('homepage', __('Home Page'), array('class' => 'col-sm-3 control-label')) ?>
 						<div class="col-sm-9">
@@ -62,14 +62,14 @@
 							</div>
 						</div>
 					</div>
-			
+
 					<div class="form-group <?php echo isset($errors['bio']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('bio', __('Bio'), array('class' => 'col-sm-3 control-label')) ?>
 						<div class="col-sm-9">
 							<div class="row">
 								<div class="input-group col-sm-10">
 									<?php echo Form::textarea('bio', $user->bio, array('class' => 'form-control', 'rows' => 8)); ?>
-									<span class="help-block"><?php echo __('Public field. No more than 800 characters') ?></span>
+									<span class="help-block"><?php _e('Public field. No more than 800 characters') ?></span>
 								</div>
 							</div>
 						</div>
