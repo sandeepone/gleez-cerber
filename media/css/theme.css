@@ -695,3 +695,16 @@ microwidget i,
 	border-bottom-width: 1px;
 	vertical-align: middle;
 }
+
+
+#user .list-group .list-group-item .list-group-chevron {
+    color: #BBBBBB;
+    float: right;
+    margin-top: 5px;
+}
+#user .vcard .caption-label{
+    padding-right:10px;
+}
+#user .list-group-chevron + .badge {
+    margin-right: 10px;
+}

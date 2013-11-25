@@ -104,12 +104,8 @@ body.user-register {
 	background: #FFF;
 	width: 210px;
 	height: 210px;
-	border: 1px solid #DDD;
 	margin: 0 auto;
 	display: block;
-	-webkit-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
-	   -moz-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
-	                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .empty-photo i {
