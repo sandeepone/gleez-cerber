@@ -714,3 +714,8 @@ div.page-header h1 {
 .btn-sm .fa, .btn-xs .fa {
 	font-size: 13px;
 }
+
+/* Overrides for Character Counter */
+.charleft.text-warning {
+	color: #c09853!important;
+}
