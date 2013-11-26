@@ -56,36 +56,36 @@
 					<?php endif; ?>
 				</div>
 
-				<div class="col-md-12">
+				<div class="col-md-12 bio">
 					<?php if ($user->bio): ?>
 						<div class="widget">
 							<div class="widget-header">
-								<h3><?php echo __('Bio'); ?></h3>
+								<h4><?php echo __('Bio'); ?></h4>
 							</div>
 							<div class="widget-content">
 								<?php echo Text::plain($user->bio); ?>
 							</div>
 						</div>
-					<?php endif ?>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
 
 		<div class="col-md-3 col-sm-6 col-sidebar-right">
-			<ul class="tabnav">
-				<dl>
-					<dt><i class="fa fa-sign-in"></i></dt>
-					<dd><span class="caption-label"><?php echo __('Joined on') ?></span><?php echo date('M d, Y', $user->created) ?></dd>
-				</dl>
-				<dl>
-					<dt><i class="fa fa-power-off"></i></dt>
-					<dd><span class="caption-label"><?php echo __('Visits') ?></span><?php echo $user->logins ?></dd>
-				</dl>
-				<dl title="<?php echo __('Last Active') ?>">
-					<dt><i class="fa fa-fire"></i></dt>
-					<dd><?php echo date('M d, Y', $user->login) . __(' @ ') .  date('h:i a', $user->login) ?></dd>
-				</dl>
-			</ul>
+			<div class="list-group">  
+				<a href="#" class="list-group-item"><h3 class="pull-right"><i class="fa fa-sign-in"></i></h3>
+					<h4 class="list-group-item-heading"><?php echo date('M d, Y', $user->created); ?></h4>
+					<p class="list-group-item-text"><?php echo __('Joined on'); ?></p>
+				</a>
+				<a href="#" class="list-group-item"><h3 class="pull-right"><i class="fa fa-power-off"></i></h3>
+					<h4 class="list-group-item-heading"><?php echo $user->logins; ?></h4>
+					<p class="list-group-item-text"><?php echo __('Visits'); ?></p>
+				</a>
+				<a href="#" class="list-group-item"><h3 class="pull-right"><i class="fa fa-fire"></i></h3>
+					<h4 class="list-group-item-heading"><?php echo date('M d, Y', $user->login); ?></h4>
+					<p class="list-group-item-text"><?php echo  __(' @ ') .  date('h:i a', $user->login); ?></p>
+				</a>
+			</div> <!-- /.list-group -->
 		</div>
 	</div> <!-- /.row -->
 </div> <!-- /#content-container -->

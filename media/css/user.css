@@ -176,8 +176,7 @@ a#add-pic:hover {
 .vcard dl dt {
 	margin: 0;
 	float: left;
-	width: 22px;
-	color: #D0D0D0;
+	color: #333333;
 }
 
 .vcard dl dd {
@@ -474,4 +473,39 @@ ul.tabnav > li {
 
 .reset_password legend {
 	padding: 0 1em;
+}
+
+#user .list-group .list-group-item .list-group-chevron {
+	color: #BBB;
+	float: right;
+	margin-top: 5px;
+}
+
+#user .vcard .caption-label{
+	padding-right: 10px;
+}
+
+#user .list-group-chevron + .badge {
+	margin-right: 10px;
+}
+
+.btn-sm .fa, .btn-xs .fa {
+	font-size: 13px;
+}
+
+.vcard-details{
+    padding-top:20px;
+    border-top: 1px solid #E9E9E9;
+}
+.bio .widget-header{
+    padding-top:20px;
+}
+
+.col-sidebar-right {
+    border-left: 1px solid #DDDDDD;
+    padding-left: 2em;
+}
+
+#form-picture{
+    height:auto;
 }
