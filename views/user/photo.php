@@ -13,19 +13,19 @@
 			
 				<?php include Kohana::find_file('views', 'errors/partial'); ?>
 			
-					<div class="form-group <?php echo isset($errors['picture']) ? 'error': ''; ?>">
+					<div class="form-group <?php echo isset($errors['picture']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('photo', __('Photo'), array('class' => 'control-label')) ?>
 						<div class="controls col-md-12">
-							<?php print Form::file('picture', array('class' => 'form-control')); ?>
+							<?php echo Form::file('picture', array('class' => 'form-control')); ?>
 						</div>
 					</div>
 				
 					<blockquote>
 						<small class="muted">
-							<?php _e('Your picture will be changed proportionally to the size of :w&times;:h', array(':w' => 210, ':h' => 210)); ?>
+							<?php echo __('Your picture will be changed proportionally to the size of :w&times;:h', array(':w' => 210, ':h' => 210)); ?>
 						</small>
 						<small class="muted">
-							<?php _e('Allowed image formats: :formats', array(':formats' => '<strong>'.implode('</strong>, <strong>', $allowed_types).'</strong>')) ?>
+							<?php echo __('Allowed image formats: :formats', array(':formats' => '<strong>'.implode('</strong>, <strong>', $allowed_types).'</strong>')); ?>
 						</small>
 					</blockquote>
 			
