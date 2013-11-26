@@ -7,7 +7,7 @@
 
 			<div class="login-fields">
 				<div class="field">
-					<div class="control-group <?php echo isset($errors['pass']) ? 'error': ''; ?>">
+					<div class="control-group <?php echo isset($errors['pass']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('pass', __('New password'), array('class' => 'control-label')); ?>
 						<div class="controls">
 							<div class="input-prepend">
@@ -17,7 +17,7 @@
 						</div>
 					</div>
 
-					<div class="control-group <?php echo isset($errors['pass_confirm']) ? 'error': ''; ?>">
+					<div class="control-group <?php echo isset($errors['pass_confirm']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('pass_confirm', __('New password (again)'), array('class' => 'control-label')); ?>
 						<div class="controls">
 							<div class="input-prepend">
