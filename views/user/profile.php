@@ -6,20 +6,20 @@
 					<?php echo User::getAvatar($user, array('size' => 150)); ?>
 				</div>
 
-				<div class="list-group">  
+				<div class="list-group">
 					<a href="javascript:;" class="list-group-item">
 						<i class="fa fa-asterisk"></i> <?php echo __('Activity Feed'); ?>
 						<i class="fa fa-chevron-right list-group-chevron"></i>
-					</a> 
+					</a>
 					<a href="javascript:;" class="list-group-item">
 						<i class="fa fa-group"></i> <?php echo __('Friends'); ?>
 						<i class="fa fa-chevron-right list-group-chevron"></i>
 						<span class="badge">7</span>
-					</a> 
+					</a>
 					<?php echo HTML::anchor('user/edit', '<i class="fa fa-cog"></i> '.__('Settings') .'<i class="fa fa-chevron-right list-group-chevron"></i>' , array('class' => 'list-group-item')); ?>
-				</div> <!-- /.list-group -->
-			</div> <!-- /.col -->
-	
+				</div>
+			</div>
+
 			<div class="col-md-8 col-sm-7">
 				<h2 class="vcard-names">
 					<span itemprop="name"><?php echo $user->nick; ?></span>
@@ -39,7 +39,7 @@
 							<dd><?php echo HTML::anchor($user->homepage, $user->homepage, array('itemprop' => 'url')); ?></dd>
 						</dl>
 					<?php endif; ?>
-					
+
 					<dl title="<?php echo __('Birthday') ?>">
 						<dt><i class="fa fa-calendar"></i></dt>
 						<dd itemprop="birthDate"><?php echo date('M d, Y', $user->dob) ?></dd>
@@ -90,7 +90,7 @@
 	</div> <!-- /.row -->
 </div> <!-- /#content-container -->
 
-	
+
 <?php
 	Assets::js('user', 'media/js/user.js', array('jquery'), FALSE, array('weight' => 15));
 	Assets::js('user/form', 'media/js/jquery.form.min.js', array('jquery'), FALSE, array('weight' => 10));
