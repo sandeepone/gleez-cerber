@@ -60,7 +60,7 @@
 	<!-- ########## Navbar end ########## -->
 
 	<!-- ########## template / container start ########## -->
-	<div class="container" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container">
 		<?php
 			$tpl = $is_admin ? 'admin' : 'default';
 			include Kohana::find_file('views', $tpl.'.tpl');
