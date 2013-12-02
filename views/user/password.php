@@ -51,7 +51,7 @@
 							<div class="col-sm-12">
 								<div class="row">
 									<div class="col-xs-6">
-										<?php echo HTML::anchor('user/profile', '<i class="fa fa-arrow-left"></i> '.__('Profile'), array('class' => 'btn pull-left')); ?>
+										<?php echo HTML::anchor(Route::get('user')->uri(array('action' => 'profile')), '<i class="fa fa-arrow-left"></i> '.__('Profile'), array('class' => 'btn pull-left')); ?>
 									</div>
 									<div class="col-xs-6">
 										<?php echo Form::submit('change_pass', __('Save'), array('class' => 'btn btn-info pull-right')); ?>
