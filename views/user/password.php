@@ -2,16 +2,16 @@
 	<div class="row">
 
 		<div class="col-md-3 col-sm-4">
-		<?php include Kohana::find_file('views', 'user/edit_link'); ?>
-		</div> <!-- /.col -->
-		
+			<?php include Kohana::find_file('views', 'user/edit_link'); ?>
+		</div>
+
 	<div class="col-md-9 col-sm-8">
 
 		<?php include Kohana::find_file('views', 'errors/partial'); ?>
-	
+
 		<div class="content clearfix">
 			<?php echo Form::open(Route::get('user')->uri($params).URL::query(array('destination' => Request::initial()->uri($destination))), array('class' => 'row form-password')); ?>
-				<div class="login-fields tab-content stacked-content">
+				<div class="login-fields sl stacked-content">
 					<div class="field">
 						<div class="form-group <?php echo isset($errors['_external']['old_pass']) ? 'has-error': ''; ?>">
 							<?php echo Form::label('old_pass', __('Current password'), array('class' => 'control-label')) ?>
@@ -22,7 +22,7 @@
 								</div>
 							</div>
 						</div>
-	
+
 						<div class="form-group <?php echo isset($errors['_external']['pass']) ? 'has-error': ''; ?>">
 							<?php echo Form::label('pass', __('New password'), array('class' => 'control-label')) ?>
 							<div class="controls">
@@ -33,7 +33,7 @@
 								<span class="help-block"><?php echo __('Minimum password length &mdash; :count characters', array(':count' => 4)) ?></span>
 							</div>
 						</div>
-	
+
 						<div class="form-group <?php echo isset($errors['_external']['pass_confirm']) ? 'has-error': ''; ?>">
 							<?php echo Form::label('pass_confirm', __('New password (again)'), array('class' => 'control-label')) ?>
 							<div class="controls">
@@ -46,7 +46,7 @@
 						</div>
 					</div>
 					<hr>
-	
+
 					<div class="form-group">
 						<div class="col-sm-12">
 							<div class="row">
@@ -60,7 +60,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 			<?php echo Form::close(); ?>
 		</div>
 	</div>
