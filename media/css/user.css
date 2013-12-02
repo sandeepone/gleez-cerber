@@ -125,40 +125,29 @@ a#add-pic:hover {
 	color: indianred;
 }
 
-.vcard h1 {
+.vcard h2 {
 	font-size: 26px;
-	letter-spacing: -1px;
-	color: #495961;
-	margin-top: 6px;
-	text-align: center;
+	color: #444;
+	margin: 0;
+	text-transform: none;
 }
 
-.vcard h1 span {
+.vcard h2 span {
 	line-height: 1;
+	line-height: 26px;
 	display: inline-block;
 	width: 100%;
-	line-height: 26px;
-	text-overflow: ellipsis;
-	overflow-x: hidden;
-	padding-bottom: 4px;
-	margin-bottom: -12px;
+	margin-bottom: 10px;
 }
 
-.vcard h1 em {
+.vcard h2 em {
 	display: inline-block;
 	width: 100%;
-	text-overflow: ellipsis;
-	overflow-x: hidden;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 300;
 	line-height: 24px;
-	color: #666;
-	position: relative;
-	top: -2px;
-	margin-bottom: 12px;
-	vertical-align: top;
-	letter-spacing: 0;
+	margin-bottom: 10px;
 }
 
 .vcard .details {
