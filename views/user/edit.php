@@ -8,7 +8,7 @@
 			<?php include Kohana::find_file('views', 'errors/partial'); ?>
 			<?php echo Form::open($action, array('class' => 'form-horizontal', 'role' => 'form')); ?>
 
-			<div class="tab-content stacked-content">
+			<div class="sl-wrapper stacked-content">
 				<div class="tab-pane fade in active" id="profile-tab">
 					<div class="form-group <?php echo isset($errors['nick']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('nick', __('Display Name'), array('class' => 'col-sm-3 control-label')) ?>
@@ -58,6 +58,18 @@
 								<div class="input-group col-sm-10">
 									<span class="input-group-addon"><i class="fa fa-link"></i></span>
 									<?php echo Form::input('homepage', $user->homepage, array('class' => 'form-control', 'rel' => 'tooltip', 'data-placement' => 'right', 'title' => __('Will be public'))); ?>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group <?php echo isset($errors['mail']) ? 'has-error': ''; ?>">
+						<?php echo Form::label('mail', __('Home Page'), array('class' => 'col-sm-3 control-label')) ?>
+						<div class="col-sm-9">
+							<div class="row">
+								<div class="input-group col-sm-10">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<?php echo Form::input('mail', $user->mail, array('class' => 'form-control', 'rel' => 'tooltip', 'data-placement' => 'right', 'title' => __('Will be private'))); ?>
 								</div>
 							</div>
 						</div>
