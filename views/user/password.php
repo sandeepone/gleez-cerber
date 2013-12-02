@@ -11,7 +11,7 @@
 
 			<div class="content clearfix">
 				<?php echo Form::open(Route::get('user')->uri($params).URL::query(array('destination' => Request::initial()->uri($destination))), array('class' => 'row form-password')); ?>
-					<div class="login-fields sl stacked-content">
+					<div class="login-fields sl-wrapper stacked-content">
 						<div class="field">
 							<div class="form-group <?php echo isset($errors['_external']['old_pass']) ? 'has-error': ''; ?>">
 								<?php echo Form::label('old_pass', __('Current password'), array('class' => 'control-label')) ?>
