@@ -180,6 +180,10 @@ a#add-pic:hover {
 	padding-right: 4px;
 }
 
+.vcard .list-group-item h3 {
+	margin: 0;
+}
+
 .login-fields,
 .login-actions {
 	float: left;
