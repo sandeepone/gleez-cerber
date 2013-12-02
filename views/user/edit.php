@@ -64,7 +64,7 @@
 					</div>
 
 					<div class="form-group <?php echo isset($errors['mail']) ? 'has-error': ''; ?>">
-						<?php echo Form::label('mail', __('Home Page'), array('class' => 'col-sm-3 control-label')) ?>
+						<?php echo Form::label('mail', __('E-Mail'), array('class' => 'col-sm-3 control-label')) ?>
 						<div class="col-sm-9">
 							<div class="row">
 								<div class="input-group col-sm-10">
