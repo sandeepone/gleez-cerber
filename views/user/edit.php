@@ -78,11 +78,9 @@
 					<div class="form-group <?php echo isset($errors['bio']) ? 'has-error': ''; ?>">
 						<?php echo Form::label('bio', __('Bio'), array('class' => 'col-sm-3 control-label')) ?>
 						<div class="col-sm-9">
-							<div class="row">
-								<div class="input-group col-sm-10">
-									<?php echo Form::textarea('bio', $user->bio, array('class' => 'form-control', 'rows' => 8)); ?>
-									<span class="help-block"><?php _e('Public field. No more than 800 characters') ?></span>
-								</div>
+							<div class="input-group col-sm-10">
+								<?php echo Form::textarea('bio', $user->bio, array('class' => 'form-control', 'rows' => 8)); ?>
+								<span class="help-block"><?php _e('Public field. No more than 800 characters') ?></span>
 							</div>
 						</div>
 					</div>
