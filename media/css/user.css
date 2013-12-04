@@ -2,8 +2,11 @@
 	padding-bottom: 80px;
 }
 
-.user-register .form-horizontal,
-.user-edit  .form-horizontal,
+.user-register .panel-title {
+	font-size: 22px;
+	text-transform: none;
+}
+
 .vcard dl:first-child {
 	margin-top: 0;
 }
@@ -33,12 +36,16 @@
 	position: relative;
 	background: #F9F9F9;
 	border: 1px solid #D5D5D5;
-	-webkit-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
-	   -moz-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
-	        box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
 	-webkit-border-radius: 5px;
 	   -moz-border-radius: 5px;
 	        border-radius: 5px;
+}
+
+.user-register .panel,
+.account-container {
+	-webkit-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
+	   -moz-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
+	        box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
 }
 
 .widget .account-container {
@@ -280,6 +287,11 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	padding-right: 0;
 }
 
+.oauth-buttons .btn.btn-default{
+	margin: 1em;
+	min-width: 120px;
+}
+
 .login-social {
 	padding: 10px 0 15px;
 	float: left;
@@ -325,69 +337,6 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 .login-social a.btn-social:hover {
 	color: #f8f8f8;
 	text-decoration: none;
-}
-
-/* Sign Up form */
-
-#signup .title,
-#signin .title {
-	padding: 15px 30px;
-	margin: 0;
-	letter-spacing: -1px;
-	font-size: 22px;
-	color: #444;
-	width: auto;
-	border: 1px solid #DDD;
-	background: #F7F7F7 url("../images/sign-bg.png");
-	-webkit-border-top-left-radius: 6px;
-	    -moz-border-radius-topleft: 6px;
-	        border-top-left-radius: 6px;
-	-webkit-border-top-right-radius: 6px;
-	    -moz-border-radius-topright: 6px;
-	        border-top-right-radius: 6px;
-}
-
-#signup fieldset,
-#signin .signin-wrapper {
-	width: auto;
-	margin: 0;
-	padding: 2.7em 1em 0;
-	background-color: #FFF;
-	border: 1px solid #DDD;
-	border-top: none;
-	-webkit-border-bottom-left-radius: 6px;
-	    -moz-border-radius-bottomleft: 6px;
-	        border-bottom-left-radius: 6px;
-	-webkit-border-bottom-right-radius:6px;
-	   -moz-border-radius-bottomright: 6px;
-	       border-bottom-right-radius: 6px;
-}
-
-#signin .signin-wrapper {
-	padding-left: 1em;
-	padding-right: 1em;
-}
-
-#signup .actions,
-#signin .actions {
-	background: whiteSmoke;
-	margin: 2em 0 0 0;
-	padding: 1em 0 2em 2em;
-	border-top: 1px solid #DDD;
-	-webkit-border-radius: 0 0 3px 3px;
-	   -moz-border-radius: 0 0 3px 3px;
-	        border-radius: 0 0 3px 3px;
-}
-
-#signup label.control-label,
-#signin label.control-label {
-	font-weight: 700;
-	font-size: .9em;
-	color: #555;
-}
-
-#signin #providers {
-	margin: 2em;
 }
 
 .user-register .provider {
