@@ -1,6 +1,6 @@
 <?php Assets::css('user', 'media/css/user.css', array('weight' => 2)); ?>
 
-<div class="account-container col-md-4">
+<div class="account-container col-md-4 window-shadow">
 	<?php include Kohana::find_file('views', 'errors/partial'); ?>
 
 	<div class="content clearfix">
@@ -39,17 +39,31 @@
 			</div>
 
 			<?php if ($providers): ?>
-				<div class="login-social">
-					<hr>
-					<p><?php echo __('Sign in using social network:')?></p>
-					<?php foreach ($providers as $provider => $key): ?>
-						<div class="<?php echo $provider?>">
-							<?php
-								$url = Route::get('user/oauth')->uri(array('controller' => $provider, 'action' => 'login'));
-								echo HTML::anchor($url, ucfirst($provider), array('class' => 'btn-social', 'title' => __('Login with :provider', array(':provider' => ucfirst($provider)))));
-							?>
-						</div>
-					<?php endforeach; ?>
+				<div class="form-group">
+					<p><?php echo __('Sign in using social network:');?></p>
+					<div class="btn-group">
+						<?php
+						foreach ($providers as $provider => $key)
+						{
+							// @todo Ugly hack
+							switch ($provider)
+							{
+								case 'google':
+									$class = 'google-plus';
+									break;
+								case 'live':
+									$class = 'windows';
+									break;
+								default:
+									$class = $provider;
+							}
+
+							$url = Route::get('user/oauth')->uri(array('controller' => $provider, 'action' => 'login'));
+							echo HTML::anchor($url, '<i class="fa fa-'.$class.'"></i>', array('class' => 'btn btn-default', 'title' =>__('Login with :provider', array(':provider' => $provider))));
+						}
+						?>
+					</div>
+					<p><small><?php echo __('Fast, safe & secure way!');?></small></p>
 				</div>
 			<?php endif; ?>
 
