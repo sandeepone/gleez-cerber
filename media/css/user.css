@@ -5,7 +5,8 @@
 
 /* Overrides for BS3. Big panels should have big title */
 .user-register h3.panel-title,
-.user-reset_password h3.panel-title {
+.user-reset_password h3.panel-title,
+.user-reset_confirm_password h3.panel-title{
 	font-size: 22px;
 	text-transform: none;
 }
@@ -20,15 +21,8 @@
 	margin-top: 0;
 }
 
-.form-password,
-.form-password .login-fields,
-.form-password .form-actions,
 .widget .login-fields {
 	margin-bottom: 0;
-}
-
-.form-password .btn {
-	min-width: 120px;
 }
 
 /* Use this as standard shadow effect for any windows, widgets, panels, etc. */
@@ -172,11 +166,6 @@ a#add-pic:hover {
 .widget .login-fields input[type="password"],
 .widget .login-fields input[type="text"] {
 	width: 174px;
-}
-
-.form-password input[type="password"] {
-	font-size: 32px !important;
-	line-height: 42px !important;
 }
 
 .login-fields .icon-large:before {
