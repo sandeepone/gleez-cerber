@@ -1,6 +1,6 @@
 <div id="content-container">
 	<div class="row vcard">
-		<div class="col-md-9" itemscope itemtype="http://schema.org/Person">
+		<div class="col-md-9" itemprop="about" itemscope itemtype="http://schema.org/Person">
 			<div class="row">
 				<div class="col-md-4 col-sm-5">
 					<div class="thumbnail vcard-avatar">
@@ -64,7 +64,7 @@
 					<div class="col-md-12 bio">
 						<?php if ($user->bio): ?>
 							<div title="<?php _e('Bio')?>">
-								<p itemprop="about"><?php echo Text::plain($user->bio); ?></p>
+								<p><?php echo Text::plain($user->bio); ?></p>
 							</div>
 						<?php endif; ?>
 					</div>
