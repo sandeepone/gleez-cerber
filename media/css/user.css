@@ -1,8 +1,10 @@
-.user-register #content {
-	padding-bottom: 80px;
+.user-register .panel {
+	margin-bottom: 7em;
 }
 
-.user-register .panel-title {
+/* Overrides for BS3. Big panels should have big title */
+.user-register .panel-title,
+.user-reset_password .panel-title {
 	font-size: 22px;
 	text-transform: none;
 }
@@ -23,11 +25,6 @@
 	min-width: 120px;
 }
 
-.profile-container {
-	margin-top: 2.5em;
-	position: relative;
-}
-
 .account-container {
 	padding: 0;
 	margin: 60px auto 0 auto;
@@ -41,8 +38,8 @@
 	        border-radius: 5px;
 }
 
-.user-register .panel,
-.account-container {
+/* Use this as standard shadow effect for any windows, widgets, panels, etc. */
+.window-shadow {
 	-webkit-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
 	   -moz-box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
 	        box-shadow: 0 0 20px #DADADA, inset 0 0 0 #E6E6E6;
@@ -75,11 +72,6 @@
 	font-weight: normal;
 }
 
-.login .account-container .btn {
-	display: inline-block;
-	min-width: 120px;
-}
-
 .widget .account-container h1 {
 	font-size: 1.6em;
 	margin-top: 0;
@@ -93,7 +85,8 @@
     margin-top: -1em;
     width: 100%;
 }
-.input-append, .input-prepend {
+
+.input-prepend {
     display: inline-block;
     font-size: 0;
     margin-bottom: 10px;
