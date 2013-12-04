@@ -1,9 +1,11 @@
 <?php include Kohana::find_file('views', 'errors/partial'); ?>
 
 <div class="col-sm-6">
-	<div class="panel panel-default">
+	<div class="panel panel-default window-shadow">
 		<div class="panel-heading">
-			<h3 class="panel-title"><?php _e('Fill in the information below to register') ?></h3>
+			<h3 class="panel-title">
+				<?php _e('Fill in the information below to register') ?>
+			</h3>
 		</div>
 		<div class="panel-body">
 			<?php echo Form::open($action, array('class' => 'form-horizontal', 'role' => 'form')); ?>
@@ -98,7 +100,7 @@
 </div>
 
 <div class="col-sm-6">
-	<div class="panel panel-default">
+	<div class="panel panel-default window-shadow">
 		<div class="panel-heading">
 			<h3 class="panel-title">
 				<?php _e('Already have an account? Choose how you would like to sign in') ?>
@@ -133,7 +135,7 @@
 					}
 				?>
 			</div>
-			<p class="help-signin"]>
+			<p class="help-signin">
 				<?php _e("If you don't use any of these services, you can create an account.") ?>
 				<?php _e('Fast, safe & secure way!') ?>
 			</p>
