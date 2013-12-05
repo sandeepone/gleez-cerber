@@ -28,11 +28,10 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="form-group ab-wrapper">
-					<div class="col-md-12">
-						<?php echo Form::button('password_confirm', __('Apply new password'), array('class' => 'btn btn-primary pull-right', 'type' => 'submit'))?>
-					</div>
+			</div>
+			<div class="panel-footer">
+				<div class="col-md-12 clearfix">
+					<?php echo Form::button('password_confirm', __('Apply new password'), array('class' => 'btn btn-primary pull-right', 'type' => 'submit'))?>
 				</div>
 			</div>
 		<?php echo Form::close(); ?>

@@ -7,8 +7,8 @@
 				<?php _e('Fill in the information below to register') ?>
 			</h3>
 		</div>
+		<?php echo Form::open($action, array('class' => 'form-horizontal', 'role' => 'form')); ?>
 		<div class="panel-body">
-			<?php echo Form::open($action, array('class' => 'form-horizontal', 'role' => 'form')); ?>
 			<fieldset>
 				<?php if ($config->username): ?>
 
@@ -87,15 +87,14 @@
 						<div class="clearfix"></div><br>
 					</div>
 				<?php endif; ?>
-				<hr>
-				<div class="form-group">
-					<div class="col-md-12">
-						<?php echo Form::button('register', __('Register new account'), array('class' => 'btn btn-success pull-right', 'tabindex' => 11, 'type' => 'submit')) ?>
-					</div>
-				</div>
 			</fieldset>
-			<?php echo Form::close(); ?>
 		</div>
+		<div class="panel-footer">
+			<div class="col-md-12 clearfix">
+				<?php echo Form::button('register', __('Register new account'), array('class' => 'btn btn-success pull-right', 'tabindex' => 11, 'type' => 'submit')) ?>
+			</div>
+		</div>
+		<?php echo Form::close(); ?>
 	</div>
 </div>
 
