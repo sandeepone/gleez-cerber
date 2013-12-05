@@ -44,14 +44,12 @@
 					</div>
 				</div>
 				<div class="panel-footer">
-					<div class="form-group">
-						<div class="col-sm-12 clearfix">
-							<div class="col-sm-6">
-								<?php echo HTML::anchor(Route::get('user')->uri(array('action' => 'profile')), '<i class="fa fa-arrow-left"></i> '.__('Profile'), array('class' => 'btn')); ?>
-							</div>
-							<div class="col-sm-6">
-								<?php echo Form::submit('change_pass', __('Save'), array('class' => 'btn btn-info pull-right')); ?>
-							</div>
+					<div class="col-sm-12 clearfix">
+						<div class="col-sm-6">
+							<?php echo HTML::anchor(Route::get('user')->uri(array('action' => 'profile')), '<i class="fa fa-arrow-left"></i> '.__('Profile'), array('class' => 'btn')); ?>
+						</div>
+						<div class="col-sm-6">
+							<?php echo Form::submit('change_pass', __('Save'), array('class' => 'btn btn-info pull-right')); ?>
 						</div>
 					</div>
 				</div>
