@@ -9,7 +9,7 @@
 			<?php echo Form::open($action, array('class' => 'form form-horizontal', 'role' => 'form')); ?>
 			<div class="stacked-content">
 				<div class="tab-pane fade in active" id="profile-tab">
-					<div class="panel panel-default">
+					<div class="panel panel-default window-shadow">
 						<div class="panel-body">
 							<div class="form-group <?php echo isset($errors['nick']) ? 'has-error': ''; ?>">
 								<?php echo Form::label('nick', __('Display Name'), array('class' => 'col-sm-3 control-label')) ?>
