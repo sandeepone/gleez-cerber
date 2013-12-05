@@ -24,11 +24,13 @@
 							<div class="form-group <?php echo isset($errors['gender']) ? 'has-error': ''; ?>">
 								<?php echo Form::label('gender', __('Gender'), array('class' => 'col-sm-3 control-label')) ?>
 								<div class="col-sm-9">
-									<div class="radio">
-										<?php echo Form::label('gender1', Form::radio('gender', 1, $male).__('Male')) ?>
-									</div>
-									<div class="radio">
-										<?php echo Form::label('gender2', Form::radio('gender', 2, $female).__('Female')) ?>
+									<div class="input-group col-sm-10">
+										<div class="radio">
+											<?php echo Form::label('gender1', Form::radio('gender', 1, $male).__('Male')) ?>
+										</div>
+										<div class="radio">
+											<?php echo Form::label('gender2', Form::radio('gender', 2, $female).__('Female')) ?>
+										</div>
 									</div>
 								</div>
 							</div>
