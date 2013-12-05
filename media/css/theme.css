@@ -606,34 +606,6 @@ div.page-header h1 {
 /*-------------------------------------------------------------------
                            8. Misc
 -------------------------------------------------------------------*/
-
-.tab-content {
-	background: #fff;
-	padding: 2em 1em;
-	border: 1px solid #e1e1e8;
-	border-top: none;
-	-webkit-border-radius: 0 0 4px 4px;
-	   -moz-border-radius: 0 0 4px 4px;
-	     -o-border-radius: 0 0 4px 4px;
-	        border-radius: 0 0 4px 4px;
-}
-
-/* Statically Located Wrapper: Container for some content */
-.sl-wrapper {
-	padding: 1.2em 1em;
-	background: #fff;
-	border: 1px solid #e1e1e8;
-	-webkit-border-radius: 0 0 4px 4px;
-	   -moz-border-radius: 0 0 4px 4px;
-	     -o-border-radius: 0 0 4px 4px;
-	        border-radius: 0 0 4px 4px;
-}
-
-/* After Button Wrapper: Container for buttons after content */
-.ab-wrapper {
-	padding: 1.2em 0;
-}
-
 .widget .panel-title {
 	font-weight: 900;
 	font-size: 1em;
