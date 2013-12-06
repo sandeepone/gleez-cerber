@@ -606,6 +606,17 @@ div.page-header h1 {
 /*-------------------------------------------------------------------
                            8. Misc
 -------------------------------------------------------------------*/
+.tab-content {
+	padding: 2em 0;
+	margin-bottom: 2em;
+	border: 1px solid #e1e1e8;
+	border-top: none;
+	-webkit-border-radius: 0 0 4px 4px;
+	   -moz-border-radius: 0 0 4px 4px;
+	     -o-border-radius: 0 0 4px 4px;
+	        border-radius: 0 0 4px 4px;
+}
+
 .widget .panel-title {
 	font-weight: 900;
 	font-size: 1em;
