@@ -3,7 +3,10 @@
 		<p class="lead">Open source, extensible Content Management System that is built on the Kohana Framework.</p>
 		<p>
 			<?php echo HTML::anchor('https://github.com/gleez/cms/', 'Download on GitHub', array('class' => 'btn btn-success btn-large')); ?>
-			<?php echo HTML::anchor('/guide/gleez/gleez.introduction/', 'Get started &rarr;', array('class' => 'btn btn-large')); ?>
+			<?php
+				if (Module::is_active('userguide'))
+					echo HTML::anchor('/guide/gleez/gleez.introduction/', 'Get started &rarr;', array('class' => 'btn btn-large'));
+			?>
 		</p>
 </div>
 
@@ -31,7 +34,7 @@
 	<h3>What Is Gleez CMS?</h3>
 	<p>Gleez is an open source, <a href="http://en.wikipedia.org/wiki/Content_management_system">extensible Content Management System</a> that is built on the <a href="http://kohanaframework.org">Kohana Framework</a>. Gleez is the fusion of many good concepts from the 3 most popular CMS: Joomla, Drupal, Wordpress and Ruby Rails. With years of experience using these, we've gathered great ideas and in some cases, improved on them.</p>
 	<p>With an emphasis on security and functionality, Gleez is a professional and robust system suitable for any business or organization. Built on the PHP programming language and the MySQL database, Gleez delivers superb performance on any size application.</p>
-	
+
 	<div class="gleez-features">
 		<div class="row">
 			<div class="col-md-4">
