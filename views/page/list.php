@@ -11,7 +11,6 @@
 			</h2>
 		</header>
 
-		<div id="post-<?php echo $post->id; ?>" class="post-list <?php echo ($post->sticky) ? ' sticky' : ' post-'.$post->status; ?>">
 			<?php if ($post->promote): ?>
 			<i class="post-bookmark clearfix"></i>
 			<?php endif; ?>
@@ -21,7 +20,6 @@
 				->set('config',     $config)
 				->set('page_title', TRUE);
 			?>
-		</div>
 	</article>
 <?php endforeach; ?>
 
