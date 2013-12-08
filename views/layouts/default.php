@@ -10,6 +10,9 @@
 		<?php echo HTML::script('media/js/html5.js', NULL, TRUE); ?>
 		<?php echo HTML::script('media/js/respond.min.js', NULL, TRUE); ?>
 	<![endif]-->
+	<!--[if gte IE 9]>
+		<?php echo HTML::script('media/css/ie-gte-9.css', NULL, TRUE); ?>
+	<![endif]-->
 	<?php echo Assets::css(); ?>
 </head>
 <body id="<?php echo $page_id; ?>" class="<?php echo $page_class; ?>" <?php echo $schemaType ? 'itemscope itemtype="http://schema.org/'.$schemaType.'"' : ''?>>
@@ -49,7 +52,7 @@
 								<li><a href="<?php echo URL::site('/user/profile') ?>"><i class="fa fa-cog"></i> <?php echo __('Profile') ?></a></li>
 								<li><a href="<?php echo URL::site("/user/edit") ?>"><i class="fa fa-pencil"></i> <?php echo __('Account') ?></a></li>
 								<li class="divider"></li>
-								<li><a href="<?php echo URL::site('/user/logout'); ?>"><i class="fa fa-sign-out"></i> <?php echo __('Sign Out') ?></a></li>
+								<li><a href="<?php echo URL::site('/user/logout'); ?>"><i class="fa fa-power-off"></i> <?php echo __('Sign Out') ?></a></li>
 							</ul>
 						</li>
 					<?php endif; ?>
