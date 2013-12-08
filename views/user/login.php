@@ -45,12 +45,12 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<div class="col-sm-10 col-sm-offset-1 text-center">
+					<div class="col-sm-6">
 						<?php echo HTML::anchor('user/reset/password', __('Forgot Password?')); ?>
 					</div>
 					<?php if ($register): ?>
-						<div class="col-sm-10 col-sm-offset-1 text-center">
-							<?php echo HTML::anchor('user/register', __("Don't have an account?")); ?>
+						<div class="col-sm-6">
+							<?php echo HTML::anchor('user/register', __("Don't have an account?"), array('class' => 'pull-right')); ?>
 						</div>
 					<?php endif; ?>
 				</div>
