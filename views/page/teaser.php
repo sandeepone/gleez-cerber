@@ -27,7 +27,7 @@
 		<?php echo $post->teaser; ?>
 	</div>
 	<?php if ($post->tagcloud): ?>
-		<div class="post-tags row">
+		<div class="post-tags col-md-12">
 			<span class="tagcloud">
 				<?php echo __('Tagged with :tag', array(':tag' => $post->tagcloud)); ?>
 			</span>
