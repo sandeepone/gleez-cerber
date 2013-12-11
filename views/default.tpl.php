@@ -32,7 +32,7 @@
 		<!-- ########## Sidebar left end ########## -->
 	<?php endif; ?>
 	<!-- ########## Content start ############# -->
-	<div class="col-md-<?php echo $main_column?>">
+	<div class="col-md-<?php echo $main_column?> page-container">
 		<?php if ($content_top AND ! empty($content_top)): ?>
 			<?php echo $content_top; ?>
 		<?php endif; ?>
