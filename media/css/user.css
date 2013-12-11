@@ -1,3 +1,7 @@
+.user .page-container {
+	background: transparent;
+}
+
 /* Space after footer. Mb should create general margin, and remove this rule? */
 .user-register .panel {
 	margin-bottom: 7em;
