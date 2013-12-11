@@ -23,6 +23,7 @@
     6. Menus
     7. Widgets/Panels
     8. Misc
+    9. Responsive
 
 -------------------------------------------------------------------*/
 
@@ -54,13 +55,9 @@ blockquote p {
 	font-style: italic;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	text-transform: uppercase;
-	font-weight: normal;
-}
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
 	font-family: "Open Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-weight: normal;
 }
 
 hr {
@@ -255,8 +252,13 @@ div.page-header h1 {
 	margin-bottom: 20px;
 }
 
-#content.with-tabs {
-    margin-top:10px;
+#content.with-tabs .post-page-wrapper {
+	border: 1px solid #ddd;
+	border-top: none;
+}
+
+#content.with-tabs .post-page {
+	padding-top: 15px;
 }
 
 .widget-menu-management .panel-body {
@@ -268,51 +270,22 @@ div.page-header h1 {
 -------------------------------------------------------------------*/
 
 .page-list article {
-	padding: 1em;
-	margin: 2.3em 0;
-	background-color: #fff;
-	position: relative;
-}
-
-
-.page-list article:before,
-.page-list article:after {
-	z-index: -1;
-	position: absolute;
-	content: "";
-	bottom: 15px;
-	left: 10px;
-	width: 50%;
-	top: 80%;
-	max-width:300px;
-	background: #777;
-	-webkit-box-shadow: 0 15px 10px #777;
-	   -moz-box-shadow: 0 15px 10px #777;
-	        box-shadow: 0 15px 10px #777;
-	-webkit-transform: rotate(-3deg);
-	   -moz-transform: rotate(-3deg);
-	     -o-transform: rotate(-3deg);
-	    -ms-transform: rotate(-3deg);
-	        transform: rotate(-3deg);
-}
-
-.page-list article:after
-{
-	-webkit-transform: rotate(3deg);
-	   -moz-transform: rotate(3deg);
-	     -o-transform: rotate(3deg);
-	    -ms-transform: rotate(3deg);
-	        transform: rotate(3deg);
-	right: 10px;
-	left: auto;
-}
-
-.page-list article:first-child {
-	margin-top: 0;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 1em;
 }
 
 .page-list article:last-child {
-	margin-bottom: 0;
+	border-bottom: none;
+}
+
+.page-container {
+	background: #fff;
+	padding: 0 1em 1em;
+	margin-bottom: 1em;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	     -o-border-radius: 4px;
+	        border-radius: 4px;
 }
 
 .post-rss {
@@ -355,8 +328,8 @@ div.page-header h1 {
 }
 
 .readmore {
-	background-color: #dd9933 !important;
-	border-color: #dd9933 !important;
+	background-color: #d93 !important;
+	border-color: #d93 !important;
 	color: #fff !important;
 }
 
@@ -722,4 +695,17 @@ div.page-header h1 {
 /* Overrides for Character Counter */
 .charleft.text-warning {
 	color: #c09853!important;
+}
+
+/*-------------------------------------------------------------------
+                           9. Responsive
+-------------------------------------------------------------------*/
+
+/* Everything in this query is meant for for Ipad, large-screen smartphones
+   and other similar screen widths (at least 480px). */
+@media only screen and (min-width: 480px) and (max-width:959px) {
+	.navbar-nav > li > a {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
