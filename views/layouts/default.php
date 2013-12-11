@@ -40,11 +40,11 @@
 						<li><a href="<?php echo URL::site('/user/login'); ?>"><i class="fa fa-white fa-chevron-left"></i><?php echo __('Sign In') ?></a></li>
 					<?php else:  ?>
 						<li class="dropdown">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-								<i class="fa fa-user"></i><?php echo $_user->nick; ?><b class="caret"></b>
-							</a>
+							<?php echo HTML::anchor('#', User::getAvatar($_user, array('size' => 20)).'<b class="caret"></b>', array('data-toggle' => 'dropdown', 'class' => 'dropdown-toggle')); ?>
 
 							<ul class="dropdown-menu">
+								<li><a href="#" class="muted"><?php echo $_user->nick?></a></li>
+								<li class="divider"></li>
 								<?php if (User::is_admin()): ?>
 									<li><a href="<?php echo URL::site('/admin') ?>"><i class="fa fa-dashboard"></i> <?php echo __('Dashboard') ?></a></li>
 									<li class="divider"></li>
