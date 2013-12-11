@@ -36,7 +36,7 @@
 						<?php endif; ?>
 						<?php if ($user->homepage): ?>
 							<dl title="<?php echo __('Home Page') ?>">
-								<dt><i class="fa fa-link"></i></dt>
+								<dt><i class="fa fa-globe"></i></dt>
 								<dd><?php echo HTML::anchor($user->homepage, $user->homepage, array('itemprop' => 'url')); ?></dd>
 							</dl>
 						<?php endif; ?>
