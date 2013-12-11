@@ -103,34 +103,26 @@ a#add-pic:hover {
 	margin-bottom: 10px;
 }
 
-.vcard .details {
-	border-top: 1px solid #DDD;
-	border-bottom: 1px solid #DDD;
-	margin: 0 0 8px 0;
-	padding: 18px 0 15px 0;
-}
-
 .vcard dl {
-	margin: 5px 0 0 0;
-	font-size: 14px;
+	position: relative;
+	margin-bottom: 1em;
+	line-height: 1.65em;
 }
 
 .vcard dl dt {
 	margin: 0;
 	float: left;
-	color: #333333;
+}
+
+.vcard dl dt i {
+	font-size: 1.25em;
 }
 
 .vcard dl dd {
-	margin: 0 0 0 22px;
+	margin: 0 0 0 2.2em;
 	width: 195px;
 	overflow-x: hidden;
 	text-overflow: ellipsis;
-}
-
-.vcard .details .caption-label {
-	color: #A0A0A0;
-	padding-right: 4px;
 }
 
 .vcard .list-group-item h3 {
@@ -271,6 +263,10 @@ ul.tabnav > li {
 	margin-top: 5px;
 }
 
+#user .list-group .list-group-item i {
+	color: #333;
+}
+
 #user .vcard .caption-label{
 	padding-right: 10px;
 }
@@ -283,16 +279,17 @@ ul.tabnav > li {
 	font-size: 13px;
 }
 
-.vcard-details{
+.vcard-details {
     padding-top:20px;
     border-top: 1px solid #E9E9E9;
+	color: #444;
 }
 .bio .widget-header{
     padding-top:20px;
 }
 
 .col-sidebar-right {
-    border-left: 1px solid #DDDDDD;
+    border-left: 1px solid #ddd;
     padding-left: 2em;
 }
 
