@@ -114,10 +114,6 @@ a {
     padding: 10px 15px;
 }
 
-.navbar .nav a .fa {
-	padding: 0 4px;
-}
-
 /* Active tab */
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
