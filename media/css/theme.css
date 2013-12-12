@@ -244,10 +244,6 @@ a {
                            4. Main
 -------------------------------------------------------------------*/
 
-div.page-header h1 {
-	color: #333;
-}
-
 .frontend #content {
 	margin-bottom: 20px;
 }
@@ -642,7 +638,10 @@ div.page-header h1 {
 }
 
 .page-header h1 {
-	font-size:25px;
+	font-size: 25px;
+	font-weight: 300;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
 }
 
 .title-holder h2 {
