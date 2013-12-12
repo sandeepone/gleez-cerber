@@ -5,7 +5,7 @@
 
 	<div class="col-md-9 col-sm-8">
 		<?php include Kohana::find_file('views', 'errors/partial'); ?>
-		<?php echo Form::open($action, array('class' => 'form form-horizontal', 'role' => 'form')); ?>
+		<?php echo Form::open($action, array('class' => 'form form-horizontal')); ?>
 		<div class="stacked-content">
 			<div class="tab-pane fade in active" id="profile-tab">
 				<div class="panel panel-default window-shadow">

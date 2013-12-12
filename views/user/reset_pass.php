@@ -7,7 +7,7 @@
 				<?php _e('Enter email specified at registration for password reset')?>
 			</h3>
 		</div>
-		<?php echo Form::open($action, array('class' => 'form form-horizontal', 'role' => 'form')) ?>
+		<?php echo Form::open($action, array('class' => 'form form-horizontal')) ?>
 			<div class="panel-body">
 				<div class="form-group <?php echo isset($errors['mail']) ? 'has-error': ''; ?>">
 					<div class="col-md-12">
