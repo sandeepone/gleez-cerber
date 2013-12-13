@@ -40,24 +40,28 @@
 						<li><a href="<?php echo URL::site('/user/login'); ?>"><i class="fa fa-fw fa-white fa-chevron-left"></i><?php echo __('Sign In') ?></a></li>
 					<?php else:  ?>
 						<li class="dropdown">
-							<?php echo HTML::anchor('#', User::getAvatar($_user, array('size' => 20)).'<b class="caret"></b>', array('data-toggle' => 'dropdown', 'class' => 'dropdown-toggle')); ?>
+							<?php echo HTML::anchor('#', User::getAvatar($_user, array('size' => 20)).' '.$_user->name.'<b class="caret"></b>', array('data-toggle' => 'dropdown', 'class' => 'dropdown-toggle')); ?>
 
 							<ul class="dropdown-menu">
-								<li><a href="#" class="muted"><?php echo $_user->nick?></a></li>
+								<li class="dropdown-header"><strong><?php echo $_user->nick ?></strong></li>
+								<li class="dropdown-header"><?php echo $_user->mail ?></li>
+								<li class="divider"></li>
+								<li class="dropdown-header"><?php _e('Profile') ?></li>
+								<li><a href="<?php echo URL::site('/user/profile') ?>"><i class="fa fa-fw fa-cog"></i> <?php echo __('My Profile') ?></a></li>
+								<li class="dropdown-header"><?php _e('Settings') ?></li>
+								<li><a href="<?php echo URL::site("/user/edit") ?>"><i class="fa fa-fw fa-pencil"></i> <?php echo __('Profile Settings') ?></a></li>
+								<li><a href="<?php echo URL::site("/user/password") ?>"><i class="fa fa-fw fa-lock"></i> <?php echo __('Change Password') ?></a></li>
 								<li class="divider"></li>
 								<?php if (User::is_admin()): ?>
 									<li><a href="<?php echo URL::site('/admin') ?>"><i class="fa fa-fw fa-dashboard"></i> <?php echo __('Dashboard') ?></a></li>
-									<li class="divider"></li>
 								<?php endif; ?>
-								<li><a href="<?php echo URL::site('/user/profile') ?>"><i class="fa fa-fw fa-cog"></i> <?php echo __('Profile') ?></a></li>
-								<li><a href="<?php echo URL::site("/user/edit") ?>"><i class="fa fa-fw fa-pencil"></i> <?php echo __('Account') ?></a></li>
-								<li class="divider"></li>
 								<li><a href="<?php echo URL::site('/user/logout'); ?>"><i class="fa fa-fw fa-power-off"></i> <?php echo __('Sign Out') ?></a></li>
 							</ul>
 						</li>
+
 					<?php endif; ?>
 				</ul>
-			</div><!--/.nav-collapse -->
+			</div>
 		</div>
 	</div>
 	<!-- ########## Navbar end ########## -->
