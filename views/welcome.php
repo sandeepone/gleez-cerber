@@ -1,4 +1,4 @@
-<div class="gleez-masthead">
+<div class="masthead">
 		<h1><?php _e('Gleez CMS'); ?></h1>
 		<p class="lead">Open source, extensible Content Management System that is built on the Kohana Framework.</p>
 		<p>
@@ -11,14 +11,14 @@
 </div>
 
 <div class="gleez-links">
-	<div class="gleez-social">
-		<ul class="gleez-social-buttons">
+	<div class="masthead-social">
+		<ul class="social-buttons">
 			<li><iframe src="http://ghbtns.com/github-btn.html?user=gleez&repo=cms&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
 			<li><iframe src="http://ghbtns.com/github-btn.html?user=gleez&repo=cms&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
 			<li><iframe src="http://ghbtns.com/github-btn.html?user=sandeepone&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="200" height="20"></iframe></li>
 		</ul>
 	</div>
-	<ul class="gleez-masthead-links">
+	<ul class="masthead-links">
 		<li><?php echo HTML::anchor('http://demo.gleezcms.org', 'Demo Site'); ?></li>
 		<li><?php echo HTML::anchor('https://github.com/gleez/cms/wiki', 'Gleez Wiki'); ?></li>
 		<li><?php echo HTML::anchor('https://www.facebook.com/gleezcms', 'Facebook'); ?></li>
@@ -26,16 +26,16 @@
 	</ul>
 </div>
 
-<div class="gleez-dochead">
+<div class="dochead">
 	<p>We hate reinventing the wheel. But when the wheel doesn't exist, or is square, we're not afraid to invent a round one.</p>
 </div>
 
-<div class="gleez-docbody">
+<div class="docbody">
 	<h3>What Is Gleez CMS?</h3>
 	<p>Gleez is an open source, <a href="http://en.wikipedia.org/wiki/Content_management_system">extensible Content Management System</a> that is built on the <a href="http://kohanaframework.org">Kohana Framework</a>. Gleez is the fusion of many good concepts from the 3 most popular CMS: Joomla, Drupal, Wordpress and Ruby Rails. With years of experience using these, we've gathered great ideas and in some cases, improved on them.</p>
 	<p>With an emphasis on security and functionality, Gleez is a professional and robust system suitable for any business or organization. Built on the PHP programming language and the MySQL database, Gleez delivers superb performance on any size application.</p>
 
-	<div class="gleez-features">
+	<div class="features">
 		<div class="row">
 			<div class="col-md-4">
 				<span class="fa-stack fa-3x">
@@ -43,7 +43,7 @@
 					<i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
 				</span>
 				<h4>Modules</h4>
-				<p>Modules - Code that extends the functionalities of Gleez. We just call them "Modules", others call it "Plugins"(Wordpress) or "Modules"(Drupal), but it's a more general term. Everything you can use for Gleez is an Extension.</p>
+				<p>Modules - Code that extends the functionality of Gleez. We just call them "Modules", others call it "Plugins"(Wordpress) or "Modules"(Drupal), but it's a more general term. Everything you can use for Gleez is an Extension.</p>
 			</div>
 
 			<div class="col-md-4">
