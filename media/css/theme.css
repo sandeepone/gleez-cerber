@@ -691,6 +691,14 @@ a {
 	color: #c09853!important;
 }
 
+.form-actions-right {
+	text-align: right;
+}
+
+.form-inline fieldset.bulk-actions {
+	margin-top: 5px;
+}
+
 /*-------------------------------------------------------------------
                            9. Responsive
 -------------------------------------------------------------------*/
@@ -701,5 +709,13 @@ a {
 	.navbar-nav > li > a {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+}
+
+/* Here, rules for anything less than Ipads width, with the advice to design
+   for the smallest common width, 320px. This is the majority of smarthphones. */
+@media only screen and (max-width: 767px) {
+	.form-actions-right {
+		text-align: left;
 	}
 }
