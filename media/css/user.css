@@ -296,3 +296,7 @@ ul.tabnav > li {
 #form-picture{
     height:auto;
 }
+
+.message-unread {
+	font-weight: bold;
+}
