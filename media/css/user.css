@@ -54,9 +54,7 @@
 .vcard img,
 .empty-photo {
 	padding: 5px;
-	background: #FFF;
-	width: 210px;
-	height: 210px;
+	background: #fff;
 	margin: 0 auto;
 	display: block;
 }
