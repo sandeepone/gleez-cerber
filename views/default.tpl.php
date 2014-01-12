@@ -6,8 +6,10 @@
 ?>
 <?php if ($messages): ?>
 	<!-- ########## Messages start ########## -->
-	<div id="messages" class="messages col-md-8 col-md-offset-2">
-		<?php echo $messages ?>
+	<div class="row">
+		<div id="messages" class="messages col-md-9 col-md-offset-1">
+			<?php echo $messages ?>
+		</div>
 	</div>
 	<!-- ########## Messages end ########## -->
 <?php endif; ?>
