@@ -1,14 +1,14 @@
 <div class="content row">
 	<?php if ($sidebar_left || $sidebar_right): ?>
 		<!-- ########## Sidebar start ########## -->
-		<div class="sidebar col-sm-3 col-md-3 col-lg-2 navbar-inverse">
+		<div class="col-sm-3 col-md-2 sidebar">
 			<?php echo $sidebar_left; ?>
 			<?php echo $sidebar_right; ?>
 		</div>
 		<!-- ########## Sidebar end ########## -->
 	<?php endif; ?>
 	<!-- ########## Content start ############# -->
-	<div class="main-content col-sm-9 col-md-9 col-lg-10">
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main-content">
 		<?php if ($title): ?>
 			<div class="page-header">
 				<h1><?php echo $title;?></h1>
