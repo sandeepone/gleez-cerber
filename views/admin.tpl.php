@@ -9,10 +9,10 @@
 			<!-- ########## Sidebar end ########## -->
 		<?php endif; ?>
 		<!-- ########## Content start ############# -->
-		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main-content">
+		<div class="col-sm-9 col-md-10 main-content">
 			<?php if ($title): ?>
 				<div class="page-header">
-					<h1><?php echo $title;?></h1>
+					<h1> <i class="fa fa-info-circle"></i> <?php echo $title;?></h1>
 				</div>
 			<?php endif; ?>
 
@@ -32,28 +32,6 @@
 			<div id="content" class="<?php echo $tabs ? 'with-tabs' : 'without-tabs'?>">
 				<?php echo $content; ?>
 			</div>
-
-			<div id="push"></div>
-			<!-- ########## Footer start ########## -->
-			<footer class="footer">
-				<div class="text-muted">
-					<div class="row">
-						<div class="col-xs-6 col-md-6">
-							<p class="pull-left"><?php echo __('&copy; :year :site', array(':year' => date('Y'), ':site' => HTML::anchor(URL::site(false, true), $site_name)));?></p>
-						</div>
-						<div class="col-xs-6 col-md-6">
-							<p class="pull-right"><?php echo __(':powerdby v{gleez_version}', array(':powerdby' => HTML::anchor('http://gleezcms.org/', 'Gleez CMS')))?></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 text-center" id="footer-system-info">
-							<small><?php echo __('Rendered in {execution_time}, using {memory_usage} of memory.')?></small>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!-- ########## Footer end ########## -->
 		</div>
-
 	</div>
 </div>

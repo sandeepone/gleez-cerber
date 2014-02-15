@@ -717,6 +717,9 @@ a {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
+	.quick-actions li {
+	}
 }
 
 /* Here, rules for anything less than Ipads width, with the advice to design
@@ -724,5 +727,8 @@ a {
 @media only screen and (max-width: 767px) {
 	.form-actions-right {
 		text-align: left;
+	}
+	
+	.quick-actions li {
 	}
 }
