@@ -22,8 +22,9 @@
     5. Post
     6. Menus
     7. Widgets/Panels
-    8. Misc
-    9. Responsive
+    8. Comments
+    9. Misc
+    10. Responsive
 
 -------------------------------------------------------------------*/
 
@@ -265,7 +266,7 @@ a {
 
 .page-container {
 	background: #fff;
-	padding: 0 1em 1em;
+	/*padding: 0 1em 1em;*/
 	margin-bottom: 1em;
 	-webkit-border-radius: 4px;
 	   -moz-border-radius: 4px;
@@ -587,10 +588,46 @@ a {
 	text-shadow: none;
 }
 
+/*-------------------------------------------------------------------
+                           8. Comments
+-------------------------------------------------------------------*/
+ol.comments{
+	padding-left:0;
+}
+
+ol.comments li{
+	list-style: none;
+}
+
+li.comment{
+	border-top: 1px solid #DDDDDD;
+	line-height: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.data .date-created{
+	color:#999999;
+}
+
+.author.thumbnail {
+	width: 50px;
+	height: 50px;
+}
+
+.comment-content{
+	padding-top:10px;
+}
 
 /*-------------------------------------------------------------------
-                           8. Misc
+                           9. Misc
 -------------------------------------------------------------------*/
+.page-header{
+	margin: 20px 0;
+}
+
 .tab-content {
 	padding: 2em 0;
 	margin-bottom: 2em;
@@ -707,7 +744,7 @@ a {
 }
 
 /*-------------------------------------------------------------------
-                           9. Responsive
+                           10. Responsive
 -------------------------------------------------------------------*/
 
 /* Everything in this query is meant for for Ipad, large-screen smartphones
