@@ -49,7 +49,7 @@
 					<div id="tabs"><?php echo $tabs; ?></div>
 				</div>
 			<?php endif;?>
-			<div id="content" class="<?php echo $tabs ? 'with-tabs' : 'without-tabs'?>">
+			<div id="content-body" class="<?php echo $tabs ? 'with-tabs' : 'without-tabs'?>">
 				<?php echo $content; ?>
 			</div>
 			<?php if ($content_bottom AND ! empty($content_bottom)): ?>
