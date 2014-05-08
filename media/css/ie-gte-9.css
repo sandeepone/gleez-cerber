@@ -1,0 +1,11 @@
+.quick-actions li,
+.navbar-inverse,
+.alert-info,
+.alert-success,
+.alert-error,
+.alert-danger,
+.panel-body ul.menus li.active a:after,
+.table-apparent thead tr,
+.table-apparent tfoot tr {
+	filter: none;
+}
