@@ -123,6 +123,7 @@ a {
 
 #messages {
 	top: 60px;
+	left: 0;
 	text-align: left;
 	position: absolute;
 }
@@ -765,7 +766,7 @@ li.comment{
 	.form-actions-right {
 		text-align: left;
 	}
-	
+
 	.quick-actions li {
 	}
 }
