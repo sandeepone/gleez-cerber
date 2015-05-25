@@ -14,13 +14,13 @@
 	<div class="gleez-links">
 		<div class="masthead-social">
 			<ul class="social-buttons">
-				<li><iframe src="http://ghbtns.com/github-btn.html?user=gleez&repo=cms&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
-				<li><iframe src="http://ghbtns.com/github-btn.html?user=gleez&repo=cms&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
-				<li><iframe src="http://ghbtns.com/github-btn.html?user=sandeepone&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="200" height="20"></iframe></li>
+				<li><iframe src="//ghbtns.com/github-btn.html?user=gleez&repo=cms&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
+				<li><iframe src="//ghbtns.com/github-btn.html?user=gleez&repo=cms&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe></li>
+				<li><iframe src="//ghbtns.com/github-btn.html?user=sandeepone&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="200" height="20"></iframe></li>
 			</ul>
 		</div>
 		<ul class="masthead-links">
-			<li><?php echo HTML::anchor('http://demo.gleezcms.org', 'Demo Site'); ?></li>
+			<li><?php echo HTML::anchor('https://demo.gleezcms.org', 'Demo Site'); ?></li>
 			<li><?php echo HTML::anchor('https://github.com/gleez/cms/wiki', 'Gleez Wiki'); ?></li>
 			<li><?php echo HTML::anchor('https://www.facebook.com/gleezcms', 'Facebook'); ?></li>
 			<li><?php echo HTML::anchor('https://plus.google.com/communities/111605254519349265711', 'Google Plus'); ?></li>
