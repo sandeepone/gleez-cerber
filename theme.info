@@ -1,7 +1,7 @@
 ; Gleez Cerber Theme
 ;
 ; Author:     Gleez Team
-; Copyright:  (c) 2011-2013 Gleez Technologies
+; Copyright:  (c) 2011-2015 Gleez team
 ; License:    http://gleezcms.org/license
 ;
 ; This file format fully consistent with the ini-file
@@ -15,7 +15,7 @@
 name           = "cerber"
 title          = "Cerber Theme"
 description    = "New responsive cool theme for Gleez CMS with left & right sidebar"
-version        = 1.0.0
+version        = 1.1.0
 license        = http://gleezcms.org/license
 themeURL       = https://github.com/sergeyklay/gleez-cerber
 depends        = gleez
@@ -30,18 +30,18 @@ admin          = 1
 ;
 ; format:
 ; [regions]
-; 	REGION_NAME = REGION TITLE
+; REGION_NAME = REGION TITLE
 ;
 ; Don't write here titles regions using national character encoding
 ; or non-english language. Region titles must be localized into your
 ; language using __() method
 ;
 [regions]
-	content_top    = The top of the main content
-	content_bottom = The bottom of the main content
-	top            = Top Region
-	bottom         = Bottom Region
-	left           = Left Sidebar
-	right          = Right Sidebar
-	dashboard      = Dashboard
-	footer         = Footer
+content_top    = The top of the main content
+content_bottom = The bottom of the main content
+top            = Top Region
+bottom         = Bottom Region
+left           = Left Sidebar
+right          = Right Sidebar
+dashboard      = Dashboard
+footer         = Footer
