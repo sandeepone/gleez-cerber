@@ -7,5 +7,5 @@
 .panel-body ul.menus li.active a:after,
 .table-apparent thead tr,
 .table-apparent tfoot tr {
-	filter: none;
+    filter: none;
 }
